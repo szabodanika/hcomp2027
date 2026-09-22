@@ -301,6 +301,14 @@
     transform: translateY(1px);
 }
 
+/* Disabled action button */
+.action-btn.disabled {
+    background-color: #aaa;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
 /* Hero CTA Button */
 .btn-cta {
     display: inline-block;

@@ -7,6 +7,8 @@
     <meta name="author" content="">
 
     <title>Call for Participation</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="img/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +96,7 @@
             min-height: 200px;
             flex-shrink: 0;
             /* Prevents compression on extremely long or short pages due to body flex */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab1.jpg') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/ab1.jpg') no-repeat center center;
             background-size: cover;
             width: 100%;
             display: flex;
@@ -446,13 +448,13 @@
     }
 </style>
 <div class="announcement-banner">
-    Registration is now open for HCOMP + CI 2026!
-    <a href="/registration.html">View details and register here →</a>
+    HCOMP + CI 2027 – more information To Be Announced!
+    <a href="/index.html">Stay tuned →</a>
 </div>
     <nav class="navbar" style="top: 42px;">
         <a class="navbar-brand" href="/index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
-            <img src="img/HCOMP_logo-01-colored_KG72.svg" alt="HCOMP Logo" class="nav-logo">
-            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+            <img src="img/HCOMP_logo-01-colored_hjS4.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.6rem; margin-top: -2px;">2027</span>
         </a>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span>
@@ -463,19 +465,19 @@
             <div class="dropdown">
                 <a href="/attend.html">Attend <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="/venue.html">Venue</a>
-                    <a href="/accommodations.html">Accommodations</a>
-                    <a href="/registration.html">Registration</a>
-                    <a href="/travel_grants.html">Travel Grants</a>
+                    <a href="/venue.html" class="disabled">Venue</a>
+                    <a href="/accommodations.html" class="disabled">Accommodations</a>
+                    <a href="/registration.html" class="disabled">Registration</a>
+                    <a href="/travel_grants.html" class="disabled">Travel Grants</a>
                     <a href="/visa_support_letter.html">Visa Support Letter</a>
-                    <a href="/student_volunteers.html">Student Volunteers</a>
-                    <a href="/attend.html#workshops">Workshops</a>
-                    <a href="/crowdcamp.html">CrowdCamp</a>
+                    <a href="/student_volunteers.html" class="disabled">Student Volunteers</a>
+                    <a href="/attend.html#workshops" class="disabled">Workshops</a>
+                    <a href="/crowdcamp.html" class="disabled">CrowdCamp</a>
                     <a href="/code_of_conduct.html">Code of Conduct</a>
                 </div>
             </div>
-            <a href="/program.html">Program</a>
-            <a href="/call_for_participation.html" class="active">Submit</a>
+            <a href="/program.html" class="disabled">Program</a>
+            <a href="/call_for_participation.html" class="active disabled">Submit</a>
             <a href="/organizers.html">Organizers</a>
             <a href="/call_for_sponsors.html">Sponsors</a>
             <a href="/past_meetings.html">Past Meetings</a>
@@ -555,7 +557,7 @@
     <div class="subpage-hero">
         <div class="container hero-breadcrumb-container">
             <div class="hero-breadcrumb">
-                <a href="/index.html">HCOMP 2026</a>
+                <a href="/index.html">HCOMP 2027</a>
                 
                 / <span>Call for Participation</span>
             </div>
@@ -572,8 +574,8 @@
   <li><a href="#info">Conference Information</a></li>
   <li><a href="#topics">Topics of Interest</a></li>
   <li>Call for <a href="#papers">Papers and Talks</a></li>
-  <li>Call for <a href="#posters">Posters and Demos</a> <span style="color: red; font-weight: bold;">(Deadline extended!)</span></li>
-  <li>Call for <a href="#dc">Doctoral Consortium</a> <span style="color: red; font-weight: bold;">(Deadline extended!)</span></li>
+  <li>Call for <a href="#posters">Posters and Demos</a></li>
+  <li>Call for <a href="#dc">Doctoral Consortium</a></li>
   <li>Call for <a href="#workshops">Workshops</a></li>
   <li><a href="#general">General Submission Instructions</a></li>
 </ul>
@@ -921,10 +923,10 @@
 <p>Before submitting, please ensure your document follows the <a href="#general">General Submission Instructions and Templates</a>.</p>
 
 <div style="margin-bottom: 20px;">
-    <a href="https://easychair.org/conferences/?conf=ci2026andhcomp2026" class="action-btn">Submit via EasyChair</a>
+    <a href="#" class="action-btn disabled" aria-disabled="true" onclick="return false;">Submit via EasyChair</a>
 </div>
 
-<p>For <strong>Workshop proposal</strong> submissions, please submit a <strong>single PDF file</strong> via email to <strong><a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></strong>.</p>
+<p>For <strong>Workshop proposal</strong> submissions, please submit a <strong>single PDF file</strong> via email to the Workshops Co-Chairs (contact details To Be Announced).</p>
 
 <p>For <strong>Doctoral Consortium</strong> submissions, more details will be announced soon.</p>
 
@@ -933,17 +935,18 @@
 <h1 id="info" class="sub-page-header">Conference Information</h1>
 <p class="sub-page-border">&nbsp;</p>
 
-<p>The <a href="/">2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP)</a> and the <a href="https://ci.acm.org/">2026 ACM Collective Intelligence (CI) Conference</a> will be held as co-located events from September 27-30, 2026, at the <a href="https://iac.vt.edu/about/Location.html">Virginia Tech Academic Building One</a> near Washington, DC, USA.</p>
+<p>The <a href="/">2027 ACM Conference on Human-AI Complementarity and Alignment (HCOMP)</a> and the <a href="https://ci.acm.org/">2027 ACM Collective Intelligence (CI) Conference</a> will be held as co-located events in 2027 (location and dates To Be Announced).</p>
 
-<h2 id="2026-conference-theme-connections">2026 Conference Theme: “Connections”</h2>
+<h2 id="2027-conference-theme">2027 Conference Theme: To Be Announced</h2>
 
-<p>The theme of this year’s co-located conference is <strong>Connections</strong>. <span style="background-color: #fff07bff; padding: 2px;">We encourage submissions that explore connections across disciplines; across humans, animals, and machines; between individuals and communities, and beyond.</span></p>
+<p>The theme of the 2027 co-located conferences is <strong>To Be Announced</strong>. Details will be added here once the theme is announced.</p>
 
-<h2 id="hcomp-2026-general-chair"><strong>HCOMP 2026 General Chair</strong><br></h2>
-<p><strong>Ting-Hao ‘Kenneth’ Huang</strong>, The Pennsylvania State University</p>
+<h2 id="hcomp-2027-general-co-chairs"><strong>HCOMP 2027 General Co-Chairs</strong><br></h2>
+<p><strong>Atsuyuki Morishima</strong>, University of Tsukuba<br>
+<strong>Simo Hosio</strong>, University of Oulu</p>
 
-<h2 id="ci-2026-general-chair"><strong>CI 2026 General Chair</strong><br></h2>
-<p><strong>Kurt Luther</strong>, Virginia Tech</p>
+<h2 id="ci-2027-general-chair"><strong>CI 2027 General Chair</strong><br></h2>
+<p>To Be Announced</p>
 
 <hr>
 
@@ -989,9 +992,8 @@
   <li>Human roles in the development, assessment, and governance of AI systems</li>
 </ul>
 
-<h3 id="hcomp-2026-program-co-chairs"><strong>HCOMP 2026 Program Co-Chairs</strong><br></h3>
-<p><strong>Chien-Ju Ho</strong>, Washington University in St. Louis<br>
-<strong>Tianyi Li</strong>, Purdue University</p>
+<h3 id="hcomp-2027-program-co-chairs"><strong>HCOMP 2027 Program Co-Chairs</strong><br></h3>
+<p>To Be Announced</p>
 
 <h2 id="collective-intelligence-ci">Collective Intelligence (CI)</h2>
 
@@ -1027,9 +1029,8 @@
   <li>Computer-human collaboration (e.g. hybrid systems, LLMs)</li>
 </ul>
 
-<h3 id="ci-2026-program-co-chairs"><strong>CI 2026 Program Co-Chairs</strong><br></h3>
-<p><strong>Jason W. Burton</strong>, University of Copenhagen<br>
-<strong>Ioanna Lykourentzou</strong>, Utrecht University</p>
+<h3 id="ci-2027-program-co-chairs"><strong>CI 2027 Program Co-Chairs</strong><br></h3>
+<p>To Be Announced</p>
 
 <hr>
 
@@ -1039,10 +1040,10 @@
 <h2 id="important-dates">Important Dates</h2>
 
 <ul>
-  <li><strong>Abstracts due:</strong> <del>June 1, 2026 AoE</del> <span style="color: red; font-weight: bold;">June 8, 2026 AoE (extended!)</span></li>
-  <li><strong>Papers due:</strong> <del>June 8, 2026 AoE</del> <span style="color: red; font-weight: bold;">June 15, 2026 AoE (extended!)</span></li>
-  <li><strong>Notifications:</strong> July 31, 2026</li>
-  <li><strong>Camera ready due:</strong> August 13, 2026</li>
+  <li><strong>Abstracts due:</strong> TBA</li>
+  <li><strong>Papers due:</strong> TBA</li>
+  <li><strong>Notifications:</strong> TBA</li>
+  <li><strong>Camera ready due:</strong> TBA</li>
 </ul>
 
 <hr>
@@ -1053,10 +1054,10 @@
 
 <ul>
   <li>
-    <p><strong>Full papers (max 6000 words, excluding references)</strong> will be assigned to a Program Committee member who will recruit 3 external reviewers and write a meta-review. Reviewers will be instructed to write full reviews that evaluate submissions according to specific review criteria. Accepted full papers will be published in the archival 2026 ACM HCOMP or Collective Intelligence conference proceedings which will be available via the ACM Digital Library. These papers will be assigned individual digital object identifiers (DOIs) as citable publications. <em>Note: authors submitting to the full papers track are expected to collectively review at least 3 papers subject to submission volumes and PC member availability.</em></p>
+    <p><strong>Full papers (max 6000 words, excluding references)</strong> will be assigned to a Program Committee member who will recruit 3 external reviewers and write a meta-review. Reviewers will be instructed to write full reviews that evaluate submissions according to specific review criteria. Accepted full papers will be published in the archival 2027 ACM HCOMP or Collective Intelligence conference proceedings which will be available via the ACM Digital Library. These papers will be assigned individual digital object identifiers (DOIs) as citable publications. <em>Note: authors submitting to the full papers track are expected to collectively review at least 3 papers subject to submission volumes and PC member availability.</em></p>
   </li>
   <li>
-    <p><strong>Talks (formerly “extended abstracts”) (max 1500 words, excluding references)</strong> will receive short reviews by two members of the Program Committee focusing on relevance of, and enthusiasm for, the topic. Extended abstracts for accepted talks will be made available to conference participants on the 2026 HCOMP or CI websites. These abstracts will not be archived in the ACM Digital Library nor assigned individual DOIs for tracking future citations. This option may be attractive to social science researchers who wish to submit their work to a journal for archival publication in the future.</p>
+    <p><strong>Talks (formerly “extended abstracts”) (max 1500 words, excluding references)</strong> will receive short reviews by two members of the Program Committee focusing on relevance of, and enthusiasm for, the topic. Extended abstracts for accepted talks will be made available to conference participants on the 2027 HCOMP or CI websites. These abstracts will not be archived in the ACM Digital Library nor assigned individual DOIs for tracking future citations. This option may be attractive to social science researchers who wish to submit their work to a journal for archival publication in the future.</p>
   </li>
 </ul>
 
@@ -1121,13 +1122,13 @@
 
 <h3 id="awards">Awards</h3>
 
-<p>HCOMP and CI 2026 will each recognize one best full paper, one best talk, and one best student work (of either type). Program Committee members will be asked to flag submissions they deem worthy of a recognition. The Program Chairs will form a small committee that will read the nominated submissions, consider the comments in the reviews, and select the winners.</p>
+<p>HCOMP and CI 2027 will each recognize one best full paper, one best talk, and one best student work (of either type). Program Committee members will be asked to flag submissions they deem worthy of a recognition. The Program Chairs will form a small committee that will read the nominated submissions, consider the comments in the reviews, and select the winners.</p>
 
-<p>Additionally, HCOMP and CI 2026 will recognize outstanding reviewers. PC members will be asked to flag high-quality reviews from external reviewers and fellow PC members. The Program Chairs will acknowledge these outstanding reviewers at the conference and in the proceedings.</p>
+<p>Additionally, HCOMP and CI 2027 will recognize outstanding reviewers. PC members will be asked to flag high-quality reviews from external reviewers and fellow PC members. The Program Chairs will acknowledge these outstanding reviewers at the conference and in the proceedings.</p>
 
 <h3 id="anonymity">Anonymity</h3>
 
-<p>HCOMP and CI 2026 will adopt a double-blind review process for both archival full papers and talks. Authors submitting this submission format must ensure that their submissions are fully anonymized by removing all identifying details, including author names, affiliations, and institutions. Authors should also avoid citing any unpublished work of their own.</p>
+<p>HCOMP and CI 2027 will adopt a double-blind review process for both archival full papers and talks. Authors submitting this submission format must ensure that their submissions are fully anonymized by removing all identifying details, including author names, affiliations, and institutions. Authors should also avoid citing any unpublished work of their own.</p>
 
 <h3 id="supplemental-materials">Supplemental Materials</h3>
 
@@ -1137,7 +1138,7 @@
 
 <h3 id="double-submission-policy">Double Submission Policy</h3>
 
-<p><strong>Full paper submissions</strong> to HCOMP and CI 2026 must represent original work. Submissions should not have been previously published and should not be under simultaneous peer-review at any other peer-reviewed archival conference or journal. Papers that have appeared at a conference with published proceedings constitute previously published work. If the paper uses some data, measures, or material from previously-published work, it should also contain significant new results and/or focus on a significantly different research question. Works that have appeared at a workshop, poster/demo session, extended abstract, or any non-archival forum do not constitute previously published work, as long as the paper is an extension of the prior work. Extensions might include new results, more in-depth analysis, an evaluation that was not part of the workshop paper, or further experiments. Any submissions that fail to meet these double submission requirements will be desk rejected.</p>
+<p><strong>Full paper submissions</strong> to HCOMP and CI 2027 must represent original work. Submissions should not have been previously published and should not be under simultaneous peer-review at any other peer-reviewed archival conference or journal. Papers that have appeared at a conference with published proceedings constitute previously published work. If the paper uses some data, measures, or material from previously-published work, it should also contain significant new results and/or focus on a significantly different research question. Works that have appeared at a workshop, poster/demo session, extended abstract, or any non-archival forum do not constitute previously published work, as long as the paper is an extension of the prior work. Extensions might include new results, more in-depth analysis, an evaluation that was not part of the workshop paper, or further experiments. Any submissions that fail to meet these double submission requirements will be desk rejected.</p>
 
 <p><strong>Talk submissions</strong> can be based on previously-published work, as long as the authors clearly cite the publications on which their submission is based. Extended abstracts for accepted talks will be non-archival and made available via the conference website, giving authors the flexibility to further develop their ideas and submit to other venues in the future.</p>
 
@@ -1151,18 +1152,13 @@
 
 <p>Full papers will be published under <a href="https://www.acm.org/publications/openaccess">ACM Open Access</a>.</p>
 
-<p>Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).</p>
+<p>Starting January 1, 2027, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).</p>
 
 <p>To be included in ACM Open, the <strong>corresponding author</strong> must be affiliated with a participating institution. For APC-eligible articles (research, short paper, and survey) where none of the authors are currently from participating institutions, an APC will be required. Corresponding authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or discretionary waiver. To find out whether an APC applies to your article, please consult the <a href="https://libraries.acm.org/acmopen/open-participants">list of participating institutions</a> in ACM Open and review the <a href="https://www.acm.org/publications/policies/waivers-discounts-policy">APC Waivers and Discounts Policy</a>. Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.</p>
 
-<p>Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer:</p>
+<p>Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2027 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer reduced APCs for ACM/SIG members and non-members (amounts To Be Announced).</p>
 
-<ul>
-  <li>$250 APC for ACM/SIG members</li>
-  <li>$350 for non-members</li>
-</ul>
-
-<p>This represents a <a href="https://www.acm.org/publications/openaccess">65% discount</a>, funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period. This temporary subsidized pricing will apply to all conferences scheduled for 2026.</p>
+<p>This represents a <a href="https://www.acm.org/publications/openaccess">65% discount</a>, funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period. This temporary subsidized pricing will apply to all conferences scheduled for 2027.</p>
 
 <p><em>Note: ACM is not lowering APCs, but is instead contributing funds to temporarily subsidize APC pricing as the community adjusts to the Open Access program.</em></p>
 
@@ -1176,8 +1172,8 @@
 <h2 id="important-dates-1">Important Dates</h2>
 
 <ul>
-  <li><strong>Submission Deadline:</strong> <del>July 16, 2026 (11:59 pm AOE)</del> <span style="color: red; font-weight: bold;">July 23, 2026 (11:59 pm AOE) (extended!)</span></li>
-  <li><strong>Notification of Acceptance:</strong> August 5, 2026</li>
+  <li><strong>Submission Deadline:</strong> TBA</li>
+  <li><strong>Notification of Acceptance:</strong> TBA</li>
 </ul>
 
 <h2 id="demos">Demos</h2>
@@ -1201,13 +1197,11 @@
 
 <p>CI/HCOMP takes pride in our interdisciplinary community. We welcome work from a variety of perspectives and backgrounds, and we look forward to reading your contributions. If you have any questions in the meantime, please reach out to the Posters/Demos Co-Chairs:</p>
 
-<h3 id="hcomp-2026-posters-and-demos-co-chairs"><strong>HCOMP 2026 Posters and Demos Co-Chairs</strong><br></h3>
-<p><strong>Hari Subramonyam</strong>, Stanford University (HCOMP point-of-contact: harihars@stanford.edu)<br>
-<strong>Oana Inel</strong>, University of Zurich (inel@ifi.uzh.ch)</p>
+<h3 id="hcomp-2027-posters-and-demos-co-chairs"><strong>HCOMP 2027 Posters and Demos Co-Chairs</strong><br></h3>
+<p>To Be Announced</p>
 
-<h3 id="ci-2026-posters-and-demos-co-chairs"><strong>CI 2026 Posters and Demos Co-Chairs</strong><br></h3>
-<p><strong>Xinlan Emily Hu</strong>, MIT (CI point-of-contact: xehu@mit.edu)<br>
-<strong>Vineet Pandey</strong>, University of Utah (vineet.pandey@utah.edu)</p>
+<h3 id="ci-2027-posters-and-demos-co-chairs"><strong>CI 2027 Posters and Demos Co-Chairs</strong><br></h3>
+<p>To Be Announced</p>
 
 <hr>
 
@@ -1217,13 +1211,13 @@
 <h2 id="important-dates-2">Important Dates</h2>
 
 <ul>
-  <li><strong><del>July 27, 2026</del> <span style="color: red; font-weight: bold;">August 3, 2026 (extended!)</span>:</strong> Submission Deadline</li>
-  <li><strong>August 7, 2026:</strong> Notification of Acceptance</li>
+  <li><strong>Submission Deadline:</strong> TBA</li>
+  <li><strong>Notification of Acceptance:</strong> TBA</li>
 </ul>
 
-<p>We are excited to announce that the 2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP 2026) will host a Doctoral Colloquium for PhD students. HCOMP 2026 is co-located and tightly integrated with the 14th ACM Collective Intelligence Conference (CI 2026), united under a shared theme: <strong>Connections</strong>.</p>
+<p>We are excited to announce that the 2027 ACM Conference on Human-AI Complementarity and Alignment (HCOMP 2027) will host a Doctoral Colloquium for PhD students. HCOMP 2027 is co-located and tightly integrated with the ACM Collective Intelligence Conference (CI 2027), united under a shared theme that is <strong>To Be Announced</strong>.</p>
 
-<p>The Doctoral Colloquium reflects that theme directly. It is a space designed for PhD students to forge meaningful connections — with peers across disciplines, with established researchers from both communities, and with ideas that sit at the intersection of collective intelligence and human-AI collaboration. Whether your work lives squarely within one conference’s scope or bridges both, this is an exceptional venue to share it, stress-test it, and expand it.</p>
+<p>The Doctoral Colloquium is a space designed for PhD students to forge meaningful connections — with peers across disciplines, with established researchers from both communities, and with ideas that sit at the intersection of collective intelligence and human-AI collaboration. Whether your work lives squarely within one conference’s scope or bridges both, this is an exceptional venue to share it, stress-test it, and expand it.</p>
 
 <h2 id="why-participate">Why Participate?</h2>
 
@@ -1238,7 +1232,7 @@
   <li>Gain broader exposure for their work — particularly valuable as they prepare for the job market or the next stages of their academic careers.</li>
 </ul>
 
-<p>The colloquium is especially timely given the joint event’s focus on Connections — across disciplines, across humans and machines, between individuals and communities. We particularly encourage students whose research sits at disciplinary crossroads or explores how collective and AI-driven systems interrelate.</p>
+<p>The colloquium is especially timely given the joint event’s focus on cross-cutting work — across disciplines, across humans and machines, between individuals and communities. We particularly encourage students whose research sits at disciplinary crossroads or explores how collective and AI-driven systems interrelate.</p>
 
 <h2 id="areas-of-interest">Areas of Interest</h2>
 
@@ -1273,7 +1267,7 @@
   <li>1-2 of your main research projects</li>
   <li>One of your on-going project or your proposed work for your thesis</li>
   <li>Your timeline and current stage in the research process</li>
-  <li>A short paragraph explaining why you want to join the colloquium and how you expect to benefit — including, where relevant, how the joint HCOMP + CI setting and the theme of Connections is meaningful to your work.</li>
+  <li>A short paragraph explaining why you want to join the colloquium and how you expect to benefit — including, where relevant, how the joint HCOMP + CI setting is meaningful to your work.</li>
   <li>Finally, a supporting letter from your advisor. This is not a recommendation letter. It must verify that the student is enrolled in a PhD program, state the anticipated length of the program, and indicate the student’s current stage of progress. The letter should also state whether funding to attend the DC could be secured.</li>
 </ul>
 
@@ -1281,23 +1275,23 @@
 
 <h2 id="funding">Funding</h2>
 
-<p>All accepted DC participants will receive complimentary full conference and workshop registrations. Applicants will be required to attend the conference in person, should not assume travel funding support through the DC, and are encouraged to seek institutional or external support where possible. <a href="/travel_grants.html">Travel Grants</a> are now available, but DC participants must apply separately and meet eligibility criteria to be considered.</p>
+<p>All accepted DC participants will receive complimentary full conference and workshop registrations. Applicants will be required to attend the conference in person, should not assume travel funding support through the DC, and are encouraged to seek institutional or external support where possible. Information about <a href="/travel_grants.html">Travel Grants</a> is To Be Announced; DC participants must apply separately and meet eligibility criteria to be considered.</p>
 
 <p>We look forward to your application and to building a vibrant, cross-community network of future leaders across collective intelligence and human-AI collaboration. Come make some connections.</p>
 
 <h2 id="submission">Submission</h2>
 
-<p>Please submit your application materials to the following Google Form prior to the deadline: <a href="https://forms.gle/mY8M6mcyGndUhGRC7">https://forms.gle/mY8M6mcyGndUhGRC7</a></p>
+<p>The DC application form link is <strong>To Be Announced</strong>.</p>
 
-<h3 id="hcomp-2026-dc-chair"><strong>HCOMP 2026 DC Chair</strong><br></h3>
-<p><strong>Joel Chan</strong>, University of Maryland, College Park, USA</p>
+<h3 id="hcomp-2027-dc-chair"><strong>HCOMP 2027 DC Chair</strong><br></h3>
+<p>To Be Announced</p>
 
-<h3 id="ci-2026-dc-chair"><strong>CI 2026 DC Chair</strong><br></h3>
-<p><strong>Wesley Hanwen Deng</strong>, Microsoft Research, USA</p>
+<h3 id="ci-2027-dc-chair"><strong>CI 2027 DC Chair</strong><br></h3>
+<p>To Be Announced</p>
 
-<p>For inquiries regarding the track, please contact: <a href="mailto:hcomp-ci-2026-dc@acm.org">hcomp-ci-2026-dc@acm.org</a></p>
+<p>For inquiries regarding the track, please contact the DC chairs (contact details To Be Announced).</p>
 
-<p>Credit to the <a href="https://cscw.acm.org/dc.html">CSCW 2026 DC</a> for some of the language used in this CFP.</p>
+<p>Credit to the <a href="https://cscw.acm.org/dc.html">CSCW 2027 DC</a> for some of the language used in this CFP.</p>
 
 <hr>
 
@@ -1305,22 +1299,21 @@
 <p class="sub-page-border">&nbsp;</p>
 
 <h2 id="overview">Overview</h2>
-<p>We invite proposals for workshops at HCOMP 2026 and CI 2026. Workshops are a gathering place for researchers, practitioners, and industry professionals to bring together communities with common research interests and agendas, discuss ongoing work, and initiate new collaborations.</p>
+<p>We invite proposals for workshops at HCOMP 2027 and CI 2027. Workshops are a gathering place for researchers, practitioners, and industry professionals to bring together communities with common research interests and agendas, discuss ongoing work, and initiate new collaborations.</p>
 
 <p>Workshops are an opportunity to move the field forward and build community. <span style="background-color: #fff07bff; padding: 2px;">They may address basic or applied research, best practices, tools, education, industry trends, emerging themes and applications, and critical thinking about existing methodologies and frameworks.</span> Topics should fall within the general scope of HCOMP, CI, or both (see Topics of Interest above), but we also highly encourage emerging research directions that have not yet been fully explored and may even be seen as controversial.</p>
 
 <p>We welcome traditional workshop formats that encourage lively debates and focused discussion, as well as other types of topic-specific activities, such as tutorials or roundtables. Each workshop should generate ideas that will give the HCOMP and CI communities a fresh way of thinking about the topic or suggest promising directions for future work.</p>
 
 <h2 id="important-dates-3">Important Dates</h2>
-<p><em>(All deadlines are 11:59pm AoE)</em></p>
 <ul>
-  <li><strong>Workshop Proposals Due:</strong> June 15, 2026</li>
-  <li><strong>Workshop Acceptance Notifications:</strong> June 22, 2026</li>
-  <li><strong>Workshop Websites Live &amp; CfP Announced:</strong> June 29, 2026</li>
-  <li><span style="background-color: #ff8181ff; padding: 2px;"><strong>Suggested Workshop Paper Submission Deadline:</strong> July 23 - July 30, 2026 (Organizers may select their preferred deadline, provided they can meet the Aug 7 notification requirement)</span></li>
-  <li><span style="background-color: #ff8181ff; padding: 2px;"><strong>Workshop Paper Acceptance Notifications:</strong> August 7, 2026</span></li>
-  <li><strong>Conference Early Registration Deadline:</strong> <span style="color:red; font-weight:bold;">Extended to August 28, 2026</span></li>
-  <li><strong>Workshops Day:</strong> September 27, 2026</li>
+  <li><strong>Workshop Proposals Due:</strong> TBA</li>
+  <li><strong>Workshop Acceptance Notifications:</strong> TBA</li>
+  <li><strong>Workshop Websites Live &amp; CfP Announced:</strong> TBA</li>
+  <li><strong>Suggested Workshop Paper Submission Deadline:</strong> TBA</li>
+  <li><strong>Workshop Paper Acceptance Notifications:</strong> TBA</li>
+  <li><strong>Conference Early Registration Deadline:</strong> TBA</li>
+  <li><strong>Workshops Day:</strong> TBA</li>
 </ul>
 
 <h2 id="submission-guidelines">Submission Guidelines</h2>
@@ -1329,7 +1322,7 @@
 <ul>
   <li><strong>Suggested length:</strong> 2-4 pages (excluding references)</li>
   <li><strong>Format:</strong> See <a href="#general">General Submission Instructions</a> for the official ACM templates and formatting policies.</li>
-  <li>Submit the proposal as a <strong>single PDF file</strong> via email to the Workshops Co-Chairs: <a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></li>
+  <li>Submit the proposal as a <strong>single PDF file</strong> via email to the Workshops Co-Chairs (contact details To Be Announced)</li>
 </ul>
 
 <p>Proposals must include the following sections: Overview, Format and Activities, Organizers and Speakers, and Call for Participation (CfP) Plan. Please see below for details.</p>
@@ -1374,16 +1367,16 @@
 <p>Proposals will be evaluated based on the relevance of the topic to the HCOMP and CI communities, the potential to foster engaging and interactive discussions, the experience and diversity of the organizing committee, and the overall quality of the submitted plan.</p>
 
 <h2 id="accepted-workshops">Accepted Workshops</h2>
-<p>The list of accepted HCOMP/CI 2026 workshops is now available on the <a href="/attend.html#workshops">Workshops</a> section of the Attend page.</p>
+<p>The list of accepted HCOMP/CI 2027 workshops is <strong>To Be Announced</strong>. It will be published in the <a href="/attend.html#workshops">Workshops</a> section of the Attend page.</p>
 
 <h2 id="workshops-chairs">Workshops Chairs</h2>
-<p>Please contact the Workshops Co-Chairs for any questions concerning workshop proposals: <a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></p>
+<p>Please contact the Workshops Co-Chairs for any questions concerning workshop proposals (contact details To Be Announced).</p>
 
-<h3 id="hcomp-2026-workshops-co-chair"><strong>HCOMP 2026 Workshops Co-Chair</strong><br></h3>
-<p><strong>Senjuti Dutta</strong>, University of Tennessee</p>
+<h3 id="hcomp-2027-workshops-co-chair"><strong>HCOMP 2027 Workshops Co-Chair</strong><br></h3>
+<p>To Be Announced</p>
 
-<h3 id="ci-2026-workshops-co-chair"><strong>CI 2026 Workshops Co-Chair</strong><br></h3>
-<p><strong>Vikram Mohanty</strong>, Carnegie Mellon University</p>
+<h3 id="ci-2027-workshops-co-chair"><strong>CI 2027 Workshops Co-Chair</strong><br></h3>
+<p>To Be Announced</p>
 
 <hr>
 
@@ -1402,7 +1395,7 @@
 <p>All authors should submit manuscripts for review in a <strong>single column format</strong>. For the <strong>Word Template</strong>, follow the embedded instructions to apply the paragraph styles to your various text elements.</p>
 
 <div class="highlight-box">
-                <strong>LaTeX Setup Instructions (updated June 8, 2026):</strong><br>
+                <strong>LaTeX Setup Instructions:</strong><br>
                 To use the <strong>LaTeX Template</strong> within <a href="https://www.overleaf.com/" class="inline-link" target="_blank">Overleaf</a>, access the official <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-master-template/pnrfvrrdbfwt" class="inline-link" target="_blank">ACM Conference Proceedings Primary Article Template</a> web page and click the "Open as Template" button. Please use the "sigconf" proceedings layout template to construct your manuscript (select <code>sample-sigconf-authordraft.tex</code> from the file tree). Around line 47 of the Code or Visual Text Editor, replace <code>\documentclass[sigconf,authordraft]{acmart}</code> with <code>\documentclass[manuscript,review,anonymous]{acmart}</code> to cleanly render a single-column format review copy. Please review the documentation files and <a href="https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex" class="inline-link" target="_blank">ACM's LaTeX best practices guide</a> should any formatting questions arise.
             </div>
 
@@ -1414,13 +1407,13 @@
 
 <h3 id="policy-on-using-large-language-models-llms-for-paper-writing">Policy on Using Large Language Models (LLMs) for Paper Writing</h3>
 
-<p>In line with other SIGCHI conferences’ (e.g., CHI), and computing conferences’ (e.g., CVPR and KDD), HCOMP and CI 2026 employ the following policy on the use of Large Language Models in paper writing.</p>
+<p>In line with other SIGCHI conferences’ (e.g., CHI), and computing conferences’ (e.g., CVPR and KDD), HCOMP and CI 2027 employ the following policy on the use of Large Language Models in paper writing.</p>
 
 <p>Text generated from a large-scale language model (LLM), such as ChatGPT, must be clearly marked where such tools are used for purposes beyond editing the author’s own text. Please carefully review the <a href="https://www.acm.org/publications/policies/new-acm-policy-on-authorship">ACM Policy on Authorship</a> before you use these tools. The <a href="https://medium.com/sigchi/acm-publications-policy-guidance-for-sigchi-venues-87332173aad1">SIGCHI blog post</a> describes approaches to acknowledging the use of such tools and we refer to it for guidance. Note that the LaTeX template will default to hiding the Acknowledgements section while in review mode; please make sure that any LLM disclosure is available in your submitted version. We will investigate submissions brought to our attention and desk reject papers where LLM use is not clearly marked or where an LLM is not appropriately used (e.g., including fake references generated by LLM, relying on AI-tools to generate ideas in the manuscript, etc.).</p>
 
 <h3 id="policy-on-irresponsible-reviews">Policy on Irresponsible Reviews</h3>
 
-<p>ACM policies forbid the uploading of author text into an LLM or similar system. Doing so, violates the author’s right to confidentiality and shares intellectual property without consent. Reviewing is a professional responsibility and violations are subject to investigation. In line with other SIGCHI conferences’ (e.g., CHI) and computing conferences’ (e.g., CVPR and KDD) policies on irresponsible reviews, HCOMP and CI 2026 employ the following policy on highly irresponsible reviews.</p>
+<p>ACM policies forbid the uploading of author text into an LLM or similar system. Doing so, violates the author’s right to confidentiality and shares intellectual property without consent. Reviewing is a professional responsibility and violations are subject to investigation. In line with other SIGCHI conferences’ (e.g., CHI) and computing conferences’ (e.g., CVPR and KDD) policies on irresponsible reviews, HCOMP and CI 2027 employ the following policy on highly irresponsible reviews.</p>
 
 <p><strong>LLMs are NOT allowed to be used for writing the reviews nor the meta-reviews at any step.</strong> You cannot use an LLM to write your review. This is true for any LLM, whether you run it locally or use an API.</p>
 
@@ -1436,13 +1429,13 @@
 
 <h3 id="preprints-policy">Preprints Policy</h3>
 
-<p>We do not prohibit authors from posting preprints of their work on platforms such as SSRN or arXiv either before or during review by the conference. However, to maintain the integrity of the double-blind peer review, we ask that authors refrain from publicizing the research on social media or discussing it with the press until the review process is complete. HCOMP and CI 2026 will enforce this double-blind review policy, and any submissions that fail to meet these anonymity requirements will be desk rejected.</p>
+<p>We do not prohibit authors from posting preprints of their work on platforms such as SSRN or arXiv either before or during review by the conference. However, to maintain the integrity of the double-blind peer review, we ask that authors refrain from publicizing the research on social media or discussing it with the press until the review process is complete. HCOMP and CI 2027 will enforce this double-blind review policy, and any submissions that fail to meet these anonymity requirements will be desk rejected.</p>
 
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Association for Computing Machinery. All rights reserved.</p>
+        <p>© 2027 Association for Computing Machinery. All rights reserved.</p>
     </footer>
 
     <script>

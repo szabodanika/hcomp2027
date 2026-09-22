@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 ACM HCOMP Conference</title>
+    <title>2027 ACM HCOMP Conference</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="img/favicon.png">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
@@ -59,12 +61,8 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            /* Highlighted Image as Background */
-            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)),
-                url('images/ab1.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            /* Temporary solid grey until the new hero image is ready */
+            background: #6e6e6e;
             padding: 0 20px;
         }
 
@@ -135,7 +133,7 @@
 
         .scroll-indicator {
             position: absolute;
-            bottom: 40px;
+            bottom: 70px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -741,13 +739,13 @@
     }
 </style>
 <div class="announcement-banner">
-    Registration is now open for HCOMP + CI 2026!
-    <a href="registration.html">View details and register here →</a>
+    HCOMP + CI 2027 – more information To Be Announced!
+    <a href="index.html">Stay tuned →</a>
 </div>
     <nav class="navbar">
         <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
             <img src="img/HCOMP_logo-01-colored_hjS4.svg" alt="HCOMP Logo" class="nav-logo">
-            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.6rem; margin-top: -2px;">2027</span>
         </a>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span>
@@ -758,19 +756,19 @@
             <div class="dropdown">
                 <a href="attend.html" >Attend <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="venue.html" >Venue</a>
-                    <a href="accommodations.html" >Accommodations</a>
-                    <a href="registration.html" >Registration</a>
-                    <a href="travel_grants.html" >Travel Grants</a>
+                    <a href="venue.html" class="disabled">Venue</a>
+                    <a href="accommodations.html" class="disabled">Accommodations</a>
+                    <a href="registration.html" class="disabled">Registration</a>
+                    <a href="travel_grants.html" class="disabled">Travel Grants</a>
                     <a href="visa_support_letter.html" >Visa Support Letter</a>
-                    <a href="student_volunteers.html" >Student Volunteers</a>
-                    <a href="attend.html#workshops">Workshops</a>
-                    <a href="crowdcamp.html" >CrowdCamp</a>
+                    <a href="student_volunteers.html" class="disabled">Student Volunteers</a>
+                    <a href="attend.html#workshops" class="disabled">Workshops</a>
+                    <a href="crowdcamp.html" class="disabled">CrowdCamp</a>
                     <a href="code_of_conduct.html" >Code of Conduct</a>
                 </div>
             </div>
-            <a href="program.html" >Program</a>
-            <a href="call_for_participation.html" >Submit</a>
+            <a href="program.html" class="disabled">Program</a>
+            <a href="call_for_participation.html" class="disabled">Submit</a>
             <a href="organizers.html" >Organizers</a>
             <a href="call_for_sponsors.html" >Sponsors</a>
             <a href="past_meetings.html" >Past Meetings</a>
@@ -848,18 +846,16 @@
         <div class="hero-content">
             <div
                 style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 700; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.9;">
-                2026</div>
+                2027</div>
             <h1 style="margin-bottom: 1.5rem; margin-top: 0;"><img src="img/HCOMP_logo-01-white_hjS4.svg"
                     alt="HCOMP Logo" style="width: 100%; max-width: 800px; height: auto;"></h1>
-            <h2>The 2026 ACM Conference on<br />Human-AI Complementarity and Alignment</h2>
+            <h2>The 2027 ACM Conference on<br />Human-AI Complementarity and Alignment</h2>
             <div class="location">
-                📍 <a href="https://iac.vt.edu/about/Location.html" target="_blank" class="location-link">Virginia Tech
-                    Academic Building One</a><br>
-                Near Washington, DC
+                <i style="margin-right: 1rem;" class="fa fa-map-marker "></i> <span>Time and Location To Be Announced</span><br>
             </div>
-            <div class="date-badge">
-                September 27-30, 2026
-            </div>
+            <!-- <div class="date-badge">
+                <span>To Be Announced</span>
+            </div> -->
         </div>
 
         <a href="#about" class="scroll-indicator">
@@ -883,9 +879,9 @@
         </p>
 
         <div class="highlight-box">
-            This year, the conference will be co-located and tightly integrated with the <a
-                href="http://ci.acm.org/2026/" target="_blank"
-                style="color: var(--primary-color); font-weight: bold; text-decoration: none;">2026 ACM Collective
+            The conference will be co-located and tightly integrated with the <a
+                href="http://ci.acm.org/2027/" target="_blank"
+                style="color: var(--primary-color); font-weight: bold; text-decoration: none;">2027 ACM Collective
                 Intelligence (CI) Conference</a>, creating a unique synergy between researchers in human-AI
             collaboration and collective intelligence.
         </div>
@@ -893,13 +889,30 @@
 
     </section>
 
-    <section class="container" id="theme" style="padding-top: 0;">
-        <h2 class="section-title">2026 Conference Theme: "Connections"</h2>
+    <div style="border-top: 1px solid #f0ece9;"></div>
+    <section class="container" id="chairs">
+        <h2 class="section-title">General Chairs</h2>
+        <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; text-align: center;">
+            <div>
+                <img src="img/OC/atsuyuki-morishima.png" alt="Atsuyuki Morishima"
+                    style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 4px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 1rem;">
+                <h3 style="margin-bottom: 0.25rem;">Atsuyuki Morishima</h3>
+                <p style="color: var(--text-muted);">University of Tsukuba, Japan</p>
+            </div>
+            <div>
+                <img src="img/OC/simo-hosio.jpg" alt="Simo Hosio"
+                    style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 4px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-bottom: 1rem;">
+                <h3 style="margin-bottom: 0.25rem;">Simo Hosio</h3>
+                <p style="color: var(--text-muted);">University of Oulu, Finland</p>
+            </div>
+        </div>
+    </section>
+    <div style="border-top: 1px solid #f0ece9;"></div>
+
+    <section class="container" id="theme">
+        <h2 class="section-title">Conference Theme</h2>
         <p class="about-text">
-            The theme of this year's co-located conference is <strong>Connections</strong>.
-            <br><br>
-            We encourage submissions that explore connections across disciplines; across humans, animals, and machines;
-            between individuals and communities, and beyond.
+            <span>To Be Announced</span>
         </p>
     </section>
 
@@ -907,125 +920,21 @@
         <div class="container" style="padding-top: 0; padding-bottom: 0;">
             <h2 class="section-title">Keynote Speakers</h2>
             <p class="section-subtitle">
-                We are thrilled to welcome three visionary keynote speakers spanning <strong>Industry</strong>, <strong>Academia</strong>, and <strong>Government</strong>, bringing pioneering perspectives on human-AI complementarity and alignment.
+                <span>To Be Announced</span>
             </p>
-
-            <ul class="keynote-grid">
-                <li class="keynote-card is-industry">
-                    <span class="keynote-badge badge-industry">Industry</span>
-                    <div class="keynote-photo-wrapper">
-                        <img class="keynote-photo" src="img/eric-horvitz_hjS4.jpg" alt="Portrait of Eric Horvitz" loading="lazy">
-                    </div>
-                    <div class="keynote-body">
-                        <h3 class="keynote-name">
-                            <a href="https://www.microsoft.com/en-us/research/people/horvitz/" target="_blank" rel="noopener noreferrer">Eric Horvitz</a>
-                        </h3>
-                        <p class="keynote-role">Chief Scientific Officer</p>
-                        <p class="keynote-org">Microsoft</p>
-                        <p class="keynote-day">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            <time datetime="2026-09-28">Monday, September 28</time>
-                        </p>
-                    </div>
-                </li>
-
-                <li class="keynote-card is-academia">
-                    <span class="keynote-badge badge-academia">Academia</span>
-                    <div class="keynote-photo-wrapper">
-                        <img class="keynote-photo" src="img/diyi-yang_hjS4.jpg" alt="Portrait of Diyi Yang" loading="lazy">
-                    </div>
-                    <div class="keynote-body">
-                        <h3 class="keynote-name">
-                            <a href="https://cs.stanford.edu/~diyiy/index.html" target="_blank" rel="noopener noreferrer">Diyi Yang</a>
-                        </h3>
-                        <p class="keynote-role">Assistant Professor of Computer Science</p>
-                        <p class="keynote-org">Stanford University</p>
-                        <p class="keynote-day">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            <time datetime="2026-09-29">Tuesday, September 29</time>
-                        </p>
-                    </div>
-                </li>
-
-                <li class="keynote-card is-government">
-                    <span class="keynote-badge badge-government">Government</span>
-                    <div class="keynote-photo-wrapper">
-                        <img class="keynote-photo" src="img/laurie-allen_hjS4.jpg" alt="Portrait of Laurie Allen" loading="lazy">
-                    </div>
-                    <div class="keynote-body">
-                        <h3 class="keynote-name">
-                            <a href="https://www.loc.gov/" target="_blank" rel="noopener noreferrer">Laurie Allen</a>
-                        </h3>
-                        <p class="keynote-role">Creative Engagement Officer</p>
-                        <p class="keynote-org">Library of Congress</p>
-                        <p class="keynote-day">
-                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                            <time datetime="2026-09-30">Wednesday, September 30</time>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="keynotes-cta-wrapper">
-                <a href="program.html" class="btn-keynotes-program">
-                    <span>View Full Program &amp; Schedule</span>
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </a>
-            </div>
         </div>
     </section>
 
     <section class="dates-section">
         <div class="container">
             <h2 class="section-title">Important Dates</h2>
-            <p style="text-align: center; font-style: italic; color: #555555; margin-top: -2rem; margin-bottom: 1rem;">
-                All dates are 11:59pm <abbr title="Anywhere on Earth time zone"
-                    style="text-decoration: underline dotted; border-bottom: none;">AoE</abbr> in 2026.
+            <p class="about-text" style="text-align: center;">
+                <span>To Be Announced</span>
             </p>
-            <div class="timeline">
-                <div class="date-card">
-                    <h3><s style="color: #888; font-size: 0.9em;">June 1</s> <span style="color: red;">June
-                            8</span><br><span style="font-size: 0.8em; color: red;">(extended!)</span></h3>
-                    <p><strong>Papers and Talks:</strong> Abstracts Due</p>
-                </div>
-                <div class="date-card">
-                    <h3><s style="color: #888; font-size: 0.9em;">June 8</s> <span style="color: red;">June
-                            15</span><br><span style="font-size: 0.8em; color: red;">(extended!)</span></h3>
-                    <p><strong>Papers and Talks:</strong> Submissions Due</p>
-                </div>
-                <div class="date-card">
-                    <h3>June 15</h3>
-                    <p><strong>Workshops:</strong> Proposals Due</p>
-                </div>
-                <div class="date-card">
-                    <h3>June 22</h3>
-                    <p><strong>Workshops:</strong> Proposal Notifications</p>
-                </div>
-                <div class="date-card">
-                    <h3>July 16</h3>
-                    <p><strong>Posters and Demos:</strong> Submissions Due</p>
-                </div>
-                <div class="date-card">
-                    <h3>July 31</h3>
-                    <p><strong>Papers and Talks:</strong> Notifications</p>
-                </div>
-                <div class="date-card">
-                    <h3>August 5</h3>
-                    <p><strong>Posters and Demos:</strong> Notifications</p>
-                </div>
-                <div class="date-card">
-                    <h3>August 13</h3>
-                    <p><strong>Papers and Talks:</strong> Camera Ready Due</p>
-                </div>
-            </div>
-            <!-- Secondary CTA for researchers evaluating the timeline -->
             <div style="text-align: center; margin-top: 3rem;">
-                <p style="font-weight: 500; margin-bottom: 1rem; color: #555;">Discover all the ways you can participate
-                    in HCOMP 2026</p>
                 <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
                     <a href="registration.html" class="btn-cta" style="margin-top: 0; background-color: var(--primary-color);">Register</a>
                     <a href="call_for_participation.html" class="btn-cta" style="margin-top: 0;">View Call for Participation</a>
-                    <a href="student_volunteers.html" class="btn-cta" style="margin-top: 0; background-color: var(--secondary-color);">Call for Student Volunteers</a>
                 </div>
             </div>
         </div>
@@ -1098,63 +1007,13 @@
         <h2 class="section-title">Sponsors</h2>
         <div class="sponsor-logos-container">
             <div class="sponsor-logos">
-                <!-- Platinum -->
-                <a href="https://www.nsf.gov/" target="_blank" class="logo-link tier-platinum">
-                    <img src="img/USNSF_Logo_Lockup_stacked_RGB_1200ppi_hjS4.png"
-                        alt="National Science Foundation Logo">
-                </a>
-
-                <!-- Gold -->
-                <a href="https://www.bloomberg.com/company/values/tech-at-bloomberg/artificial-intelligence-ai/"
-                    target="_blank" class="logo-link tier-gold">
-                    <img src="img/BBGEngineering_black - 2026_hjS4.png" alt="Bloomberg Engineering Logo"
-                        style="width: 260px; max-height: 110px;">
-                </a>
-                <a href="https://iac.vt.edu/" target="_blank" class="logo-link tier-gold">
-                    <img src="img/InstituteforAdvancedComputing_FullColor_RGB_hjS4.png"
-                        alt="Virginia Tech Institute for Advanced Computing Logo" style="max-height: 110px;">
-                </a>
-
-                <!-- Silver & Support -->
-                <a href="https://ifm.ai/" target="_blank" class="logo-link tier-silver">
-                    <img src="img/ifm-logo_hjS4.svg" alt="Institute of Foundation Models Logo">
-                </a>
-                <a href="https://aij.ijcai.org/funding-opportunities-for-promoting-ai-research/" target="_blank"
-                    class="logo-link tier-silver">
-                    <img src="img/ARTINT_Logo2_c_web_more_hjS4.jpg" alt="AI Journal Logo">
-                </a>
-                <a href="https://ist.psu.edu/about/departments/department-human-centered-computing-social-informatics"
-                    target="_blank" class="logo-link tier-silver">
-                    <img src="img/PSU_DHCCSI_RGB_3C_hjS4.png" alt="PSU DHCCSI Logo"
-                        style="width: 340px; max-height: 140px;">
-                </a>
-                <a href="https://bit.vt.edu/" target="_blank" class="logo-link tier-silver">
-                    <img src="img/BusinessInformationTechnology_horizontal_RGB_hjS4.png"
-                        alt="Virginia Tech Department of Business Information Technology Logo">
-                </a>
-                <a href="https://hci.icat.vt.edu/index.html" target="_blank" class="logo-link tier-silver">
-                    <img src="img/CenterforHumanComputerInteraction_Horizontal_RGB_hjS4.png"
-                        alt="VT Center for Human-Computer Interaction Logo">
-                </a>
-
-                <!-- Bronze -->
-                <a href="https://sanghani.cs.vt.edu/index.html" target="_blank" class="logo-link tier-bronze">
-                    <img src="img/Sanghani Center-horizontal-RGB_hjS4.png"
-                        alt="Virginia Tech Sanghani Center for AI & Data Analytics Logo">
-                </a>
-
-                <!-- Societies -->
-                <a href="https://www.sigweb.org/" target="_blank" class="logo-link tier-societies">
-                    <img src="img/sigweb_logo_hjS4.jpeg" alt="ACM SIGWEB Sponsor Logo">
-                </a>
-                <a href="https://sigchi.org/" target="_blank" class="logo-link tier-societies">
-                    <img src="img/sigchi_logo_hjS4.png" alt="ACM SIGCHI Sponsor Logo">
-                </a>
+                <!-- Sponsor logos To Be Announced -->
+                <p class="about-text" style="width: 100%; text-align: center;">To Be Announced</p>
 
                 <a href="call_for_sponsors.html" class="logo-link" style="text-decoration: none;">
                     <div class="sponsor-cta-box" style="width: 250px; height: 100px;">
-                        <p class="cta-text-main">...and you?</p>
-                        <p class="cta-text-sub">Join as a 2026 Sponsor</p>
+                        <p class="cta-text-main">You?</p>
+                        <p class="cta-text-sub">Join as a 2027 Sponsor</p>
                     </div>
                 </a>
             </div>
@@ -1165,7 +1024,7 @@
 
 
     <footer>
-        <p>&copy; 2026 Association for Computing Machinery. All rights reserved.</p>
+        <p>&copy; 2027 Association for Computing Machinery. All rights reserved.</p>
     </footer>
 
     <script>
