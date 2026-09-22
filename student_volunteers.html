@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" style="--banner-height: 42px;" class=" idc0_343 whbtzsn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Student Volunteers</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css_002.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #861F41;
+            --secondary-color: #E87722;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+            /* Pre-scrolls anchor targets below navbar */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+            padding-top: 38px;
+            /* Prevents fixed navbar from overlapping content */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .page-content {
+            flex: 1 0 auto;
+            width: 100%;
+        }
+
+        .page-content h1 {
+            margin-top: 2.0rem;
+        }
+
+        .page-content h2 {
+            margin-top: 1.5rem;
+        }
+
+        .page-content>*:first-child {
+            margin-top: 0 !important;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.25rem 20px;
+        }
+
+
+
+        /* Subpage Hero Banner */
+        .subpage-hero {
+            height: 200px;
+            min-height: 200px;
+            flex-shrink: 0;
+            /* Prevents compression on extremely long or short pages due to body flex */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+        }
+
+        .hero-breadcrumb-container {
+            width: 100%;
+        }
+
+        .hero-breadcrumb {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-breadcrumb span {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Page Content Specific Setup */
+        .page-content {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .page-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(134, 31, 65, 0.3);
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .page-content a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .page-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .page-content ul,
+        .page-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Markdown Table Styles (Responsive & Professional) */
+        .page-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            background-color: var(--white);
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .page-content th,
+        .page-content td {
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            min-width: 150px;
+        }
+
+        .page-content th {
+            background-color: #f8f8f8;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .page-content tr:nth-of-type(even) {
+            background-color: #fafafa;
+        }
+
+        .page-content tr:hover {
+            background-color: #f3f3f3;
+        }
+
+
+        .sub-page-header {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-top: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub-page-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 3rem;
+            border-radius: 2px;
+        }
+
+        .sub-page-border {
+            display: none;
+        }
+
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        mark {
+            background-color: transparent;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        /* Organizers Legacy Structure Support */
+        .organizers-header {
+            height: 10px;
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 20px;
+        }
+
+        /* Bootstrap grid flex fallbacks */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-1,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-12 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .profile-row>div {
+            align-items: center;
+            text-align: center;
+        }
+
+        .col-md-12 {
+            width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+
+        .col-md-6 {
+            width: calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px) !important;
+            max-width: calc(50% - 20px) !important;
+        }
+
+        .col-md-5 {
+            width: calc(41.666% - 20px);
+            flex: 0 0 calc(41.666% - 20px) !important;
+            max-width: calc(41.666% - 20px) !important;
+        }
+
+        .col-md-4 {
+            width: calc(33.333% - 20px);
+            flex: 0 0 calc(33.333% - 20px) !important;
+            max-width: calc(33.333% - 20px) !important;
+        }
+
+        .col-md-3 {
+            width: calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px) !important;
+            max-width: calc(25% - 20px) !important;
+        }
+
+        @media (max-width: 850px) {
+
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6 {
+                width: 100%;
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        ul.list-inline {
+            padding-left: 0 !important;
+            list-style: none !important;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.list-inline>li {
+            display: inline-block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Compress Past Meetings and Proceedings Grid */
+        .intro-paragraph.text-center .col-md-6 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center p {
+            margin-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center .theme-link-org {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .photo-size {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .theme-link-org {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+
+        .theme-link-org:hover {
+            color: var(--secondary-color);
+        }
+
+        .organizers .lead {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        .organizer-name {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 42px;">
+
+    <!-- Navigation -->
+    <style>
+    :root {
+        --banner-height: 40px;
+    }
+    .announcement-banner {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+    .announcement-banner a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .announcement-banner a:hover {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+    .navbar {
+        top: var(--banner-height, 40px) !important;
+    }
+    body {
+        margin-top: var(--banner-height, 40px);
+    }
+</style>
+<div class="announcement-banner">
+    Registration is now open for HCOMP + CI 2026!
+    <a href="/registration.html">View details and register here →</a>
+</div>
+    <nav class="navbar" style="top: 42px;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
+            <img src="img/HCOMP_logo-01-colored_9zWe.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-nav" id="nav-links">
+            <div class="dropdown">
+                <a href="/attend.html" class="active">Attend <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/venue.html">Venue</a>
+                    <a href="/accommodations.html">Accommodations</a>
+                    <a href="/registration.html">Registration</a>
+                    <a href="/travel_grants.html">Travel Grants</a>
+                    <a href="/visa_support_letter.html">Visa Support Letter</a>
+                    <a href="/student_volunteers.html" class="active">Student Volunteers</a>
+                    <a href="/attend.html#workshops">Workshops</a>
+                    <a href="/crowdcamp.html">CrowdCamp</a>
+                    <a href="/code_of_conduct.html">Code of Conduct</a>
+                </div>
+            </div>
+            <a href="/program.html">Program</a>
+            <a href="/call_for_participation.html">Submit</a>
+            <a href="/organizers.html">Organizers</a>
+            <a href="/call_for_sponsors.html">Sponsors</a>
+            <a href="/past_meetings.html">Past Meetings</a>
+        </div>
+    </nav>
+
+<script>
+    (function() {
+        function updateBannerAndNavbar() {
+            const banner = document.querySelector('.announcement-banner');
+            const navbar = document.querySelector('.navbar');
+            if (banner && window.getComputedStyle(banner).display !== 'none') {
+                const bannerHeight = banner.offsetHeight;
+                document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+                if (navbar) {
+                    navbar.style.top = bannerHeight + 'px';
+                }
+                document.body.style.marginTop = bannerHeight + 'px';
+            } else {
+                document.documentElement.style.setProperty('--banner-height', '0px');
+                if (navbar) {
+                    navbar.style.top = '0px';
+                }
+                document.body.style.marginTop = '0px';
+            }
+
+            if (typeof window.updateSubnavPosition === 'function') {
+                window.updateSubnavPosition();
+            }
+        }
+
+        window.updateBannerAndNavbar = updateBannerAndNavbar;
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateBannerAndNavbar);
+        } else {
+            updateBannerAndNavbar();
+        }
+
+        window.addEventListener('load', updateBannerAndNavbar);
+        window.addEventListener('resize', updateBannerAndNavbar);
+        window.addEventListener('orientationchange', updateBannerAndNavbar);
+
+        if (window.ResizeObserver) {
+            const ro = new ResizeObserver(() => {
+                updateBannerAndNavbar();
+            });
+            const banner = document.querySelector('.announcement-banner');
+            if (banner) {
+                ro.observe(banner);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    const b = document.querySelector('.announcement-banner');
+                    if (b) ro.observe(b);
+                });
+            }
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Only target the arrow icon for expanding/collapsing
+        const dropdownIcons = document.querySelectorAll('.dropdown > a > i');
+        dropdownIcons.forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1100) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Prevent the click from navigating the link
+                    this.closest('.dropdown').classList.toggle('mobile-open');
+                }
+            });
+        });
+    });
+</script>
+
+
+    <!-- Subpage Hero Banner -->
+    <div class="subpage-hero">
+        <div class="container hero-breadcrumb-container">
+            <div class="hero-breadcrumb">
+                <a href="/index.html">HCOMP 2026</a>
+                
+                / <a href="/attend.html">Attend</a>
+                
+                / <span>Student Volunteers</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+        <h1 class="sub-page-header" id="call-for-student-volunteers">Call for Student Volunteers</h1>
+<p class="sub-page-border">&nbsp;</p>
+<p>&nbsp;</p>
+
+<p>Student Volunteers (SVs) are an essential part of <strong>HCOMP/CI 2026</strong>. They help ensure the conference runs smoothly by supporting registration, session management, technical support, speaker coordination, and other on-site activities. In return, SVs have the opportunity to engage with the conference community, network with researchers and practitioners, and gain behind-the-scenes conference experience.</p>
+
+<p>We invite applications from undergraduate, master’s, and Ph.D. students from all backgrounds and disciplines. No prior Student Volunteer experience is required; we are looking for enthusiastic, reliable, and collaborative volunteers.</p>
+
+<h2 id="eligibility">Eligibility</h2>
+
+<p>Applicants must:</p>
+<ul>
+  <li>Be enrolled as an undergraduate, master’s, or Ph.D. student during the 2026–2027 academic year.</li>
+  <li>Be able to attend the conference in person for its full duration.</li>
+  <li>Commit to completing assigned volunteer duties and attending any required orientation sessions.</li>
+</ul>
+
+<h2 id="what-will-i-do-as-a-student-volunteer">What Will I Do as a Student Volunteer?</h2>
+
+<p>All Student Volunteers agree to:</p>
+<ul>
+  <li>Commit to approximately <strong>20 hours</strong> of volunteer duties during <strong>September 27–30, 2026.</strong></li>
+  <li>Attend the mandatory Student Volunteer orientation.</li>
+  <li>Arrive on time for assigned shifts and complete all assigned responsibilities.</li>
+  <li>Be a welcoming and professional representative of <strong>HCOMP/CI 2026</strong> throughout the conference.</li>
+  <li>Arrange and cover their own travel, accommodation, and meals not provided by the conference.</li>
+</ul>
+
+<h2 id="student-volunteer-benefits">Student Volunteer Benefits</h2>
+
+<p>Selected Student Volunteers will receive:</p>
+<ul>
+  <li>Complimentary conference registration</li>
+  <li>An exclusive <strong>HCOMP/CI 2026</strong> Student Volunteer T-shirt</li>
+  <li>Opportunities to network with researchers, practitioners, and fellow student volunteers</li>
+  <li>Behind-the-scenes conference organization experience</li>
+</ul>
+
+<h2 id="how-to-apply">How to Apply</h2>
+
+<p><span style="background-color: #fff07bff; padding: 2px;">Please fill out <a href="https://forms.gle/Sva8rbawHFNBdtS16">this application form</a> by <em>Tuesday, August 18, 2026, AoE</em></span></p>
+
+<p><span style="background-color: #fff07bff; padding: 2px;"><strong>Application deadline:</strong> <em>Tuesday, August 18, 2026, AoE</em></span><br>
+<strong>Notification of decisions:</strong> <em>Thursday, August 20, 2026</em></p>
+
+<h2 id="questions">Questions?</h2>
+
+<p>If you have any questions about the Student Volunteer program, please contact the Student Volunteer Chairs at <a href="mailto:hcomp-ci-2026-sv@acm.org">hcomp-ci-2026-sv@acm.org</a>.</p>
+
+<p>We look forward to welcoming you to the <strong>HCOMP/CI 2026</strong> Student Volunteer team!</p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Association for Computing Machinery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Dynamic Sticky Positioning for Sub-navbars
+        // This ensures sub-navs always sit perfectly under the main navbar across all devices
+        window.updateSubnavPosition = () => {
+            const mainNav = document.querySelector('.navbar');
+            const banner = document.querySelector('.announcement-banner');
+            const subnavs = document.querySelectorAll('.sticky-subnav');
+            if (mainNav && subnavs.length > 0) {
+                const bannerHeight = (banner && window.getComputedStyle(banner).display !== 'none') ? banner.offsetHeight : 0;
+                const totalHeight = bannerHeight + mainNav.offsetHeight;
+                subnavs.forEach(nav => {
+                    nav.style.top = (totalHeight - 6) + 'px'; // 6px overlap to eliminate tiny gaps
+                });
+                document.documentElement.style.setProperty('--navbar-height', (totalHeight - 6) + 'px');
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', window.updateSubnavPosition);
+        window.addEventListener('load', window.updateSubnavPosition);
+        window.addEventListener('resize', window.updateSubnavPosition);
+    </script>
+
+
+</body></html>

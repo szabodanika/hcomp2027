@@ -1,0 +1,14 @@
+{
+  "name": "hcomp2027",
+  "version": "1.0.0",
+  "description": "HCOMP 2026 Conference Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server public -p 8000 -o",
+    "build": "echo 'Static site ready in ./public'",
+    "start": "npx http-server public -p 8000"
+  },
+  "keywords": ["conference", "hcomp"],
+  "author": "Daniel Szabo",
+  "license": "MIT"
+}

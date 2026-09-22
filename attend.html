@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en" style="--banner-height: 42px;" class=" idc0_343 yxfllajk"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Attend</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--   favicon link-->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Custom CSS  -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css_002.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #861F41;
+            --secondary-color: #E87722;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+            /* Pre-scrolls anchor targets below navbar */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+            padding-top: 38px;
+            /* Prevents fixed navbar from overlapping content */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .page-content {
+            flex: 1 0 auto;
+            width: 100%;
+        }
+
+        .page-content h1 {
+            margin-top: 2.0rem;
+        }
+
+        .page-content h2 {
+            margin-top: 1.5rem;
+        }
+
+        .page-content>*:first-child {
+            margin-top: 0 !important;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.25rem 20px;
+        }
+
+
+
+        /* Subpage Hero Banner */
+        .subpage-hero {
+            height: 200px;
+            min-height: 200px;
+            flex-shrink: 0;
+            /* Prevents compression on extremely long or short pages due to body flex */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+        }
+
+        .hero-breadcrumb-container {
+            width: 100%;
+        }
+
+        .hero-breadcrumb {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-breadcrumb span {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Page Content Specific Setup */
+        .page-content {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .page-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(134, 31, 65, 0.3);
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .page-content a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .page-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .page-content ul,
+        .page-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Markdown Table Styles (Responsive & Professional) */
+        .page-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            background-color: var(--white);
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .page-content th,
+        .page-content td {
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            min-width: 150px;
+        }
+
+        .page-content th {
+            background-color: #f8f8f8;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .page-content tr:nth-of-type(even) {
+            background-color: #fafafa;
+        }
+
+        .page-content tr:hover {
+            background-color: #f3f3f3;
+        }
+
+
+        .sub-page-header {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-top: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub-page-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 3rem;
+            border-radius: 2px;
+        }
+
+        .sub-page-border {
+            display: none;
+        }
+
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        mark {
+            background-color: transparent;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        /* Organizers Legacy Structure Support */
+        .organizers-header {
+            height: 10px;
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 20px;
+        }
+
+        /* Bootstrap grid flex fallbacks */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-1,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-12 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .profile-row>div {
+            align-items: center;
+            text-align: center;
+        }
+
+        .col-md-12 {
+            width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+
+        .col-md-6 {
+            width: calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px) !important;
+            max-width: calc(50% - 20px) !important;
+        }
+
+        .col-md-5 {
+            width: calc(41.666% - 20px);
+            flex: 0 0 calc(41.666% - 20px) !important;
+            max-width: calc(41.666% - 20px) !important;
+        }
+
+        .col-md-4 {
+            width: calc(33.333% - 20px);
+            flex: 0 0 calc(33.333% - 20px) !important;
+            max-width: calc(33.333% - 20px) !important;
+        }
+
+        .col-md-3 {
+            width: calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px) !important;
+            max-width: calc(25% - 20px) !important;
+        }
+
+        @media (max-width: 850px) {
+
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6 {
+                width: 100%;
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        ul.list-inline {
+            padding-left: 0 !important;
+            list-style: none !important;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.list-inline>li {
+            display: inline-block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Compress Past Meetings and Proceedings Grid */
+        .intro-paragraph.text-center .col-md-6 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center p {
+            margin-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center .theme-link-org {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .photo-size {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .theme-link-org {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+
+        .theme-link-org:hover {
+            color: var(--secondary-color);
+        }
+
+        .organizers .lead {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        .organizer-name {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 42px;">
+
+    <!-- Navigation -->
+    <style>
+    :root {
+        --banner-height: 40px;
+    }
+    .announcement-banner {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+    .announcement-banner a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .announcement-banner a:hover {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+    .navbar {
+        top: var(--banner-height, 40px) !important;
+    }
+    body {
+        margin-top: var(--banner-height, 40px);
+    }
+</style>
+<div class="announcement-banner">
+    Registration is now open for HCOMP + CI 2026!
+    <a href="/registration.html">View details and register here →</a>
+</div>
+    <nav class="navbar" style="top: 42px;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
+            <img src="img/HCOMP_logo-01-colored_YBUw.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-nav" id="nav-links">
+            <div class="dropdown">
+                <a href="/attend.html" class="active">Attend <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/venue.html">Venue</a>
+                    <a href="/accommodations.html">Accommodations</a>
+                    <a href="/registration.html">Registration</a>
+                    <a href="/travel_grants.html">Travel Grants</a>
+                    <a href="/visa_support_letter.html">Visa Support Letter</a>
+                    <a href="/student_volunteers.html">Student Volunteers</a>
+                    <a href="/attend.html#workshops">Workshops</a>
+                    <a href="/crowdcamp.html">CrowdCamp</a>
+                    <a href="/code_of_conduct.html">Code of Conduct</a>
+                </div>
+            </div>
+            <a href="/program.html">Program</a>
+            <a href="/call_for_participation.html">Submit</a>
+            <a href="/organizers.html">Organizers</a>
+            <a href="/call_for_sponsors.html">Sponsors</a>
+            <a href="/past_meetings.html">Past Meetings</a>
+        </div>
+    </nav>
+
+<script>
+    (function() {
+        function updateBannerAndNavbar() {
+            const banner = document.querySelector('.announcement-banner');
+            const navbar = document.querySelector('.navbar');
+            if (banner && window.getComputedStyle(banner).display !== 'none') {
+                const bannerHeight = banner.offsetHeight;
+                document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+                if (navbar) {
+                    navbar.style.top = bannerHeight + 'px';
+                }
+                document.body.style.marginTop = bannerHeight + 'px';
+            } else {
+                document.documentElement.style.setProperty('--banner-height', '0px');
+                if (navbar) {
+                    navbar.style.top = '0px';
+                }
+                document.body.style.marginTop = '0px';
+            }
+
+            if (typeof window.updateSubnavPosition === 'function') {
+                window.updateSubnavPosition();
+            }
+        }
+
+        window.updateBannerAndNavbar = updateBannerAndNavbar;
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateBannerAndNavbar);
+        } else {
+            updateBannerAndNavbar();
+        }
+
+        window.addEventListener('load', updateBannerAndNavbar);
+        window.addEventListener('resize', updateBannerAndNavbar);
+        window.addEventListener('orientationchange', updateBannerAndNavbar);
+
+        if (window.ResizeObserver) {
+            const ro = new ResizeObserver(() => {
+                updateBannerAndNavbar();
+            });
+            const banner = document.querySelector('.announcement-banner');
+            if (banner) {
+                ro.observe(banner);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    const b = document.querySelector('.announcement-banner');
+                    if (b) ro.observe(b);
+                });
+            }
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Only target the arrow icon for expanding/collapsing
+        const dropdownIcons = document.querySelectorAll('.dropdown > a > i');
+        dropdownIcons.forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1100) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Prevent the click from navigating the link
+                    this.closest('.dropdown').classList.toggle('mobile-open');
+                }
+            });
+        });
+    });
+</script>
+
+
+    <!-- Subpage Hero Banner -->
+    <div class="subpage-hero">
+        <div class="container hero-breadcrumb-container">
+            <div class="hero-breadcrumb">
+                <a href="/index.html">HCOMP 2026</a>
+                
+                / <span>Attend</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+        <p>The 2026 ACM Conference on
+Human-AI Complementarity and Alignment(HCOMP 2026) will be held September 27-30, 2026 at <a href="https://dcarea.vt.edu/about/locations/alexandria-academic-building-one.html">Virginia Tech’s Academic Building One</a> near Washington, D.C., USA.</p>
+
+<p>This year, the conference will be co-located and tightly integrated with the <a href="https://ci.acm.org/">14th ACM Collective Intelligence Conference (CI 2026)</a>, creating a unique synergy between researchers in collective intelligence and human-AI collaboration.</p>
+
+<p>The theme of this year’s co-located event is Connections. We encourage submissions that explore connections across disciplines; across humans, animals, and machines; between individuals and communities, and beyond.</p>
+
+<div class="attend-index">
+    <span class="index-label">More Information:</span>
+    <a href="venue.html" class="index-link">Venue</a>
+    <a href="accommodations.html" class="index-link">Accommodations</a>
+    <a href="registration.html" class="index-link">Registration</a>
+    <a href="travel-grants.html" class="index-link">Travel Grants</a>
+    <a href="visa.html" class="index-link">Visa Support Letter</a>
+    <a href="crowdcamp.html" class="index-link">CrowdCamp</a>
+    <a href="code-of-conduct.html" class="index-link">Code of Conduct</a>
+</div>
+
+<style>
+.attend-index {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: #fdfdfd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    border: 1px solid #eee;
+}
+.index-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+.index-link {
+    color: #555;
+    text-decoration: none !important;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+.index-link:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background: #fffafa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+</style>
+
+<h1 class="sub-page-header" id="about-the-conference">About the Conference</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p>ACM Conference on
+Human-AI Complementarity and Alignment(HCOMP) is the premier venue for disseminating the latest research that advances the theoretical and empirical understanding of collective performance in diverse systems, whether biological, technological, or a combination. We are interested in research on a broad range of systems that vary in scale and scope and focus on implications for a diverse range of social, ecological, and economic outcomes.</p>
+
+<p>HCOMP has a transdisciplinary focus devoted to advancing the theoretical and empirical understanding of collective intelligence, broadly designed. The community does basic science on emergent collective phenomena, as well as designing and engineering systems for combining computational and human intelligence. We are interested in research on a broad range of phenomena that vary in scale and scope with implications for a diverse range of social, ecological, and economic outcomes.</p>
+
+<p><a href="https://www.humancomputation.com/">Learn more</a> about the ACM Conference on Human-AI Complementarity and Alignment (HCOMP) series and steering committee.</p>
+
+<h1 class="sub-page-header" id="important-dates">Important Dates</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p style="text-align: center; font-style: italic; color: #555555; margin-top: -2rem; margin-bottom: 1rem;">
+    All dates are 11:59pm <abbr title="Anywhere on Earth time zone" style="text-decoration: underline dotted; border-bottom: none;">AoE</abbr> in 2026.
+</p>
+
+<style>
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.date-card {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.date-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.date-card h3 {
+    color: var(--secondary-color);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+.date-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    margin-bottom: 0;
+}
+</style>
+
+<div class="timeline">
+    <div class="date-card">
+        <h3>June 1</h3>
+        <p><strong>Papers and Talks:</strong> Abstracts Due</p>
+    </div>
+    <div class="date-card">
+        <h3>June 8</h3>
+        <p><strong>Papers and Talks:</strong> Submissions Due</p>
+    </div>
+    <div class="date-card">
+        <h3>June 15</h3>
+        <p><strong>Workshops:</strong> Proposals Due</p>
+    </div>
+    <div class="date-card">
+        <h3>June 22</h3>
+        <p><strong>Workshops:</strong> Proposal Notifications</p>
+    </div>
+    <div class="date-card">
+        <h3>July 16</h3>
+        <p><strong>Posters and Demos:</strong> Submissions Due</p>
+    </div>
+    <div class="date-card">
+        <h3>July 31</h3>
+        <p><strong>Papers and Talks:</strong> Notifications</p>
+    </div>
+    <div class="date-card">
+        <h3>August 5</h3>
+        <p><strong>Posters and Demos:</strong> Notifications</p>
+    </div>
+    <div class="date-card">
+        <h3>August 13</h3>
+        <p><strong>Papers and Talks:</strong> Camera Ready Due</p>
+    </div>
+</div>
+
+<h1 id="workshops" class="sub-page-header">Workshops</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p class="lead" style="text-align:center; margin-bottom: 2rem;">
+  We're excited to share the workshops accepted for the co-located <strong><span class="hcomp-text">HCOMP
+      2026</span></strong> and <strong><span class="ci-text">Collective Intelligence (CI) 2026</span></strong>
+  conferences, taking place on <strong>Sunday, September 27, 2026</strong>. Additional workshops may
+  still be announced, and this list will be updated as details are confirmed.
+</p>
+
+<ul>
+  <li><a href="#human-ai-teaming">Human-AI Teaming: Useful Framework or Empty Metaphor?</a></li>
+  <li><a href="#sovereign-ai">The First Workshop on Sovereign AI for Collaborative and Pluralistic AI
+      Ecosystems</a></li>
+  <li><a href="#past-meets-future">Past Meets Future: 3rd Annual Workshop on Human-AI Interaction for Digital
+      Humanities and Cultural Heritage</a></li>
+  <li><a href="#clarity-ai-chaos">CLARITY: 1st Workshop on Cognitive Labels for Appropriate Reliance and Information
+      Transparency + AI CHAOS! 3rd Workshop on the Challenges for Human Oversight of AI Systems</a></li>
+  <li><a href="#future-of-research">The Future of Research in the Age of Human–AI Collective Intelligence</a></li>
+  <li><a href="#cogsec">Cognitive Security for Human–AI Systems (CogSec)</a></li>
+  <li><a href="#hch2">Shaping the Handbook of Human Computation, Second Edition</a></li>
+</ul>
+
+<style>
+  .hcomp-text {
+    color: #d48806;
+    font-weight: bold;
+  }
+
+  .ci-text {
+    color: #00458b;
+    font-weight: bold;
+  }
+
+  .workshop-card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary-color);
+    padding: 1.75rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .workshop-title {
+    margin: 0;
+  }
+
+  .workshop-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+
+  .workshop-header-label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    text-align: left;
+  }
+
+  .workshop-badge-full {
+    background-color: rgba(134, 31, 65, 0.1);
+    color: var(--primary-color);
+  }
+
+  .workshop-badge-half {
+    background-color: rgba(232, 119, 34, 0.12);
+    color: var(--secondary-color);
+  }
+
+  .workshop-field-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .workshop-organizers {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+  }
+
+  .workshop-organizers li {
+    margin-bottom: 0.4rem;
+  }
+
+  .workshop-abstract {
+    margin-bottom: 1.5rem;
+  }
+
+  .workshop-header {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.15rem;
+    color: var(--primary-color);
+  }
+
+  .workshop-header:hover {
+    color: var(--secondary-color);
+  }
+
+  .workshop-chevron {
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+    margin-left: 1.5rem;
+    font-size: 1em;
+  }
+
+  .workshop-card.expanded .workshop-chevron {
+    transform: rotate(180deg);
+  }
+
+  .workshop-body-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+  }
+
+  .workshop-card.expanded .workshop-body-wrapper {
+    grid-template-rows: 1fr;
+    margin-top: 1.5rem;
+  }
+
+  .workshop-body-inner {
+    overflow: hidden;
+  }
+</style>
+
+<!-- Workshop 1 -->
+<div class="workshop-card" id="human-ai-teaming">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-human-ai-teaming">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-full">Full-Day</span>
+        Human-AI Teaming: Useful Framework or Empty Metaphor?
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-human-ai-teaming">
+    <div class="workshop-body-inner">
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Sam Moradzadeh</strong>, Penn State University, College of Information Sciences and Technology</li>
+        <li><strong>Andrew M. Sherrill</strong>, Emory University, Department of Psychiatry and Behavioral Sciences</li>
+        <li><strong>Rosa I. Arriaga</strong>, Georgia Institute of Technology, School of Interactive Computing</li>
+        <li><strong>Christopher W. Wiese</strong>, Georgia Institute of Technology, School of Psychology</li>
+        <li><strong>Jung Ah (Julie) Lee</strong>, Georgia Institute of Technology, School of Interactive Computing</li>
+        <li><strong>Sadie K. Hogge</strong>, Georgia Institute of Technology, School of Psychology, College of Sciences
+        </li>
+        <li><strong>Saeed Abdullah</strong>, Penn State University, College of Information Sciences and Technology</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">"Human-AI teaming" has become one of the most widely invoked concepts in AI
+        research, design, and policy. Yet beneath the surface of this appealing phrase lies a set of unresolved
+        questions that the research community has largely deferred. Rather than asking whether teaming is the correct
+        term, this workshop asks a more generative question: what work does the teaming construct actually do, and for
+        whom? For researchers, it may offer a frame for studying coordination and division of labor. For designers, it
+        may suggest interaction structures that go beyond tool use. For end-users, it may set expectations, helpful or
+        misleading, about agency, accountability, and trust.</p>
+      <p class="workshop-abstract">We bring together researchers from human-computer interaction, cognitive science,
+        clinical studies, and AI to examine the functions and limits of the teaming concept, compare it against
+        alternative framings such as augmentation, delegation, and scaffolding, and work toward a more precise
+        vocabulary for describing and designing expert-AI collaboration. Through short provocations, structured
+        debates, and collaborative framework-building, the workshop will produce a shared position paper capturing
+        points of agreement and productive disagreement, with the goal of grounding future CI and HCOMP research in a
+        more honest and rigorous account of what human-AI collaboration actually is, and what it should aspire to be.
+      </p>
+
+      <a href="https://hcomp-ci2026-hat.github.io/" target="_blank" class="action-btn">Visit Workshop Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 2 -->
+<div class="workshop-card" id="sovereign-ai">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-sovereign-ai">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-full">Full-Day</span>
+        The First Workshop on Sovereign AI for Collaborative and Pluralistic AI Ecosystems
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-sovereign-ai">
+    <div class="workshop-body-inner">
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Dr. Lun-Wei Ku</strong>, Research Fellow, Institute of Information Science, Academia Sinica, Taiwan
+        </li>
+        <li><strong>Wan-Jhen (Crystal) Wu</strong>, Technical Program Manager, Taiwan Public Media News LLM Project,
+          Academia Sinica, Taiwan</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">Sovereign AI is not only about where models are developed, deployed, or hosted, nor
+        only about who owns or controls them. It is about who has the power to shape, question, and govern AI systems
+        when they act on behalf of individuals, communities, and institutions.</p>
+      <p class="workshop-abstract">AI systems are increasingly embedded in public services, media, civic participation,
+        and everyday decision-making. Yet many of these systems are designed and operated by a concentrated set of
+        technical and commercial actors, leaving affected people with limited visibility into how they work and little
+        ability to contest or change them. Genuine sovereignty requires more than participation or consultation: it
+        requires that people, communities, and institutions be able to examine AI systems, challenge their behavior,
+        and, when they fail to meet local needs, values, or legal standards, require that they be corrected,
+        reconfigured, or replaced. What matters is not only the ability to be heard, but meaningful authority over
+        outcomes.</p>
+      <p class="workshop-abstract">This is both a technical and a governance challenge. It asks how humans and AI can
+        complement one another without reducing people to passive users or treating automation as inevitable.
+        Addressing this challenge requires connecting AI/ML, HCI and design, institutional governance, law and policy,
+        and journalism, while moving affected communities into active roles in rule-making, oversight, and evaluation.
+      </p>
+      <p class="workshop-abstract">This workshop brings together researchers and practitioners across these fields to
+        examine real-world deployments, develop cross-disciplinary Sovereign AI Problem Maps, and produce actionable
+        recommendations. Through keynotes, paper presentations, and posters, it works in the spirit of the HCOMP × CI
+        2026 theme, "Connections." We welcome papers, work-in-progress, position papers, surveys, demos, and deployment
+        case studies.</p>
+
+      <a href="https://sovereignai-workshop.github.io/" target="_blank" class="action-btn">Visit Workshop Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 3 -->
+<div class="workshop-card" id="past-meets-future">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-past-meets-future">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-full">Full-Day</span>
+        Past Meets Future: 3rd Annual Workshop on Human-AI Interaction for Digital Humanities and Cultural Heritage
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-past-meets-future">
+    <div class="workshop-body-inner">
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Fei Shan</strong>, Virginia Tech, USA</li>
+        <li><strong>David A. Shamma</strong>, Northeastern University Oakland, USA</li>
+        <li><strong>Victoria Van Hyning</strong>, University of Maryland, USA</li>
+        <li><strong>Benjamin Charles Germain Lee</strong>, University of Washington, USA</li>
+        <li><strong>Vikram Mohanty</strong>, Carnegie Mellon University, USA</li>
+        <li><strong>Kurt Luther</strong>, Virginia Tech, USA</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">This workshop aims to bridge the gap between the Human-AI Interaction (HAI) research
+        community and fields like digital humanities, history, and cultural heritage to address critical challenges
+        such as data quality, accessibility, and public engagement. The primary goal is to foster interdisciplinary
+        dialogue to develop human-centered tools and innovative HAI methodologies. Workshop day activities feature
+        participant-led presentations and collaborative discussions focused on building shared understandings and
+        identifying open research opportunities. Building on past momentum, the previous two editions of this workshop
+        series were successfully hosted at ACM IUI 2024 and ASIS&amp;T 2025.</p>
+
+      <a href="https://past-meets-future.github.io/2026" target="_blank" class="action-btn">Visit
+        Workshop Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 4 -->
+<div class="workshop-card" id="clarity-ai-chaos">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-clarity-ai-chaos">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-half">Half-Day</span>
+        CLARITY: 1st Workshop on Cognitive Labels for Appropriate Reliance and Information Transparency + AI CHAOS! 3rd Workshop on the Challenges for Human Oversight of AI Systems
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-clarity-ai-chaos">
+    <div class="workshop-body-inner">
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Shreyan Biswas</strong>, Delft University of Technology, The Netherlands</li>
+        <li><strong>Ji-Youn Jung</strong>, Carnegie Mellon University, USA</li>
+        <li><strong>Marie-Therese Sekwenz</strong>, Delft University of Technology, The Netherlands</li>
+        <li><strong>Min Hun Lee</strong>, Singapore Management University, Singapore</li>
+        <li><strong>Harmanpreet Kaur</strong>, University of Minnesota, USA</li>
+        <li><strong>Simo Hosio</strong>, University of Oulu, Finland</li>
+        <li><strong>Ujwal Gadiraju</strong>, Delft University of Technology, The Netherlands</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">As AI systems are increasingly deployed in high-stakes domains, ranging from
+        healthcare and autonomous driving to platform governance and automated legal compliance, their failures
+        directly threaten human safety and fundamental rights. Central to HCOMP's mission around Human-AI
+        Complementarity and Alignment, human oversight serves as a vital socio-technical safeguard. Drawing on recent
+        interdisciplinary roadmaps, effective oversight is conceptualized not as a solitary interface task, but as a
+        deliberate, risk-mitigating activity structured around the two operational pillars of continuous monitoring and
+        timely intervention. This responsibility is distributed across diverse organizational stakeholders, including
+        frontline operators, domain experts, and compliance officers. However, emerging regulatory mandates like the
+        European AI Act and the Digital Services Act have outpaced our conceptual clarity and empirical methodologies.
+        Poorly designed oversight architectures risk creating a dangerous illusion of control, obscuring accountability
+        without providing humans with genuine causal agency or systemic support. Embracing the HCOMP 2026 theme of
+        "Connections," this workshop establishes vital links across AI, human computation, HCI, psychology, law, and
+        policy to bridge this critical gap.</p>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+        <a href="https://sites.google.com/view/aiclarity/home" target="_blank" class="action-btn">Visit CLARITY Website</a>
+        <a href="https://sites.google.com/view/aichaos/hcomp-2026" target="_blank" class="action-btn">Visit AI CHAOS Website</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 5 -->
+<div class="workshop-card" id="future-of-research">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-future-of-research">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-half">Half-Day</span>
+        The Future of Research in the Age of Human–AI Collective Intelligence
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-future-of-research">
+    <div class="workshop-body-inner">
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Senjuti Dutta</strong>, University of Tennessee</li>
+        <li><strong>Alex Bentley</strong>, University of Tennessee, Knoxville</li>
+        <li><strong>Chuanren Liu</strong>, University of Tennessee, Knoxville</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">What is the future of research as a human–AI collaboration? Researchers increasingly
+        use LLMs to generate hypotheses, analyze data, synthesize literature, write code, and communicate findings.
+        This raises fundamental questions about how scientific knowledge is produced, evaluated, and shared. Because
+        science functions as a collective intelligence system, understanding these transformations requires both HCOMP
+        perspectives on human–AI complementarity and CI perspectives on distributed cognition and knowledge production.
+        Bringing together researchers from computer science, social science, business analytics, and related fields,
+        this workshop examines changes at multiple scales: from knowledge work and research practice, to scientific
+        communication, to broader questions about the future evolution of collective intelligence in human–AI knowledge
+        systems. By combining perspectives from HCI, computational social science, and evolutionary theory,
+        participants will establish empirical baselines, develop a research agenda, and identify promising directions
+        for future collaboration.</p>
+
+      <a href="https://sduyr.github.io/hai-ci-workshop-2026" target="_blank" class="action-btn">Visit Workshop
+        Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 6 -->
+<div class="workshop-card" id="cogsec">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-cogsec">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-full">Full-Day</span>
+        Cognitive Security for Human–AI Systems (CogSec)
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-cogsec">
+    <div class="workshop-body-inner">
+      <p style="color: var(--text-muted); margin-top: 0; margin-bottom: 1.5rem;">Approximately 7 hours, in-person
+        with a synchronous remote (hybrid) participation option.</p>
+
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Utsav Gupta</strong>, Stanford HAI Cognitive Security Task Force, Stanford University (Primary
+          contact: vastu@stanford.edu)</li>
+        <li><strong>Brett Frischmann</strong>, Charles Widger Endowed University Professor in Law, Business and
+          Economics, Villanova University</li>
+        <li><strong>Eric Heng</strong>, Stanford University, Cognitive Security Task Force</li>
+        <li><strong>Andreas Haupt</strong>, Stanford Institute for Human-Centered AI, Stanford Digital Economy Lab</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">As generative and agentic AI become embedded in search, education, companionship,
+        and decision support, a class of trust-and-safety risk is emerging that the field has no shared way to name,
+        test, or govern. A single model output may be accurate and appropriately disclosed. The risk lies instead in
+        how systems shape attention, belief formation, memory, judgment, and agency across many interactions, and in
+        how they reshape collective sensemaking. CogSec proposes cognitive security, the integrity of the conditions
+        under which people and groups reason for themselves, as a research agenda spanning HCOMP (AI-assisted
+        decision-making, over- and under-reliance, oversight) and CI (misinformation, deliberation, civic
+        decision-making). The workshop convenes researchers and practitioners to consolidate a shared vocabulary of
+        cognitive vulnerabilities, advance the measurement of over- and under-reliance, and translate findings into
+        auditable interventions. It is anchored by a hands-on session that builds the Cognitive Vulnerability and
+        Mitigation Catalog (CVMC): a schema pairing each AI affordance and cognitive vulnerability with a candidate
+        mitigation, an evaluation metric, a burden-and-equity check, and a governance hook. Attendees leave having
+        co-authored catalog entries and a community roadmap.</p>
+
+      <a href="https://noetx.github.io/cogsec-2026/" target="_blank" class="action-btn">Visit Workshop Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- Workshop 7 -->
+<div class="workshop-card" id="hch2">
+  <h2 class="workshop-title">
+    <button class="workshop-header" aria-expanded="false" aria-controls="body-hch2">
+      <span class="workshop-header-label">
+        <span class="workshop-badge workshop-badge-half">Half-Day</span>
+        Shaping the Handbook of Human Computation, Second Edition
+      </span>
+      <i class="fa fa-chevron-down workshop-chevron"></i>
+    </button>
+  </h2>
+
+  <div class="workshop-body-wrapper" id="body-hch2">
+    <div class="workshop-body-inner">
+      <span class="workshop-field-label">Organizers</span>
+      <ul class="workshop-organizers">
+        <li><strong>Pietro Michelucci</strong>, Human Computation Institute and Cornell University</li>
+        <li><strong>Caroline Nickerson</strong>, Human Computation Institute</li>
+        <li><strong>Shida Sharif-Bakhtiar</strong>, McGill University</li>
+        <li><strong>Jérôme Waldispühl</strong>, McGill University</li>
+      </ul>
+
+      <span class="workshop-field-label">Abstract</span>
+      <p class="workshop-abstract">The first edition of the Handbook of Human Computation brought together more than 100 authors from academia, industry, and nonprofit organizations to define and document an emerging interdisciplinary field. Since its publication in 2013, the handbook has been downloaded more than 280,000 times and has served as a foundational reference for researchers, practitioners, and students.</p>
+      <p class="workshop-abstract">Over a decade later, the landscape has changed dramatically. Generative AI, large language models, agentic systems, and increasingly sophisticated human-AI collaboration are transforming how people learn, create, decide, and solve problems together, even as the ACM HCOMP and Collective Intelligence communities converge around designing systems that combine the complementary strengths of humans and machines.</p>
+      <p class="workshop-abstract">This workshop invites the community to help shape the Handbook of Human Computation, Second Edition (HCH2). In general, participants will learn about the handbook vision and editorial process, identify important topics, propose chapters, and contribute to a community-driven roadmap. We will begin wtih a town hall meeting on the evolving role of humans in hybrid intellence systems.  Then we’ll ground our thinking with GWAP (Games with a Purpose) case studies that explore the continued value of human contributions in AI-enhanced environments. Then we’ll engage in collaborative ideation with lightning talks as readouts, and conclude with participation pathways for a new publication that will help set a vision for the co-evolution of humanity and AI.</p>
+
+      <a href="https://humancomputation.org/projects/hch2" target="_blank" class="action-btn">Visit Workshop Website</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.workshop-card');
+
+    function collapseAllExcept(target) {
+      cards.forEach(function (card) {
+        if (card !== target) {
+          card.classList.remove('expanded');
+          const header = card.querySelector('.workshop-header');
+          if (header) header.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    function expandCard(card) {
+      collapseAllExcept(card);
+      card.classList.add('expanded');
+      const header = card.querySelector('.workshop-header');
+      if (header) header.setAttribute('aria-expanded', 'true');
+
+      // Wait for the 0.35s grid-template-rows transition (see .workshop-body-wrapper
+      // CSS) to finish before measuring position, so a card that just collapsed above
+      // this one has already shrunk and we scroll to the final, settled layout.
+      setTimeout(function () {
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 360);
+    }
+
+    cards.forEach(function (card) {
+      const header = card.querySelector('.workshop-header');
+      if (!header) return;
+      header.addEventListener('click', function () {
+        if (card.classList.contains('expanded')) {
+          card.classList.remove('expanded');
+          header.setAttribute('aria-expanded', 'false');
+        } else {
+          expandCard(card);
+        }
+      });
+    });
+
+    function expandFromHash() {
+      let id = window.location.hash.replace('#', '');
+      if (!id) return;
+      if (id === 'clarity' || id === 'ai-chaos') {
+        id = 'clarity-ai-chaos';
+      }
+      const target = document.getElementById(id);
+      if (target && target.classList.contains('workshop-card')) {
+        expandCard(target);
+      }
+    }
+
+    expandFromHash();
+    window.addEventListener('hashchange', expandFromHash);
+  });
+</script>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Association for Computing Machinery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Dynamic Sticky Positioning for Sub-navbars
+        // This ensures sub-navs always sit perfectly under the main navbar across all devices
+        window.updateSubnavPosition = () => {
+            const mainNav = document.querySelector('.navbar');
+            const banner = document.querySelector('.announcement-banner');
+            const subnavs = document.querySelectorAll('.sticky-subnav');
+            if (mainNav && subnavs.length > 0) {
+                const bannerHeight = (banner && window.getComputedStyle(banner).display !== 'none') ? banner.offsetHeight : 0;
+                const totalHeight = bannerHeight + mainNav.offsetHeight;
+                subnavs.forEach(nav => {
+                    nav.style.top = (totalHeight - 6) + 'px'; // 6px overlap to eliminate tiny gaps
+                });
+                document.documentElement.style.setProperty('--navbar-height', (totalHeight - 6) + 'px');
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', window.updateSubnavPosition);
+        window.addEventListener('load', window.updateSubnavPosition);
+        window.addEventListener('resize', window.updateSubnavPosition);
+    </script>
+
+
+</body></html>

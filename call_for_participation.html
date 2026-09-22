@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en" style="--banner-height: 42px; --navbar-height: 89px;" class=" idc0_343 aojhjiixp"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Call for Participation</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css_002.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #861F41;
+            --secondary-color: #E87722;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+            /* Pre-scrolls anchor targets below navbar */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+            padding-top: 38px;
+            /* Prevents fixed navbar from overlapping content */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .page-content {
+            flex: 1 0 auto;
+            width: 100%;
+        }
+
+        .page-content h1 {
+            margin-top: 2.0rem;
+        }
+
+        .page-content h2 {
+            margin-top: 1.5rem;
+        }
+
+        .page-content>*:first-child {
+            margin-top: 0 !important;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.25rem 20px;
+        }
+
+
+
+        /* Subpage Hero Banner */
+        .subpage-hero {
+            height: 200px;
+            min-height: 200px;
+            flex-shrink: 0;
+            /* Prevents compression on extremely long or short pages due to body flex */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+        }
+
+        .hero-breadcrumb-container {
+            width: 100%;
+        }
+
+        .hero-breadcrumb {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-breadcrumb span {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Page Content Specific Setup */
+        .page-content {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .page-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(134, 31, 65, 0.3);
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .page-content a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .page-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .page-content ul,
+        .page-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Markdown Table Styles (Responsive & Professional) */
+        .page-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            background-color: var(--white);
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .page-content th,
+        .page-content td {
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            min-width: 150px;
+        }
+
+        .page-content th {
+            background-color: #f8f8f8;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .page-content tr:nth-of-type(even) {
+            background-color: #fafafa;
+        }
+
+        .page-content tr:hover {
+            background-color: #f3f3f3;
+        }
+
+
+        .sub-page-header {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-top: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub-page-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 3rem;
+            border-radius: 2px;
+        }
+
+        .sub-page-border {
+            display: none;
+        }
+
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        mark {
+            background-color: transparent;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        /* Organizers Legacy Structure Support */
+        .organizers-header {
+            height: 10px;
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 20px;
+        }
+
+        /* Bootstrap grid flex fallbacks */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-1,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-12 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .profile-row>div {
+            align-items: center;
+            text-align: center;
+        }
+
+        .col-md-12 {
+            width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+
+        .col-md-6 {
+            width: calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px) !important;
+            max-width: calc(50% - 20px) !important;
+        }
+
+        .col-md-5 {
+            width: calc(41.666% - 20px);
+            flex: 0 0 calc(41.666% - 20px) !important;
+            max-width: calc(41.666% - 20px) !important;
+        }
+
+        .col-md-4 {
+            width: calc(33.333% - 20px);
+            flex: 0 0 calc(33.333% - 20px) !important;
+            max-width: calc(33.333% - 20px) !important;
+        }
+
+        .col-md-3 {
+            width: calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px) !important;
+            max-width: calc(25% - 20px) !important;
+        }
+
+        @media (max-width: 850px) {
+
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6 {
+                width: 100%;
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        ul.list-inline {
+            padding-left: 0 !important;
+            list-style: none !important;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.list-inline>li {
+            display: inline-block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Compress Past Meetings and Proceedings Grid */
+        .intro-paragraph.text-center .col-md-6 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center p {
+            margin-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center .theme-link-org {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .photo-size {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .theme-link-org {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+
+        .theme-link-org:hover {
+            color: var(--secondary-color);
+        }
+
+        .organizers .lead {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        .organizer-name {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 42px;">
+
+    <!-- Navigation -->
+    <style>
+    :root {
+        --banner-height: 40px;
+    }
+    .announcement-banner {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+    .announcement-banner a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .announcement-banner a:hover {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+    .navbar {
+        top: var(--banner-height, 40px) !important;
+    }
+    body {
+        margin-top: var(--banner-height, 40px);
+    }
+</style>
+<div class="announcement-banner">
+    Registration is now open for HCOMP + CI 2026!
+    <a href="/registration.html">View details and register here →</a>
+</div>
+    <nav class="navbar" style="top: 42px;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
+            <img src="img/HCOMP_logo-01-colored_KG72.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-nav" id="nav-links">
+            <div class="dropdown">
+                <a href="/attend.html">Attend <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/venue.html">Venue</a>
+                    <a href="/accommodations.html">Accommodations</a>
+                    <a href="/registration.html">Registration</a>
+                    <a href="/travel_grants.html">Travel Grants</a>
+                    <a href="/visa_support_letter.html">Visa Support Letter</a>
+                    <a href="/student_volunteers.html">Student Volunteers</a>
+                    <a href="/attend.html#workshops">Workshops</a>
+                    <a href="/crowdcamp.html">CrowdCamp</a>
+                    <a href="/code_of_conduct.html">Code of Conduct</a>
+                </div>
+            </div>
+            <a href="/program.html">Program</a>
+            <a href="/call_for_participation.html" class="active">Submit</a>
+            <a href="/organizers.html">Organizers</a>
+            <a href="/call_for_sponsors.html">Sponsors</a>
+            <a href="/past_meetings.html">Past Meetings</a>
+        </div>
+    </nav>
+
+<script>
+    (function() {
+        function updateBannerAndNavbar() {
+            const banner = document.querySelector('.announcement-banner');
+            const navbar = document.querySelector('.navbar');
+            if (banner && window.getComputedStyle(banner).display !== 'none') {
+                const bannerHeight = banner.offsetHeight;
+                document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+                if (navbar) {
+                    navbar.style.top = bannerHeight + 'px';
+                }
+                document.body.style.marginTop = bannerHeight + 'px';
+            } else {
+                document.documentElement.style.setProperty('--banner-height', '0px');
+                if (navbar) {
+                    navbar.style.top = '0px';
+                }
+                document.body.style.marginTop = '0px';
+            }
+
+            if (typeof window.updateSubnavPosition === 'function') {
+                window.updateSubnavPosition();
+            }
+        }
+
+        window.updateBannerAndNavbar = updateBannerAndNavbar;
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateBannerAndNavbar);
+        } else {
+            updateBannerAndNavbar();
+        }
+
+        window.addEventListener('load', updateBannerAndNavbar);
+        window.addEventListener('resize', updateBannerAndNavbar);
+        window.addEventListener('orientationchange', updateBannerAndNavbar);
+
+        if (window.ResizeObserver) {
+            const ro = new ResizeObserver(() => {
+                updateBannerAndNavbar();
+            });
+            const banner = document.querySelector('.announcement-banner');
+            if (banner) {
+                ro.observe(banner);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    const b = document.querySelector('.announcement-banner');
+                    if (b) ro.observe(b);
+                });
+            }
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Only target the arrow icon for expanding/collapsing
+        const dropdownIcons = document.querySelectorAll('.dropdown > a > i');
+        dropdownIcons.forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1100) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Prevent the click from navigating the link
+                    this.closest('.dropdown').classList.toggle('mobile-open');
+                }
+            });
+        });
+    });
+</script>
+
+
+    <!-- Subpage Hero Banner -->
+    <div class="subpage-hero">
+        <div class="container hero-breadcrumb-container">
+            <div class="hero-breadcrumb">
+                <a href="/index.html">HCOMP 2026</a>
+                
+                / <span>Call for Participation</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+        <h1 class="sub-page-header" id="call-for-participation">Call for Participation</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<ul>
+  <li><a href="#submit">Submit Your Work</a></li>
+  <li><a href="#info">Conference Information</a></li>
+  <li><a href="#topics">Topics of Interest</a></li>
+  <li>Call for <a href="#papers">Papers and Talks</a></li>
+  <li>Call for <a href="#posters">Posters and Demos</a> <span style="color: red; font-weight: bold;">(Deadline extended!)</span></li>
+  <li>Call for <a href="#dc">Doctoral Consortium</a> <span style="color: red; font-weight: bold;">(Deadline extended!)</span></li>
+  <li>Call for <a href="#workshops">Workshops</a></li>
+  <li><a href="#general">General Submission Instructions</a></li>
+</ul>
+
+<hr>
+
+<!-- SUB-NAVBAR -->
+
+<style>
+  .sticky-subnav {
+    position: sticky;
+    top: 75px; 
+    z-index: 999;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    padding: 0;
+    margin-bottom: 2rem;
+    border-bottom: none !important; /* Remove any container border */
+    
+    /* Break out of container to be full-screen width */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+
+    /* Initially Hidden */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sticky-subnav.show-nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+
+  .subnav-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 15px;
+    border-bottom: none !important; /* Eliminate internal container borders */
+  }
+
+  /* Remove display: none to show scrollbar on mobile if needed, 
+     or keep it hidden but add visual cues. 
+     For now, let's keep it but ensure links don't shrink. */
+  .subnav-container::-webkit-scrollbar {
+    height: 3px;
+  }
+  .subnav-container::-webkit-scrollbar-thumb {
+    background: rgba(134, 31, 65, 0.2);
+    border-radius: 3px;
+  }
+
+  .subnav-link {
+    padding: 15px 20px;
+    color: #555;
+    text-decoration: none !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    opacity: 0.8;
+    border: none !important; /* Aggressive override for all borders */
+    border-bottom: none !important;
+    outline: none !important;
+  }
+
+  .subnav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+  }
+
+  .subnav-link:hover, .subnav-link.active {
+    color: var(--primary-color);
+    opacity: 1;
+  }
+
+  .subnav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  /* Specific override to kill the global .page-content a border */
+  .page-content .sticky-subnav a,
+  .page-content .sticky-subnav a:hover,
+  .page-content .sticky-subnav a.active {
+    border-bottom: none !important;
+  }
+
+  .subnav-link.active {
+    background: rgba(134, 31, 65, 0.05);
+    transform: translateY(-1px);
+  }
+
+  .nav-arrow {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-arrow.visible {
+    opacity: 0.9;
+    visibility: visible;
+  }
+
+  .nav-arrow:hover {
+    background: #f8f8f8;
+    color: var(--secondary-color);
+  }
+
+  .nav-arrow.left { 
+    left: 0; 
+    background: linear-gradient(to right, white 70%, transparent);
+  }
+
+  .nav-arrow.right { 
+    right: 0; 
+    background: linear-gradient(to left, white 70%, transparent);
+  }
+
+  @media (max-width: 768px) {
+    .sticky-subnav {
+      top: 60px; /* Aligned with the main navbar height */
+    }
+    .subnav-link {
+      padding: 12px 18px;
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+<div class="sticky-subnav" style="top: 89px;">
+  <button class="nav-arrow left" id="prev-btn" aria-label="Scroll left"><i class="fa fa-chevron-left"></i></button>
+  <div class="subnav-container" id="subnav">
+    
+    <a href="#submit" class="subnav-link">Submit</a>
+    <a href="#info" class="subnav-link active">Information</a>
+    <a href="#topics" class="subnav-link">Topics</a>
+    <a href="#papers" class="subnav-link">Papers/Talks</a>
+    <a href="#posters" class="subnav-link">Posters/Demos</a>
+    <a href="#dc" class="subnav-link">Doctoral Consortium</a>
+    <a href="#workshops" class="subnav-link">Workshop</a>
+    <a href="#general" class="subnav-link">Submission Info</a>
+
+  </div>
+  <button class="nav-arrow right" id="next-btn" aria-label="Scroll right"><i class="fa fa-chevron-right"></i></button>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const subnav = document.querySelector('.sticky-subnav');
+    const navLinks = document.querySelectorAll('.subnav-link');
+    
+    const getTargetElements = () => {
+      return Array.from(navLinks).map(link => {
+        const hash = link.getAttribute('href');
+        return hash && hash.startsWith('#') ? document.querySelector(hash) : null;
+      }).filter(Boolean);
+    };
+
+    // Reveal Nav on Scroll with dynamic trigger
+    const targetElements = getTargetElements();
+    const firstSection = targetElements[0] || document.querySelector('h1[id]');
+    const handleScroll = () => {
+      const scrollPos = window.scrollY;
+      const triggerPos = firstSection ? (firstSection.offsetTop - 150) : 300;
+
+      if (scrollPos > triggerPos) {
+        subnav.classList.add('show-nav');
+      } else {
+        subnav.classList.remove('show-nav');
+      }
+    };
+
+    window.addEventListener('scroll', () => {
+      window.requestAnimationFrame(handleScroll);
+    });
+    
+    // --- ARROW NAVIGATION & AUTO-CENTERING ---
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const container = document.getElementById('subnav');
+
+    const updateArrows = () => {
+      const scrollLeft = container.scrollLeft;
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      prevBtn.classList.toggle('visible', scrollLeft > 20);
+      nextBtn.classList.toggle('visible', scrollLeft < maxScroll - 20);
+    };
+
+    container.addEventListener('scroll', updateArrows);
+    window.addEventListener('resize', updateArrows);
+    
+    prevBtn.addEventListener('click', () => {
+      container.scrollBy({ left: -250, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      container.scrollBy({ left: 250, behavior: 'smooth' });
+    });
+
+    // Initial arrow check
+    setTimeout(updateArrows, 500);
+
+    // Smooth scroll override for subnav
+    let isScrolling = false;
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (isScrolling) return;
+
+        const id = link.getAttribute('href');
+        const target = document.querySelector(id);
+        if (target) {
+          const mainNav = document.querySelector('.navbar');
+          const mainNavHeight = mainNav ? mainNav.offsetHeight : 0;
+          const banner = document.querySelector('.announcement-banner');
+          const bannerHeight = (banner && window.getComputedStyle(banner).display !== 'none') ? banner.offsetHeight : 0;
+          const subNavHeight = subnav ? subnav.offsetHeight : 0;
+          const offset = bannerHeight + mainNavHeight + subNavHeight + 10; // Extra breathing room (whitespace) after clicking
+          
+          const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - offset;
+          smoothScrollTo(offsetPosition);
+        }
+      });
+    });
+
+    const smoothScrollTo = (targetY) => {
+      isScrolling = true;
+      // Disable CSS smooth scroll to prevent fighting with JS animation
+      const html = document.documentElement;
+      html.style.scrollBehavior = 'auto';
+
+      const startY = window.scrollY;
+      const distance = targetY - startY;
+      const duration = 800; 
+      let start = null;
+
+      const animation = (currentTime) => {
+        if (!start) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const run = easeOutExpo(timeElapsed, startY, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        } else {
+          isScrolling = false;
+          html.style.scrollBehavior = ''; // Reset to CSS default
+        }
+      };
+
+      function easeOutExpo(t, b, c, d) {
+        return t === d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+      }
+      requestAnimationFrame(animation);
+    };
+
+    // Continuous Verification Scroll-Spy
+    let currentActiveId = '';
+    const updateActiveState = () => {
+      const targets = getTargetElements();
+      let activeSectionId = '';
+      
+      targets.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        // A section is considered active if we have scrolled past its header (plus offset)
+        if (rect.top <= 260) {
+          activeSectionId = sec.getAttribute('id');
+        }
+      });
+
+      if (activeSectionId && activeSectionId !== currentActiveId) {
+        currentActiveId = activeSectionId;
+        navLinks.forEach(link => {
+          const isActive = link.getAttribute('href') === `#${activeSectionId}`;
+          link.classList.toggle('active', isActive);
+          
+          if (isActive) {
+            // Auto-center the active link in the navbar
+            const navContainer = document.getElementById('subnav');
+            if (navContainer) {
+              const linkOffset = link.offsetLeft;
+              const containerWidth = navContainer.offsetWidth;
+              const linkWidth = link.offsetWidth;
+              navContainer.scrollTo({
+                left: linkOffset - (containerWidth / 2) + (linkWidth / 2),
+                behavior: 'auto'
+              });
+            }
+          }
+        });
+      }
+    };
+
+    window.addEventListener('scroll', () => {
+      window.requestAnimationFrame(updateActiveState);
+    });
+    // Initial check
+    updateActiveState();
+  });
+</script>
+
+<h1 id="submit" class="sub-page-header">Submit Your Work</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p>The submissions for the following tracks must be submitted through the EasyChair platform by their respective official deadlines:</p>
+<ul>
+  <li><strong>Papers</strong> and <strong>Talks</strong></li>
+  <li><strong>Posters and Demos</strong></li>
+</ul>
+
+<p>Before submitting, please ensure your document follows the <a href="#general">General Submission Instructions and Templates</a>.</p>
+
+<div style="margin-bottom: 20px;">
+    <a href="https://easychair.org/conferences/?conf=ci2026andhcomp2026" class="action-btn">Submit via EasyChair</a>
+</div>
+
+<p>For <strong>Workshop proposal</strong> submissions, please submit a <strong>single PDF file</strong> via email to <strong><a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></strong>.</p>
+
+<p>For <strong>Doctoral Consortium</strong> submissions, more details will be announced soon.</p>
+
+<hr>
+
+<h1 id="info" class="sub-page-header">Conference Information</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p>The <a href="/">2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP)</a> and the <a href="https://ci.acm.org/">2026 ACM Collective Intelligence (CI) Conference</a> will be held as co-located events from September 27-30, 2026, at the <a href="https://iac.vt.edu/about/Location.html">Virginia Tech Academic Building One</a> near Washington, DC, USA.</p>
+
+<h2 id="2026-conference-theme-connections">2026 Conference Theme: “Connections”</h2>
+
+<p>The theme of this year’s co-located conference is <strong>Connections</strong>. <span style="background-color: #fff07bff; padding: 2px;">We encourage submissions that explore connections across disciplines; across humans, animals, and machines; between individuals and communities, and beyond.</span></p>
+
+<h2 id="hcomp-2026-general-chair"><strong>HCOMP 2026 General Chair</strong><br></h2>
+<p><strong>Ting-Hao ‘Kenneth’ Huang</strong>, The Pennsylvania State University</p>
+
+<h2 id="ci-2026-general-chair"><strong>CI 2026 General Chair</strong><br></h2>
+<p><strong>Kurt Luther</strong>, Virginia Tech</p>
+
+<hr>
+
+<h1 id="topics" class="sub-page-header">Topics of Interest</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<h2 id="human-ai-complementarity-and-alignment-hcomp">Human-AI Complementarity and Alignment (HCOMP)</h2>
+
+<p>ACM HCOMP is the premier venue for disseminating the latest research findings on human-AI complementarity and alignment. Our community studies and designs systems that combine the complementary strengths of human and artificial intelligence to achieve outcomes neither could achieve alone, in ways that are ethical, safe, and intentional. This research builds on a foundation established by the HCOMP community during its first decade as an AAAI conference series focused on human computation and crowdsourcing.</p>
+
+<p>HCOMP focuses on the emerging science and practice of human-AI complementarity and alignment. As AI systems become increasingly capable, the field is expanding from studying how humans contribute to building these systems to also studying how humans and AI systems work together as complementary partners. This broader perspective situates complementarity and alignment across the full lifecycle of AI systems, from how systems are built and evaluated to how they are used and governed in practice, with attention to how responsibilities are divided, how collaboration evolves over time, and how alignment is achieved and maintained in real-world use.</p>
+
+<p>While artificial intelligence (AI) and human-computer interaction (HCI) represent traditional mainstays of the conference, HCOMP believes strongly in fostering and promoting broad, interdisciplinary research. Our field is particularly unique in the diversity of disciplines it draws upon and contributes to, including human-centered qualitative studies, HCI design, social computing, machine learning, natural language processing, the broader realms of artificial intelligence (including LLMs and generative AI), economics, computational social science, digital humanities, policy, and ethics. We promote the exchange of advances in human-AI complementarity and alignment not only among researchers but also engineers and practitioners, to encourage dialogue across disciplines and communities of practice.</p>
+
+<p>Example topics for HCOMP include, but are not limited to, the following:</p>
+
+<p><strong>Research on human-AI complementarity</strong></p>
+<ul>
+  <li>Human-AI collaboration, coordination, and co-adaptation</li>
+  <li>Division of labor, delegation, and supervisory control</li>
+  <li>Complementarity versus redundancy in human-AI systems</li>
+  <li>Hybrid workflows that combine human and AI strengths</li>
+  <li>Human-AI decision-making and problem solving</li>
+  <li>Human-AI interaction in organizational and societal settings</li>
+</ul>
+
+<p><strong>Research on human-centered alignment</strong></p>
+<ul>
+  <li>Alignment in training and in use</li>
+  <li>Trust, reliance, and calibration</li>
+  <li>Scalable human oversight</li>
+  <li>Steering, monitoring, and control of AI systems</li>
+  <li>Detecting, communicating, and repairing misalignment</li>
+  <li>Governance, accountability, and safety in human-AI systems</li>
+</ul>
+
+<p><strong>Research on human contributions to AI systems</strong></p>
+<ul>
+  <li>Crowdsourcing and human computation</li>
+  <li>Human feedback, preference learning, and evaluation</li>
+  <li>Data collection, annotation, and quality assurance</li>
+  <li>Bias, fairness, and responsible data practices</li>
+  <li>Human roles in the development, assessment, and governance of AI systems</li>
+</ul>
+
+<h3 id="hcomp-2026-program-co-chairs"><strong>HCOMP 2026 Program Co-Chairs</strong><br></h3>
+<p><strong>Chien-Ju Ho</strong>, Washington University in St. Louis<br>
+<strong>Tianyi Li</strong>, Purdue University</p>
+
+<h2 id="collective-intelligence-ci">Collective Intelligence (CI)</h2>
+
+<p>ACM Collective Intelligence is the premier venue for disseminating the latest research that advances the theoretical and empirical understanding of collective performance in diverse systems, whether biological, technological, or a combination. We are interested in research on a broad range of systems that vary in scale and scope and focus on implications for a diverse range of social, ecological, and economic outcomes.</p>
+
+<p>CI has a transdisciplinary focus devoted to advancing the theoretical and empirical understanding of collective intelligence, broadly designed. The community does basic science on emergent collective phenomena, as well as designing and engineering systems for combining computational and human intelligence. We are interested in research on a broad range of phenomena that vary in scale and scope with implications for a diverse range of social, ecological, and economic outcomes.</p>
+
+<p>Researchers who participate in the CI conference represent a wide and growing cross-section of social science and computer science as well the natural sciences, arts, and humanities. All types of contributions—empirical, conceptual, theoretical, quantitative, and qualitative—are welcome, including computational models.</p>
+
+<p>Topics include (but are not limited to) research that helps us to explain the mechanisms of emergent behavior as well as presentations of design solutions and systems engineering.</p>
+
+<p>Research on collective behaviors including, but not limited to:</p>
+<ul>
+  <li>Crowds, flocks and swarms</li>
+  <li>Collective emotion and polarization</li>
+  <li>Belief formation and misinformation</li>
+  <li>Social network formation and functioning</li>
+  <li>Science and innovation</li>
+  <li>Open source communities</li>
+  <li>Organizational Studies</li>
+</ul>
+
+<p>Research into systems and tasks to support the following, but not limited to:</p>
+<ul>
+  <li>Forecasting and decision-making</li>
+  <li>Democracy, civics and policymaking</li>
+  <li>Complex problem solving</li>
+  <li>Crisis response</li>
+  <li>Community-driven design</li>
+  <li>Innovation contests</li>
+  <li>Citizen science</li>
+  <li>Discussion moderation and decision facilitation</li>
+  <li>Computer-human collaboration (e.g. hybrid systems, LLMs)</li>
+</ul>
+
+<h3 id="ci-2026-program-co-chairs"><strong>CI 2026 Program Co-Chairs</strong><br></h3>
+<p><strong>Jason W. Burton</strong>, University of Copenhagen<br>
+<strong>Ioanna Lykourentzou</strong>, Utrecht University</p>
+
+<hr>
+
+<h1 id="papers" class="sub-page-header">Call for Papers and Talks</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<h2 id="important-dates">Important Dates</h2>
+
+<ul>
+  <li><strong>Abstracts due:</strong> <del>June 1, 2026 AoE</del> <span style="color: red; font-weight: bold;">June 8, 2026 AoE (extended!)</span></li>
+  <li><strong>Papers due:</strong> <del>June 8, 2026 AoE</del> <span style="color: red; font-weight: bold;">June 15, 2026 AoE (extended!)</span></li>
+  <li><strong>Notifications:</strong> July 31, 2026</li>
+  <li><strong>Camera ready due:</strong> August 13, 2026</li>
+</ul>
+
+<hr>
+
+<h2 id="submission-options">Submission Options</h2>
+
+<p>The two primary submission formats—full papers and talks (formerly called “extended abstracts”)—are intended to accommodate the different norms and requirements across the diverse fields represented in the HCOMP and Collective Intelligence communities. Submissions will be selected for inclusion based on their quality and the fit of their topic with the interests of the HCOMP and CI audiences. The key differences between formats (see below) relate to the amount of feedback authors will receive and opportunities for inclusion in archival conference proceedings.</p>
+
+<ul>
+  <li>
+    <p><strong>Full papers (max 6000 words, excluding references)</strong> will be assigned to a Program Committee member who will recruit 3 external reviewers and write a meta-review. Reviewers will be instructed to write full reviews that evaluate submissions according to specific review criteria. Accepted full papers will be published in the archival 2026 ACM HCOMP or Collective Intelligence conference proceedings which will be available via the ACM Digital Library. These papers will be assigned individual digital object identifiers (DOIs) as citable publications. <em>Note: authors submitting to the full papers track are expected to collectively review at least 3 papers subject to submission volumes and PC member availability.</em></p>
+  </li>
+  <li>
+    <p><strong>Talks (formerly “extended abstracts”) (max 1500 words, excluding references)</strong> will receive short reviews by two members of the Program Committee focusing on relevance of, and enthusiasm for, the topic. Extended abstracts for accepted talks will be made available to conference participants on the 2026 HCOMP or CI websites. These abstracts will not be archived in the ACM Digital Library nor assigned individual DOIs for tracking future citations. This option may be attractive to social science researchers who wish to submit their work to a journal for archival publication in the future.</p>
+  </li>
+</ul>
+
+<h3 id="selecting-hcomp-or-ci-track">Selecting HCOMP or CI Track</h3>
+
+<p>When submitting a full paper or talk, authors will be required to select either the HCOMP or CI track, based on the Topics of Interest listed above. Their track selection will determine which Program Committee (PC) reviews their submission. Additionally, for accepted full papers, the track selection will determine the proceedings (HCOMP or CI) in which the paper will be published. In rare cases, the Program Chairs may request permission from the authors to move a submission to a different track if it appears to be a better topical fit.</p>
+
+<p>The submission options can be summarized in the following table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Submission Option</strong></th>
+      <th><strong>Track</strong></th>
+      <th><strong>Max word count (excluding references)</strong></th>
+      <th><strong>Archival?</strong></th>
+      <th><strong>Review process</strong></th>
+      <th><strong>Where published</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Full papers</strong></td>
+      <td>Authors select HCOMP or CI track</td>
+      <td>6000</td>
+      <td>Yes; must be original research not previously published</td>
+      <td>1 PC member coordinates 3 detailed external reviews</td>
+      <td>HCOMP or CI proceedings in ACM Digital Library w/ DOI</td>
+    </tr>
+    <tr>
+      <td><strong>Talks</strong> (formerly “extended abstracts”)</td>
+      <td>Authors select HCOMP or CI track</td>
+      <td>1500</td>
+      <td>No; may be based on cited prior publications</td>
+      <td>2 PC members provide brief reviews</td>
+      <td>PDF on conference website only (no DOI)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="journal-partnerships">Journal Partnerships</h2>
+
+<p><strong>CI Journal option:</strong> Authors of full paper submissions to the CI track have the option of additional consideration for publication of extended versions in <a href="https://dl.acm.org/journal/cola">ACM’s Collective Intelligence Journal</a> (CI Journal Fast Track). Authors who select this option in EasyChair agree to share their submitted paper and reviews with the journal’s editors who will, at their discretion, keep or expand the existing set of reviewers and consider the work for publication in the Journal. This option must be selected at the time of initial submission to the conference. Publication fees for the journal follow the same ACM Open model as conference papers, described below.</p>
+
+<p><strong>TiiS Journal option:</strong> Authors of full papers submitted to the HCOMP track may be invited to submit extended versions of their work to be considered for publication in a special issue of the journal <a href="https://dl.acm.org/journal/tiis">ACM Transactions on Interactive Intelligent Systems (TiiS)</a>. Authors will be notified of this opportunity after the conference review process is completed. Publication fees for the journal follow the same ACM Open model as conference papers, described below.</p>
+
+<hr>
+
+<h2 id="submission-information-for-papers-and-talks">Submission Information for Papers and Talks</h2>
+
+<h3 id="format-and-templates">Format and Templates</h3>
+
+<p>All paper and talk submissions must follow the formatting guidelines and use the official ACM templates. Please refer to the <a href="#general">General Submission Instructions</a> for the Word and LaTeX templates, as well as policies regarding LLM usage and double-blind anonymity.</p>
+
+<h3 id="attendance-and-presentations">Attendance and Presentations</h3>
+
+<p>Authors of accepted full papers and talks will be invited to give oral presentations at the conference. To ensure your accepted submission will be included in the conference program, at least one author of each accepted submission must register to attend the conference by the early registration deadline. Failure to do so will result in the withdrawal of the submission. In-person attendance is required as remote presentations are only allowed under exceptional circumstances.</p>
+
+<p>In the submission form, authors of full papers and talks may check an option to be automatically considered for a poster or demo presentation if the submission is not accepted for an oral presentation.</p>
+
+<h3 id="awards">Awards</h3>
+
+<p>HCOMP and CI 2026 will each recognize one best full paper, one best talk, and one best student work (of either type). Program Committee members will be asked to flag submissions they deem worthy of a recognition. The Program Chairs will form a small committee that will read the nominated submissions, consider the comments in the reviews, and select the winners.</p>
+
+<p>Additionally, HCOMP and CI 2026 will recognize outstanding reviewers. PC members will be asked to flag high-quality reviews from external reviewers and fellow PC members. The Program Chairs will acknowledge these outstanding reviewers at the conference and in the proceedings.</p>
+
+<h3 id="anonymity">Anonymity</h3>
+
+<p>HCOMP and CI 2026 will adopt a double-blind review process for both archival full papers and talks. Authors submitting this submission format must ensure that their submissions are fully anonymized by removing all identifying details, including author names, affiliations, and institutions. Authors should also avoid citing any unpublished work of their own.</p>
+
+<h3 id="supplemental-materials">Supplemental Materials</h3>
+
+<p>Authors are invited, but not required, to include supplemental materials such as executables and data files, images, additional videos, related papers, more detailed explanations, derivations, or results, so that reviewers can reproduce results in the paper. These materials will be viewed only at the reviewers’ discretion, who are only obligated to read the submitted papers.</p>
+
+<p>Supplemental materials should be uploaded separately in the “supplemental materials” section of the submission form. Supplemental materials included as appendices in the submission PDF itself (e.g., paper, poster/demo) will be counted towards the word count limit.</p>
+
+<h3 id="double-submission-policy">Double Submission Policy</h3>
+
+<p><strong>Full paper submissions</strong> to HCOMP and CI 2026 must represent original work. Submissions should not have been previously published and should not be under simultaneous peer-review at any other peer-reviewed archival conference or journal. Papers that have appeared at a conference with published proceedings constitute previously published work. If the paper uses some data, measures, or material from previously-published work, it should also contain significant new results and/or focus on a significantly different research question. Works that have appeared at a workshop, poster/demo session, extended abstract, or any non-archival forum do not constitute previously published work, as long as the paper is an extension of the prior work. Extensions might include new results, more in-depth analysis, an evaluation that was not part of the workshop paper, or further experiments. Any submissions that fail to meet these double submission requirements will be desk rejected.</p>
+
+<p><strong>Talk submissions</strong> can be based on previously-published work, as long as the authors clearly cite the publications on which their submission is based. Extended abstracts for accepted talks will be non-archival and made available via the conference website, giving authors the flexibility to further develop their ideas and submit to other venues in the future.</p>
+
+<h3 id="acm-publication-policies">ACM Publication Policies</h3>
+
+<p>Full papers will be archived and, therefore, must adhere to ACM’s publication policies. Authors hereby acknowledge that you and your co-authors are subject to all ACM Publications Policies, including the <a href="https://www.acm.org/publications/policies/new-acm-policy-on-authorship">ACM Policy on Authorship</a> and <a href="https://www.acm.org/publications/policies/research-involving-human-participants-and-subjects">ACM’s new Publications Policy on Research Involving Human Participants and Subjects</a>. Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy.</p>
+
+<p>Please ensure that you and your co-authors <a href="https://orcid.org/register">obtain an ORCID ID</a>, so you can complete the publishing process for your accepted paper. ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID IDs from all of our published authors. We are committed to improving author discoverability, ensuring proper attribution and contributing to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.</p>
+
+<h3 id="acm-open">ACM Open</h3>
+
+<p>Full papers will be published under <a href="https://www.acm.org/publications/openaccess">ACM Open Access</a>.</p>
+
+<p>Starting January 1, 2026, ACM will fully transition to Open Access. All ACM publications, including those from ACM-sponsored conferences, will be 100% Open Access. Authors will have two primary options for publishing Open Access articles with ACM: the ACM Open institutional model or by paying Article Processing Charges (APCs). With over 1,800 institutions already part of ACM Open, the majority of ACM-sponsored conference papers will not require APCs from authors or conferences (currently, around 70-75%).</p>
+
+<p>To be included in ACM Open, the <strong>corresponding author</strong> must be affiliated with a participating institution. For APC-eligible articles (research, short paper, and survey) where none of the authors are currently from participating institutions, an APC will be required. Corresponding authors from institutions not participating in ACM Open will need to pay an APC to publish their papers, unless they qualify for a financial or discretionary waiver. To find out whether an APC applies to your article, please consult the <a href="https://libraries.acm.org/acmopen/open-participants">list of participating institutions</a> in ACM Open and review the <a href="https://www.acm.org/publications/policies/waivers-discounts-policy">APC Waivers and Discounts Policy</a>. Keep in mind that waivers are rare and are granted based on specific criteria set by ACM.</p>
+
+<p>Understanding that this change could present financial challenges, ACM has approved a temporary subsidy for 2026 to ease the transition and allow more time for institutions to join ACM Open. The subsidy will offer:</p>
+
+<ul>
+  <li>$250 APC for ACM/SIG members</li>
+  <li>$350 for non-members</li>
+</ul>
+
+<p>This represents a <a href="https://www.acm.org/publications/openaccess">65% discount</a>, funded directly by ACM. Authors are encouraged to help advocate for their institutions to join ACM Open during this transition period. This temporary subsidized pricing will apply to all conferences scheduled for 2026.</p>
+
+<p><em>Note: ACM is not lowering APCs, but is instead contributing funds to temporarily subsidize APC pricing as the community adjusts to the Open Access program.</em></p>
+
+<h1 id="posters" class="sub-page-header">Call for Posters and Demos</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<p>Authors with emerging and late-breaking work are invited to submit a short (&lt;2 page) writeup to our Posters track. We encourage recent findings, innovative ideas, and early proof-of-concepts that will spark productive conversations within our dynamic and interdisciplinary community. Projects involving hands-on demonstrations of an interactive system, tool, or technology are encouraged to submit to the Demos track. Demos track require a walkthrough video in addition to a brief writeup.</p>
+
+<p>When submitting your Poster or Demo, you will be asked to indicate whether your project is more strongly affiliated with collective intelligence (CI) or human-AI complementarity and alignment (HCOMP) topics. Please see the <a href="#topics">‘Topics of Interest’</a> section for details on the research topics most closely associated with each one.</p>
+
+<h2 id="important-dates-1">Important Dates</h2>
+
+<ul>
+  <li><strong>Submission Deadline:</strong> <del>July 16, 2026 (11:59 pm AOE)</del> <span style="color: red; font-weight: bold;">July 23, 2026 (11:59 pm AOE) (extended!)</span></li>
+  <li><strong>Notification of Acceptance:</strong> August 5, 2026</li>
+</ul>
+
+<h2 id="demos">Demos</h2>
+
+<p>Demos offer a high-visibility, hands-on opportunity to present interactive systems, tools, or technologies related to collective intelligence, collaborative human-AI systems, and human-centered AI. This track provides a platform to showcase prototypes, systems, exhibits, or installations that engage participants through live interaction. If you’ve built something exciting, this is your chance to show it in action! Demo submissions should include a video walkthrough of the system, along with a 1-2 page description of the system, the nature of interaction with users, and the expected form of audience engagement. Accepted demos will be presented in-person at the conference. CI/HCOMP will provide presenters with a table, 2 chairs, a power outlet, and wi-fi; if additional materials are required, they must be requested by contacting the Posters/Demos Co-Chairs directly and they may not be guaranteed.</p>
+
+<h2 id="posters">Posters</h2>
+
+<p>Posters present concise reports of recent findings or innovative work relevant to collective intelligence (CI) and human-AI complementarity and alignment (HCOMP). Poster submissions are perfect for work that is still in progress or has not yet reached the completion level required for full paper submission. Each poster submission should offer some contribution to the CI or HCOMP research community, whether in results or in potential. Accepted posters will be presented in-person at the conference in the form of a poster session, offering authors the chance to engage with attendees and receive feedback in an interactive format.</p>
+
+<h2 id="submission-details">Submission Details</h2>
+
+<ul>
+  <li><strong>Platform:</strong> Demos and Posters must be made through the <a href="#submit">EasyChair platform</a> by the deadline.</li>
+  <li><strong>Format:</strong> Refer to the <a href="#general">General Submission Instructions</a> for the official ACM templates and detailed formatting guidelines.</li>
+  <li><strong>Length:</strong> The main body of the text must be under 2 pages. There is no page limit for references.</li>
+  <li><strong>Supplemental Materials:</strong> Authors are encouraged to include additional materials such as executables or data files to enhance reproducibility. Though a video walkthrough is required only for the Demos track, those submitting a Poster may optionally include videos or screenshots to demonstrate the potential of their work. Supplemental materials should be uploaded separately in the “supplemental materials” section of the submission form. Supplemental materials included as appendices in the submission PDF itself (e.g., paper, poster/demo) will be counted towards the word/page limit.</li>
+  <li><strong>Non-anonymized:</strong> Authors should include identifying information for a single-blind review process.</li>
+  <li><strong>Non-archival:</strong> Accepted demos and posters will be non-archival and made available via the conference website. Authors are free to further develop their work and submit to other venues in the future.</li>
+</ul>
+
+<p>CI/HCOMP takes pride in our interdisciplinary community. We welcome work from a variety of perspectives and backgrounds, and we look forward to reading your contributions. If you have any questions in the meantime, please reach out to the Posters/Demos Co-Chairs:</p>
+
+<h3 id="hcomp-2026-posters-and-demos-co-chairs"><strong>HCOMP 2026 Posters and Demos Co-Chairs</strong><br></h3>
+<p><strong>Hari Subramonyam</strong>, Stanford University (HCOMP point-of-contact: harihars@stanford.edu)<br>
+<strong>Oana Inel</strong>, University of Zurich (inel@ifi.uzh.ch)</p>
+
+<h3 id="ci-2026-posters-and-demos-co-chairs"><strong>CI 2026 Posters and Demos Co-Chairs</strong><br></h3>
+<p><strong>Xinlan Emily Hu</strong>, MIT (CI point-of-contact: xehu@mit.edu)<br>
+<strong>Vineet Pandey</strong>, University of Utah (vineet.pandey@utah.edu)</p>
+
+<hr>
+
+<h1 id="dc" class="sub-page-header">Call for Doctoral Consortium</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<h2 id="important-dates-2">Important Dates</h2>
+
+<ul>
+  <li><strong><del>July 27, 2026</del> <span style="color: red; font-weight: bold;">August 3, 2026 (extended!)</span>:</strong> Submission Deadline</li>
+  <li><strong>August 7, 2026:</strong> Notification of Acceptance</li>
+</ul>
+
+<p>We are excited to announce that the 2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP 2026) will host a Doctoral Colloquium for PhD students. HCOMP 2026 is co-located and tightly integrated with the 14th ACM Collective Intelligence Conference (CI 2026), united under a shared theme: <strong>Connections</strong>.</p>
+
+<p>The Doctoral Colloquium reflects that theme directly. It is a space designed for PhD students to forge meaningful connections — with peers across disciplines, with established researchers from both communities, and with ideas that sit at the intersection of collective intelligence and human-AI collaboration. Whether your work lives squarely within one conference’s scope or bridges both, this is an exceptional venue to share it, stress-test it, and expand it.</p>
+
+<h2 id="why-participate">Why Participate?</h2>
+
+<p>The joint HCOMP + CI event brings together two vibrant research communities that rarely have the chance to engage this deeply. For doctoral students, this creates a rare opportunity to gain visibility and feedback from a broader, more diverse audience than either conference alone would offer.</p>
+
+<p><strong>Selected PhD students will:</strong></p>
+
+<ul>
+  <li>Present and discuss their research directions, receiving new ideas and perspectives from researchers across collective intelligence, human-AI collaboration, AI safety and alignment, and related fields;</li>
+  <li>Support one another by constructively offering feedback to fellow doctoral attendees;</li>
+  <li>Build community among PhD students from both HCOMP and CI, fostering connections that can extend well beyond the colloquium itself; and</li>
+  <li>Gain broader exposure for their work — particularly valuable as they prepare for the job market or the next stages of their academic careers.</li>
+</ul>
+
+<p>The colloquium is especially timely given the joint event’s focus on Connections — across disciplines, across humans and machines, between individuals and communities. We particularly encourage students whose research sits at disciplinary crossroads or explores how collective and AI-driven systems interrelate.</p>
+
+<h2 id="areas-of-interest">Areas of Interest</h2>
+
+<p>The HCOMP and CI communities together span a rich and diverse landscape of research, including but not limited to:</p>
+
+<ul>
+  <li>Collective decision-making, democracy, and governance</li>
+  <li>Human-AI complementarity, collaboration, and alignment</li>
+  <li>Societal implications of AI</li>
+  <li>Crowdsourcing and human computation</li>
+  <li>Herd, swarm, and emergent behavior</li>
+  <li>AI for science, science of science, and metascience</li>
+  <li>AI systems for social good</li>
+  <li>The future of work and human-centered AI</li>
+  <li>Digital humanities and social computing</li>
+</ul>
+
+<p>If your work connects to any of these areas — or connects across them — we want to hear from you.</p>
+
+<h2 id="eligibility-and-selection-criteria">Eligibility and Selection Criteria</h2>
+
+<p>Applicants must be currently enrolled in a PhD program. Students at any stage are welcome to apply, though the colloquium will likely prioritize those who have a clear dissertation plan, have made meaningful progress toward it, and are still at a stage where feedback and mentorship can genuinely shape their trajectory.</p>
+
+<p>We are looking for students whose research shows potential to push boundaries and who would benefit from engagement with expertise beyond what is locally available to them. Priority will be given to applicants whose work connects to the themes of the joint event, particularly research that speaks to both the HCOMP and CI communities.</p>
+
+<h2 id="application-process">Application Process</h2>
+
+<p>Submit a Doctoral Research Overview (up to 4 pages), covering:</p>
+
+<ul>
+  <li>Your thesis research motivation and questions</li>
+  <li>1-2 of your main research projects</li>
+  <li>One of your on-going project or your proposed work for your thesis</li>
+  <li>Your timeline and current stage in the research process</li>
+  <li>A short paragraph explaining why you want to join the colloquium and how you expect to benefit — including, where relevant, how the joint HCOMP + CI setting and the theme of Connections is meaningful to your work.</li>
+  <li>Finally, a supporting letter from your advisor. This is not a recommendation letter. It must verify that the student is enrolled in a PhD program, state the anticipated length of the program, and indicate the student’s current stage of progress. The letter should also state whether funding to attend the DC could be secured.</li>
+</ul>
+
+<p>Submissions may include as many additional pages as needed for references and appendices.</p>
+
+<h2 id="funding">Funding</h2>
+
+<p>All accepted DC participants will receive complimentary full conference and workshop registrations. Applicants will be required to attend the conference in person, should not assume travel funding support through the DC, and are encouraged to seek institutional or external support where possible. <a href="/travel_grants.html">Travel Grants</a> are now available, but DC participants must apply separately and meet eligibility criteria to be considered.</p>
+
+<p>We look forward to your application and to building a vibrant, cross-community network of future leaders across collective intelligence and human-AI collaboration. Come make some connections.</p>
+
+<h2 id="submission">Submission</h2>
+
+<p>Please submit your application materials to the following Google Form prior to the deadline: <a href="https://forms.gle/mY8M6mcyGndUhGRC7">https://forms.gle/mY8M6mcyGndUhGRC7</a></p>
+
+<h3 id="hcomp-2026-dc-chair"><strong>HCOMP 2026 DC Chair</strong><br></h3>
+<p><strong>Joel Chan</strong>, University of Maryland, College Park, USA</p>
+
+<h3 id="ci-2026-dc-chair"><strong>CI 2026 DC Chair</strong><br></h3>
+<p><strong>Wesley Hanwen Deng</strong>, Microsoft Research, USA</p>
+
+<p>For inquiries regarding the track, please contact: <a href="mailto:hcomp-ci-2026-dc@acm.org">hcomp-ci-2026-dc@acm.org</a></p>
+
+<p>Credit to the <a href="https://cscw.acm.org/dc.html">CSCW 2026 DC</a> for some of the language used in this CFP.</p>
+
+<hr>
+
+<h1 id="workshops" class="sub-page-header">Call for Workshops</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<h2 id="overview">Overview</h2>
+<p>We invite proposals for workshops at HCOMP 2026 and CI 2026. Workshops are a gathering place for researchers, practitioners, and industry professionals to bring together communities with common research interests and agendas, discuss ongoing work, and initiate new collaborations.</p>
+
+<p>Workshops are an opportunity to move the field forward and build community. <span style="background-color: #fff07bff; padding: 2px;">They may address basic or applied research, best practices, tools, education, industry trends, emerging themes and applications, and critical thinking about existing methodologies and frameworks.</span> Topics should fall within the general scope of HCOMP, CI, or both (see Topics of Interest above), but we also highly encourage emerging research directions that have not yet been fully explored and may even be seen as controversial.</p>
+
+<p>We welcome traditional workshop formats that encourage lively debates and focused discussion, as well as other types of topic-specific activities, such as tutorials or roundtables. Each workshop should generate ideas that will give the HCOMP and CI communities a fresh way of thinking about the topic or suggest promising directions for future work.</p>
+
+<h2 id="important-dates-3">Important Dates</h2>
+<p><em>(All deadlines are 11:59pm AoE)</em></p>
+<ul>
+  <li><strong>Workshop Proposals Due:</strong> June 15, 2026</li>
+  <li><strong>Workshop Acceptance Notifications:</strong> June 22, 2026</li>
+  <li><strong>Workshop Websites Live &amp; CfP Announced:</strong> June 29, 2026</li>
+  <li><span style="background-color: #ff8181ff; padding: 2px;"><strong>Suggested Workshop Paper Submission Deadline:</strong> July 23 - July 30, 2026 (Organizers may select their preferred deadline, provided they can meet the Aug 7 notification requirement)</span></li>
+  <li><span style="background-color: #ff8181ff; padding: 2px;"><strong>Workshop Paper Acceptance Notifications:</strong> August 7, 2026</span></li>
+  <li><strong>Conference Early Registration Deadline:</strong> <span style="color:red; font-weight:bold;">Extended to August 28, 2026</span></li>
+  <li><strong>Workshops Day:</strong> September 27, 2026</li>
+</ul>
+
+<h2 id="submission-guidelines">Submission Guidelines</h2>
+
+<h3 id="submission-requirements">Submission Requirements</h3>
+<ul>
+  <li><strong>Suggested length:</strong> 2-4 pages (excluding references)</li>
+  <li><strong>Format:</strong> See <a href="#general">General Submission Instructions</a> for the official ACM templates and formatting policies.</li>
+  <li>Submit the proposal as a <strong>single PDF file</strong> via email to the Workshops Co-Chairs: <a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></li>
+</ul>
+
+<p>Proposals must include the following sections: Overview, Format and Activities, Organizers and Speakers, and Call for Participation (CfP) Plan. Please see below for details.</p>
+
+<h3 id="overview-1">Overview</h3>
+<p>Provide a concise summary of the proposed workshop, including:</p>
+<ul>
+  <li>Workshop title and acronym.</li>
+  <li>A brief abstract (up to 250 words) suitable for the conference website.</li>
+  <li>Topics and subtopics that are in scope.</li>
+  <li>Intended audience and the expected number of participants.</li>
+  <li>This should include a strong rationale for the workshop, describe the issues to be addressed, and state concrete objectives.</li>
+</ul>
+
+<h3 id="format-and-activities">Format and Activities</h3>
+<ul>
+  <li>Information on whether your workshop will be a full-day or half-day event.</li>
+  <li>Explain the activities you plan to do during the workshop (e.g., keynote, workshop paper presentations, lightning talks, hands-on activities, etc.).</li>
+  <li>An explanation of how you will keep participants engaged, interacting, and/or collaborating. Keep everyone involved! We especially encourage workshop formats with activities that maintain engagement throughout the event. Get creative! Consider incorporating demos, feedback on innovative task designs, or short-term collaborations. Think about what attendees can create or solve.</li>
+  <li>State your plans for follow-up and creation of tangible outcomes (e.g., poster presentation, publication of a workshop report, plans for a special issue of a journal).</li>
+  <li>Workshops must be in-person or hybrid; no virtual-only workshops.</li>
+  <li>All workshop attendees (virtual or in person) need to pay the registration fee.</li>
+  <li><em>Note: This can be a tentative plan.</em></li>
+</ul>
+
+<h3 id="organizers-and-speakers">Organizers and Speakers</h3>
+<ul>
+  <li>Organizers’ names, affiliations, and contact information.</li>
+  <li>A brief biography for each organizer, highlighting their background and past experience organizing similar events.</li>
+  <li>At least 2 organizers required to attend in person; please indicate which organizers will attend in person and who won’t.</li>
+  <li>A list of potential keynote speakers, panelists, or special invitees, indicating if any have already been tentatively confirmed.</li>
+  <li><em>Note: Priority will be given to workshops that include a diverse group of organizers and speakers across different dimensions (e.g., academia/industry, demographics, and research area).</em></li>
+</ul>
+
+<h3 id="call-for-participation-cfp-plan">Call for Participation (CfP) Plan</h3>
+<ul>
+  <li>A draft of the Call for Papers/Participation that will be distributed to the community (Keep it to 250 words).</li>
+  <li>Information on how you plan to advertise your workshop to reach a diverse audience.</li>
+</ul>
+
+<h2 id="evaluation-criteria">Evaluation Criteria</h2>
+<p>Proposals will be evaluated based on the relevance of the topic to the HCOMP and CI communities, the potential to foster engaging and interactive discussions, the experience and diversity of the organizing committee, and the overall quality of the submitted plan.</p>
+
+<h2 id="accepted-workshops">Accepted Workshops</h2>
+<p>The list of accepted HCOMP/CI 2026 workshops is now available on the <a href="/attend.html#workshops">Workshops</a> section of the Attend page.</p>
+
+<h2 id="workshops-chairs">Workshops Chairs</h2>
+<p>Please contact the Workshops Co-Chairs for any questions concerning workshop proposals: <a href="mailto:hcomp-ci-2026-workshops@acm.org">hcomp-ci-2026-workshops@acm.org</a></p>
+
+<h3 id="hcomp-2026-workshops-co-chair"><strong>HCOMP 2026 Workshops Co-Chair</strong><br></h3>
+<p><strong>Senjuti Dutta</strong>, University of Tennessee</p>
+
+<h3 id="ci-2026-workshops-co-chair"><strong>CI 2026 Workshops Co-Chair</strong><br></h3>
+<p><strong>Vikram Mohanty</strong>, Carnegie Mellon University</p>
+
+<hr>
+
+<h1 id="general" class="sub-page-header">General Submission Instructions</h1>
+<p class="sub-page-border">&nbsp;</p>
+
+<h2 id="submission-templates">Submission Templates</h2>
+
+<p>All submissions should use one of the following templates and must be converted to PDF at the time of submission:</p>
+
+<ul>
+  <li><a href="https://www.acm.org/binaries/content/assets/publications/taps/acm_submission_template.docx">Word Template</a></li>
+  <li><a href="https://portalparts.acm.org/hippo/latex_templates/acmart-primary.zip">LaTeX Template</a></li>
+</ul>
+
+<p>All authors should submit manuscripts for review in a <strong>single column format</strong>. For the <strong>Word Template</strong>, follow the embedded instructions to apply the paragraph styles to your various text elements.</p>
+
+<div class="highlight-box">
+                <strong>LaTeX Setup Instructions (updated June 8, 2026):</strong><br>
+                To use the <strong>LaTeX Template</strong> within <a href="https://www.overleaf.com/" class="inline-link" target="_blank">Overleaf</a>, access the official <a href="https://www.overleaf.com/latex/templates/acm-conference-proceedings-master-template/pnrfvrrdbfwt" class="inline-link" target="_blank">ACM Conference Proceedings Primary Article Template</a> web page and click the "Open as Template" button. Please use the "sigconf" proceedings layout template to construct your manuscript (select <code>sample-sigconf-authordraft.tex</code> from the file tree). Around line 47 of the Code or Visual Text Editor, replace <code>\documentclass[sigconf,authordraft]{acmart}</code> with <code>\documentclass[manuscript,review,anonymous]{acmart}</code> to cleanly render a single-column format review copy. Please review the documentation files and <a href="https://authors.acm.org/proceedings/production-information/preparing-your-article-with-latex" class="inline-link" target="_blank">ACM's LaTeX best practices guide</a> should any formatting questions arise.
+            </div>
+
+<h3 id="supplemental-materials-1">Supplemental Materials</h3>
+
+<p>Authors are invited, but not required, to include supplemental materials such as executables and data files, images, additional videos, related papers, more detailed explanations, derivations, or results, so that reviewers can reproduce results in the paper. These materials will be viewed only at the reviewers’ discretion, who are only obligated to read the submitted papers.</p>
+
+<p>Supplemental materials should be uploaded separately in the “supplemental materials” section of the submission form. Supplemental materials included as appendices in the submission PDF itself (e.g., paper, poster/demo) will be counted towards the word count limit.</p>
+
+<h3 id="policy-on-using-large-language-models-llms-for-paper-writing">Policy on Using Large Language Models (LLMs) for Paper Writing</h3>
+
+<p>In line with other SIGCHI conferences’ (e.g., CHI), and computing conferences’ (e.g., CVPR and KDD), HCOMP and CI 2026 employ the following policy on the use of Large Language Models in paper writing.</p>
+
+<p>Text generated from a large-scale language model (LLM), such as ChatGPT, must be clearly marked where such tools are used for purposes beyond editing the author’s own text. Please carefully review the <a href="https://www.acm.org/publications/policies/new-acm-policy-on-authorship">ACM Policy on Authorship</a> before you use these tools. The <a href="https://medium.com/sigchi/acm-publications-policy-guidance-for-sigchi-venues-87332173aad1">SIGCHI blog post</a> describes approaches to acknowledging the use of such tools and we refer to it for guidance. Note that the LaTeX template will default to hiding the Acknowledgements section while in review mode; please make sure that any LLM disclosure is available in your submitted version. We will investigate submissions brought to our attention and desk reject papers where LLM use is not clearly marked or where an LLM is not appropriately used (e.g., including fake references generated by LLM, relying on AI-tools to generate ideas in the manuscript, etc.).</p>
+
+<h3 id="policy-on-irresponsible-reviews">Policy on Irresponsible Reviews</h3>
+
+<p>ACM policies forbid the uploading of author text into an LLM or similar system. Doing so, violates the author’s right to confidentiality and shares intellectual property without consent. Reviewing is a professional responsibility and violations are subject to investigation. In line with other SIGCHI conferences’ (e.g., CHI) and computing conferences’ (e.g., CVPR and KDD) policies on irresponsible reviews, HCOMP and CI 2026 employ the following policy on highly irresponsible reviews.</p>
+
+<p><strong>LLMs are NOT allowed to be used for writing the reviews nor the meta-reviews at any step.</strong> You cannot use an LLM to write your review. This is true for any LLM, whether you run it locally or use an API.</p>
+
+<p>This policy includes but is not restricted to:</p>
+
+<ul>
+  <li>You can <strong>NOT</strong> ask an LLM to write content for you. The review needs to be based on your own judgment.</li>
+  <li>You can <strong>NOT</strong> share substantial content from the paper or your review with an LLM. This means, for example, that you cannot use an LLM to translate a review.</li>
+  <li>You <strong>CAN</strong> use an LLM to check the grammar of your (meta-)review.</li>
+</ul>
+
+<p>It is also expected that reviewers will submit fair and thoughtful reviews on time. Program chairs and PC members will check (meta-)reviews for highly irresponsible reviews. If a review is flagged as “highly irresponsible,” we will investigate the review. Example cases of highly irresponsible reviews include: reviews that violate the above-mentioned LLM policy, missing or one-sentence reviews, reviews not relevant to the paper or that miss a substantial portion of the paper. Highly irresponsible reviews do not include cases where reviewers merely have some misunderstandings, miss small parts of the paper, or hold a different opinion from other reviewers or the PC. <strong>If the review is confirmed as “highly irresponsible,” the papers submitted by the reviewer will be desk rejected per discretion of the program chairs.</strong> We might also report this incident and this reviewer to the ACM.</p>
+
+<h3 id="preprints-policy">Preprints Policy</h3>
+
+<p>We do not prohibit authors from posting preprints of their work on platforms such as SSRN or arXiv either before or during review by the conference. However, to maintain the integrity of the double-blind peer review, we ask that authors refrain from publicizing the research on social media or discussing it with the press until the review process is complete. HCOMP and CI 2026 will enforce this double-blind review policy, and any submissions that fail to meet these anonymity requirements will be desk rejected.</p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Association for Computing Machinery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Dynamic Sticky Positioning for Sub-navbars
+        // This ensures sub-navs always sit perfectly under the main navbar across all devices
+        window.updateSubnavPosition = () => {
+            const mainNav = document.querySelector('.navbar');
+            const banner = document.querySelector('.announcement-banner');
+            const subnavs = document.querySelectorAll('.sticky-subnav');
+            if (mainNav && subnavs.length > 0) {
+                const bannerHeight = (banner && window.getComputedStyle(banner).display !== 'none') ? banner.offsetHeight : 0;
+                const totalHeight = bannerHeight + mainNav.offsetHeight;
+                subnavs.forEach(nav => {
+                    nav.style.top = (totalHeight - 6) + 'px'; // 6px overlap to eliminate tiny gaps
+                });
+                document.documentElement.style.setProperty('--navbar-height', (totalHeight - 6) + 'px');
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', window.updateSubnavPosition);
+        window.addEventListener('load', window.updateSubnavPosition);
+        window.addEventListener('resize', window.updateSubnavPosition);
+    </script>
+
+
+</body></html>

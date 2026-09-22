@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en" style="--banner-height: 42px;" class=" idc0_343 hsrduzr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Past Meetings</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css_002.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #861F41;
+            --secondary-color: #E87722;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+            /* Pre-scrolls anchor targets below navbar */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+            padding-top: 38px;
+            /* Prevents fixed navbar from overlapping content */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .page-content {
+            flex: 1 0 auto;
+            width: 100%;
+        }
+
+        .page-content h1 {
+            margin-top: 2.0rem;
+        }
+
+        .page-content h2 {
+            margin-top: 1.5rem;
+        }
+
+        .page-content>*:first-child {
+            margin-top: 0 !important;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.25rem 20px;
+        }
+
+
+
+        /* Subpage Hero Banner */
+        .subpage-hero {
+            height: 200px;
+            min-height: 200px;
+            flex-shrink: 0;
+            /* Prevents compression on extremely long or short pages due to body flex */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ab1.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 20px;
+        }
+
+        .hero-breadcrumb-container {
+            width: 100%;
+        }
+
+        .hero-breadcrumb {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .hero-breadcrumb a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero-breadcrumb span {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Page Content Specific Setup */
+        .page-content {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .page-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(134, 31, 65, 0.3);
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .page-content a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .page-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .page-content ul,
+        .page-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Markdown Table Styles (Responsive & Professional) */
+        .page-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2.5rem 0;
+            font-size: 1rem;
+            background-color: var(--white);
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .page-content th,
+        .page-content td {
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            min-width: 150px;
+        }
+
+        .page-content th {
+            background-color: #f8f8f8;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .page-content tr:nth-of-type(even) {
+            background-color: #fafafa;
+        }
+
+        .page-content tr:hover {
+            background-color: #f3f3f3;
+        }
+
+
+        .sub-page-header {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-top: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sub-page-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 3rem;
+            border-radius: 2px;
+        }
+
+        .sub-page-border {
+            display: none;
+        }
+
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        mark {
+            background-color: transparent;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        /* Organizers Legacy Structure Support */
+        .organizers-header {
+            height: 10px;
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 20px;
+        }
+
+        /* Bootstrap grid flex fallbacks */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col-md-1,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-12 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .profile-row>div {
+            align-items: center;
+            text-align: center;
+        }
+
+        .col-md-12 {
+            width: 100%;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+
+        .col-md-6 {
+            width: calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px) !important;
+            max-width: calc(50% - 20px) !important;
+        }
+
+        .col-md-5 {
+            width: calc(41.666% - 20px);
+            flex: 0 0 calc(41.666% - 20px) !important;
+            max-width: calc(41.666% - 20px) !important;
+        }
+
+        .col-md-4 {
+            width: calc(33.333% - 20px);
+            flex: 0 0 calc(33.333% - 20px) !important;
+            max-width: calc(33.333% - 20px) !important;
+        }
+
+        .col-md-3 {
+            width: calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px) !important;
+            max-width: calc(25% - 20px) !important;
+        }
+
+        @media (max-width: 850px) {
+
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6 {
+                width: 100%;
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        ul.list-inline {
+            padding-left: 0 !important;
+            list-style: none !important;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.list-inline>li {
+            display: inline-block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Compress Past Meetings and Proceedings Grid */
+        .intro-paragraph.text-center .col-md-6 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center p {
+            margin-bottom: 5px;
+        }
+
+        .intro-paragraph.text-center .theme-link-org {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .photo-size {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid var(--white);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .rounded-circle {
+            border-radius: 50%;
+        }
+
+        .theme-link-org {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+
+        .theme-link-org:hover {
+            color: var(--secondary-color);
+        }
+
+        .organizers .lead {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        .organizer-name {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body style="margin-top: 42px;">
+
+    <!-- Navigation -->
+    <style>
+    :root {
+        --banner-height: 40px;
+    }
+    .announcement-banner {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+    .announcement-banner a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .announcement-banner a:hover {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+    .navbar {
+        top: var(--banner-height, 40px) !important;
+    }
+    body {
+        margin-top: var(--banner-height, 40px);
+    }
+</style>
+<div class="announcement-banner">
+    Registration is now open for HCOMP + CI 2026!
+    <a href="/registration.html">View details and register here →</a>
+</div>
+    <nav class="navbar" style="top: 42px;">
+        <a class="navbar-brand" href="/index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
+            <img src="img/HCOMP_logo-01-colored_yGcW.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-nav" id="nav-links">
+            <div class="dropdown">
+                <a href="/attend.html">Attend <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="/venue.html">Venue</a>
+                    <a href="/accommodations.html">Accommodations</a>
+                    <a href="/registration.html">Registration</a>
+                    <a href="/travel_grants.html">Travel Grants</a>
+                    <a href="/visa_support_letter.html">Visa Support Letter</a>
+                    <a href="/student_volunteers.html">Student Volunteers</a>
+                    <a href="/attend.html#workshops">Workshops</a>
+                    <a href="/crowdcamp.html">CrowdCamp</a>
+                    <a href="/code_of_conduct.html">Code of Conduct</a>
+                </div>
+            </div>
+            <a href="/program.html">Program</a>
+            <a href="/call_for_participation.html">Submit</a>
+            <a href="/organizers.html">Organizers</a>
+            <a href="/call_for_sponsors.html">Sponsors</a>
+            <a href="/past_meetings.html" class="active">Past Meetings</a>
+        </div>
+    </nav>
+
+<script>
+    (function() {
+        function updateBannerAndNavbar() {
+            const banner = document.querySelector('.announcement-banner');
+            const navbar = document.querySelector('.navbar');
+            if (banner && window.getComputedStyle(banner).display !== 'none') {
+                const bannerHeight = banner.offsetHeight;
+                document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+                if (navbar) {
+                    navbar.style.top = bannerHeight + 'px';
+                }
+                document.body.style.marginTop = bannerHeight + 'px';
+            } else {
+                document.documentElement.style.setProperty('--banner-height', '0px');
+                if (navbar) {
+                    navbar.style.top = '0px';
+                }
+                document.body.style.marginTop = '0px';
+            }
+
+            if (typeof window.updateSubnavPosition === 'function') {
+                window.updateSubnavPosition();
+            }
+        }
+
+        window.updateBannerAndNavbar = updateBannerAndNavbar;
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateBannerAndNavbar);
+        } else {
+            updateBannerAndNavbar();
+        }
+
+        window.addEventListener('load', updateBannerAndNavbar);
+        window.addEventListener('resize', updateBannerAndNavbar);
+        window.addEventListener('orientationchange', updateBannerAndNavbar);
+
+        if (window.ResizeObserver) {
+            const ro = new ResizeObserver(() => {
+                updateBannerAndNavbar();
+            });
+            const banner = document.querySelector('.announcement-banner');
+            if (banner) {
+                ro.observe(banner);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    const b = document.querySelector('.announcement-banner');
+                    if (b) ro.observe(b);
+                });
+            }
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Only target the arrow icon for expanding/collapsing
+        const dropdownIcons = document.querySelectorAll('.dropdown > a > i');
+        dropdownIcons.forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1100) {
+                    e.preventDefault();
+                    e.stopPropagation(); // Prevent the click from navigating the link
+                    this.closest('.dropdown').classList.toggle('mobile-open');
+                }
+            });
+        });
+    });
+</script>
+
+
+    <!-- Subpage Hero Banner -->
+    <div class="subpage-hero">
+        <div class="container hero-breadcrumb-container">
+            <div class="hero-breadcrumb">
+                <a href="/index.html">HCOMP 2026</a>
+                
+                / <span>Past Meetings</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+        <!-- Page Content -->
+<div class="container">
+    <h1 class="sub-page-header">Overview</h1>
+    <div class="sub-page-border"></div>
+</div>
+<div class="container">
+    <div class="intro-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro-paragraph">
+                    <p class="lead">
+                        HCOMP is the premier venue for disseminating the latest research findings on human-AI complementarity and alignment. Our community studies and designs systems that combine the complementary strengths of human and artificial intelligence to achieve outcomes neither could achieve alone, in ways that are ethical, safe, and intentional. This research builds on a foundation established by the HCOMP community during its first decade as an AAAI conference series focused on human computation and crowdsourcing.
+                    </p>
+                    <p class="lead">
+                        HCOMP focuses on the emerging science and practice of human-AI complementarity and alignment. As AI systems become increasingly capable, the field is expanding from studying how humans contribute to building these systems to also studying how humans and AI systems work together as complementary partners. This broader perspective situates complementarity and alignment across the full lifecycle of AI systems, from how systems are built and evaluated to how they are used and governed in practice, with attention to how responsibilities are divided, how collaboration evolves over time, and how alignment is achieved and maintained in real-world use.
+                    </p>
+                    <p class="lead">
+                        While artificial intelligence (AI) and human-computer interaction (HCI) represent traditional mainstays of the conference, HCOMP believes strongly in fostering and promoting broad, interdisciplinary research. Our field is particularly unique in the diversity of disciplines it draws upon and contributes to, including human-centered qualitative studies, HCI design, social computing, machine learning, natural language processing, the broader realms of artificial intelligence (including LLMs and generative AI), economics, computational social science, digital humanities, policy, and ethics. We promote the exchange of advances in human-AI complementarity and alignment not only among researchers but also engineers and practitioners, to encourage dialogue across disciplines and communities of practice.
+                    </p>
+                    <p class="lead">
+                        Past meetings include twelve AAAI HCOMP conferences
+                        (2013-2024) and four earlier workshops, held at the AAAI
+                        Conference on Artificial Intelligence (2011-2012), and
+                        the ACM SIGKDD Conference on Knowledge Discovery and
+                        Data Mining (2009-2010).
+                    </p>
+                    <p class="lead">
+                        An overview of the history, goals, and peer review
+                        procedures of the conference can be found in the
+                        <a class="theme-link" href="https://www.humancomputation.com/2014/notefromchairs.html">
+                            preface to the HCOMP-13 proceedings</a>.
+                        Additional background on the founding of the conference is discussed in a
+                        <a class="theme-link" href="http://archive2.cra.org/resources/crn-archive-view-detail/harnessing_human_intellect_for_computing/">
+                            <i>Computing Research News</i> story
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="sub-page-header">Past Meetings</h1>
+    <div class="sub-page-border"></div>
+</div>
+
+<!-- container a-->
+<div class="container">
+    <div class="intro-text">
+        <div class="col-md-12">
+            <div class="intro-text"></div>
+            <div class="intro-paragraph text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2024/index.html">HCOMP
+                                2024</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2023/index.html">HCOMP
+                                2023</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2022/index.html">HCOMP
+                                2022</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2021/index.html">HCOMP
+                                2021</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2020/index.html">HCOMP
+                                2020</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2019/index.html">HCOMP
+                                2019</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2018/index.html">HCOMP
+                                2018</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2017/index.html">HCOMP
+                                2017</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2016/index.html">HCOMP
+                                2016</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2015/index.html">HCOMP
+                                2015</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2014/index.html">HCOMP
+                                2014</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2013/index.html">HCOMP
+                                2013</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2012/index.html">HCOMP
+                                2012</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2011/index.html">HCOMP
+                                2011</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2010/index.html">HCOMP
+                                2010</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://www.humancomputation.com/2009/index.html">HCOMP
+                                2009</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<a name="proceedings"></a>
+<div class="container">
+    <h1 class="sub-page-header">Past Proceedings</h1>
+    <div class="sub-page-border"></div>
+</div>
+
+<!-- container a-->
+<div class="container">
+    <div class="intro-text">
+        <div class="col-md-12">
+            <div class="intro-text"></div>
+            <div class="intro-paragraph text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/608">HCOMP
+                                2024</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/572">HCOMP
+                                2023</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/530">HCOMP
+                                2022</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/476">HCOMP
+                                2021</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/268">HCOMP
+                                2020</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/248">HCOMP
+                                2019</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/310">HCOMP
+                                2018</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/311">HCOMP
+                                2017</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/312">HCOMP
+                                2016</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/313">HCOMP
+                                2015</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/314">HCOMP
+                                2014</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://ojs.aaai.org/index.php/HCOMP/issue/view/315">HCOMP
+                                2013</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://aaai.org/proceeding/ws12-08/">HCOMP 2012</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="https://aaai.org/proceeding/ws11-11/">HCOMP 2011</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="http://dl.acm.org/citation.cfm?id=1837885">HCOMP 2010</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a class="theme-link-org" href="http://dl.acm.org/citation.cfm?id=1600150&amp;CFID=701772411&amp;CFTOKEN=74377953">HCOMP
+                                2009</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a name="awards"></a>
+<div class="container">
+    <h1 class="sub-page-header">Past Paper Awards</h1>
+    <div class="sub-page-border"></div>
+</div>
+
+<div class="container">
+    <div class="intro-text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro-paragraph">
+                    <div class="row">
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2024</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Inaugural Test of Time and Impact Award</mark>
+                                <br><span style="font-size: 0.9em; font-weight: normal; color: #666;">(selection among papers from 2013–2014)</span>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/13088" target="_blank">
+                                    SQUARE: A Benchmark for Research on Computing Crowd Consensus
+                                </a>
+                                <br>Aashish Sheshadri and Matthew Lease
+                                <br><span style="font-size: 0.9em; color: #666;">In Proceedings of the 1st AAAI Conference on Human Computation (HCOMP), pages 156–164, 2013.</span>
+                                <br><span style="font-size: 0.9em;">See <a class="theme-link" href="https://ai.ischool.utexas.edu/square/" target="_blank">SQUARE website</a> with data and code | 2024 Award Presentation <a class="theme-link" href="https://utexas.box.com/v/lease-hcomp24-tot" target="_blank">slides</a></span>
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/31602">
+                                    Investigating What Factors Influence Users'
+                                    Rating of Harmful Algorithmic Bias and
+                                    Discrimination
+                                </a>
+                                <br>Sara Kingsley, Jiayin Zhi, Wesley Hanwen
+                                Deng, Jaimie Lee, Sizhe Zhang, Motahhare Eslami,
+                                Kenneth Holstein, Jason I. Hong, Tianshi Li and
+                                Hong Shen
+                            </p>
+                            <p class="lead">
+                                <mark>Honorable Mention Paper Awards</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/31598">
+                                    The Atlas of AI Risks: Enhancing Public
+                                    Understanding of AI Risks
+                                </a>
+                                <br>Edyta Bogucka, Sanja Scepanovic and
+                                Daniele Quercia
+                            </p>
+                            <p class="lead">
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/31605">
+                                    Utility-Oriented Knowledge Graph Accuracy
+                                    Estimation with Limited Annotations: A Case
+                                    Study on DBpedia
+                                </a>
+                                <br>Stefano Marchesin, Gianmaria Silvello and
+                                Omar Alonso
+                            </p>
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2023</h2>
+                                </li>
+                            </ul>
+                            <p class="lead">
+                                <mark>Best Paper Awards</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/27548">
+                                    Where Does My Model Underperform? A Human
+                                    Evaluation of Slice Discovery Algorithms</a>
+                                <br>Nari Johnson, Ángel Alexander Cabrera,
+                                Gregory Plumb and Ameet Talwalkar
+                            </p>
+                            <p>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/27559">
+                                    Confidence Contours: Uncertainty-Aware
+                                    Annotation for Medical Semantic
+                                    Segmentation</a>
+                                <br>Andre Ye, Quan Ze Chen and Amy Zhang
+                            </p>
+
+                            <p class="lead">
+                                <mark>Honorable Mention Paper Awards</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/27547">
+                                    Collect, Measure, Repeat: Reliability
+                                    Factors for Responsible AI Data
+                                    Collection</a>
+                                <br>Oana Inel, Tim Draws and Lora Aroyo
+                            </p>
+                            <p>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/27554">
+                                    A Taxonomy of Human and ML Strengths in
+                                    Decision-Making to Investigate Human-ML
+                                    Complementarity</a>
+                                <br>Charvi Rastogi, Liu Leqi, Kenneth Holstein
+                                and Hoda Heidari
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Poster/Demo Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://www.humancomputation.com/2023/assets/wips_demos/HCOMP-23_paper_8465.pdf" target="_blank">
+                                    Behind the Canvas: A Human-AI Workflow for Tracing 19th-Century Photographers and Studio Backdrops
+                                </a>
+                                <br>Vikram Mohanty, Jude Lim, Terryl Dodson and Kurt Luther
+                            </p>
+                        </div>
+
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2022</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/21990">
+                                    It Is like Finding a Polar Bear in the
+                                    Savannah! Concept-Level AI Explanations with
+                                    Analogical Inference from Commonsense
+                                    Knowledge</a>
+                                <br>Gaole He, Agathe Balayn, Stefan Buijsman,
+                                Jie Yang, and Ujwal Gadiraju
+                            </p>
+
+                            <p class="lead">
+                                <mark>Honorable Mention Paper Awards</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/21995">
+                                    Connecting Algorithmic Research and Usage
+                                    Contexts: A Perspective of Contextualized
+                                    Evaluation for Explainable AI</a>
+                                <br>Q. Vera Liao, Yunfeng Zhang, Ronny Luss,
+                                Finale Doshi-Velez, and Amit Dhurandhar
+                            </p>
+                            <p>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/21991">
+                                    Near-Optimal Reviewer Splitting in
+                                    Two-Phase Paper Reviewing and Conference
+                                    Experiment Design</a>
+                                <br>Steven Jecmen, Hanrui Zhang, Ryan Liu, Fei
+                                Fang, Vincent Conitzer, and Nihar B. Shah
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Poster/Demo Award</mark>
+                                <br>
+                                Human-in-the-loop mixup
+                                <br>Katherine Collins, Umang Bhatt, Weiyang
+                                Liu, Bradley Love, and Adrian Weller
+                            </p>
+                        </div>
+
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2021</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/18939">A
+                                    Checklist to Combat Cognitive Biases in
+                                    Crowdsourcing</a>
+                                <br>Tim Draws, Alisa Rieger, Oana Inel, Ujwal
+                                Gadiraju and Nava Tintarev
+                            </p>
+
+                            <p class="lead">
+                                <mark>Honorable Mention Paper Awards</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/18945">On
+                                    the Bayesian Rational Assumption in
+                                    Information Design</a>
+                                <br>Wei Tang and Chien-Ju Ho
+                            </p>
+                            <p>
+                                <a class="theme-link" href="https://ojs.aaai.org/index.php/HCOMP/article/view/18947">Rapid Instance-level
+                                    Knowledge Acquisition
+                                    from Class-level Common Sense</a>
+                                <br>Chris Welty, Lora Aroyo, Flip Korn, Sara
+                                Marie Mc Carthy and Shubin Zhao
+                            </p>
+                            <p class="lead">
+                                <mark>Best Blue Sky Ideas</mark>
+                                <br>
+                                First Place:
+                                <a class="theme-link" href="">The Science of Rejection: A Research Area
+                                    for Human Computation</a>
+                                <br>Burcu Sayin, Jie Yang, Andrea Passerini
+                                and Fabio Casati
+                            </p>
+                            <p class="lead">
+                                Second Place:
+                                <a class="theme-link" href="">Human Computation and Crowdsourcing for
+                                    Earth</a>
+                                <br>Yasaman Rohanifar, Syed Ishtiaque Ahmed,
+                                Sharifa Sultana, Prateek Chanda and Malay
+                                Bhattacharyya
+                            </p>
+                            <p class="lead">
+                                Third Place:
+                                <a class="theme-link" href="">Human in the Loop for Machine Creativity</a>
+                                <br>Neo Christopher Chung
+                            </p>
+                            <p class="lead">
+                                <mark>Best Poster/Demo Award</mark>
+                                <br>
+                                FindItOut: A Multiplayer GWAP for Collecting
+                                Plural Knowledge
+                                <br>Agathe Balayn, Gaole He, Andrea Hu, Jie
+                                Yang and Ujwal Gadiraju
+                            </p>
+                        </div>
+
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2020</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org//index.php/HCOMP/article/view/7470">Motivating Novice
+                                    Crowd Workers through
+                                    Goal Setting: An Investigation into the
+                                    Effects on Complex Crowdsourcing Task
+                                    Training</a>
+                                <br>Amy Rechkemmer and Ming Yin
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Student Paper</mark>
+                                <br>
+                                <a class="theme-link" href="https://ojs.aaai.org//index.php/HCOMP/article/view/7462">Impact of Algorithmic
+                                    Decision Making on
+                                    Human Behavior: Evidence from Ultimatum
+                                    Bargaining</a>
+                                <br>Alexander Erlei, Franck Awounang Nekdem,
+                                Lukas Meub, Avishek Anand and Ujwal Gadiraju
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Blue Sky Ideas</mark>
+                                <br>
+                                First Place:
+                                <a class="theme-link" href="">Using Human Cognitive Limitations to Enable
+                                    New Systems</a>
+                                <br>Vincent Conitzer
+                            </p>
+                            <p class="lead">
+                                Second Place:
+                                <a class="theme-link" href="">Group-Assign: Type Theoretic Framework for
+                                    Human AI Orchestration</a>
+                                <br>Aik Beng Ng, Zhangsheng Lai, Simon See and
+                                Shaowei Lin
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Demo Award</mark>
+                                <br>
+                                OpenTag: Understanding Human Perceptions of
+                                Image Tagging Algorithms
+                                <br>Kyriakos Kyriakou, Pınar Barlas, Styliani
+                                Kleanthous and Jahna Otterbacher
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Work-in-Progress Award</mark>
+                                <br>
+                                Assessing Political Bias using Crowdsourced
+                                Pairwise Comparisons
+                                <br>Tzu-Sheng Kuo, Mcardle Hankin, Miranda Li,
+                                Andrew Ying and Cathy Wang
+                            </p>
+                        </div>
+
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2019</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ojs/index.php/HCOMP/article/view/5271">A
+                                    Large-Scale Study of the "Wisdom of
+                                    Crowds"</a>
+                                <br>Camelia Simoiu, Chiraag Sumanth, Alok
+                                Shankar and Sharad Goel
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ojs/index.php/HCOMP/article/view/5280">Human Evaluation of
+                                    Models Built for
+                                    Interpretability</a>
+                                <br>Isaac Lage, Emily Chen, Jeffrey He, Menaka
+                                Narayanan, Been Kim, Samuel Gershman and Finale
+                                Doshi-Velez
+                            </p>
+                            <p class="lead">
+                                <a class="theme-link" href="https://aaai.org/ojs/index.php/HCOMP/article/view/5283">Fair
+                                    Work: Crowd Work Minimum Wage with One
+                                    Line of Code</a>
+                                <br>Mark Whiting, Grant Hugh and Michael
+                                Bernstein
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Poster / Demo Presentation</mark>
+                                <br>
+                                PairWise: Mitigating Political Bias in
+                                Crowdsourced Content Moderation
+                                <br>Jacob Thebault-Spieker, Sukrit
+                                Venkatagiri, David Mitchell, Chris Hurt and Kurt
+                                Luther
+                            </p>
+                        </div>
+
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2018</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ocs/index.php/HCOMP/HCOMP18/paper/view/17925">All That
+                                    Glitters is Gold -- An Attack
+                                    Scheme on Gold Questions in Crowdsourcing</a>
+                                <br>Alessandro Checco, Jo Bates and Gianluca
+                                Demartini
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ocs/index.php/HCOMP/HCOMP18/paper/view/17930">Towards
+                                    Accountable AI: Hybrid
+                                    Human-Machine Analyses for Characterizing
+                                    System Failure</a>
+                                <br>Besmira Nushi, Ece Kamar and Eric Horvitz
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Poster / Demo Presentation</mark>
+                                <br>
+                                Are 1,000 Features Worth A Picture? Combining
+                                Crowdsourcing and Face Recognition to Identify
+                                Civil War Soldiers
+                                <br>Vikram Mohanty, David Thames, Kurt Luther
+                            </p>
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2017</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ocs/index.php/HCOMP/HCOMP17/paper/view/15920">
+                                    Toward Scalable Social Alt Text:
+                                    Conversational Crowdsourcing as a Tool for
+                                    Refining Vision-to-Language Technology for
+                                    the Blind</a>
+                                <br>Elliot Salisbury, Ece Kamar, and Meredith
+                                Ringel Morris
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="https://aaai.org/ocs/index.php/HCOMP/HCOMP17/paper/view/15812">Supporting
+                                    Image Geolocation with
+                                    Diagramming and Crowdsourcing</a>
+                                <br>
+                                Rachel Kohler, John Purviance, and Kurt Luther
+                            </p>
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2016</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="http://aaai.org/ocs/index.php/HCOMP/HCOMP16/paper/view/14043">Why Is That
+                                    Relevant? Collecting Annotator
+                                    Rationales for Relevance Judgments</a>
+                                <br>
+                                Tyler Mcdonnell, Matthew Lease, Mucahid Kutlu
+                                and Tamer Elsayed
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="http://aaai.org/ocs/index.php/HCOMP/HCOMP16/paper/view/14036">Efficient
+                                    Techniques for Crowdsourced Top-k
+                                    Lists</a>
+                                <br>
+                                Luca de Alfaro, Vassilis Polychronopoulos and
+                                Neoklis Polyzotis
+                            </p>
+                            <p class="lead">
+                                <a class="theme-link" href="http://aaai.org/ocs/index.php/HCOMP/HCOMP16/paper/view/14030">Extending
+                                    Workers' Attention Span Through
+                                    Dummy Events</a>
+                                <br>
+                                Avshalom Elmalech, David Sarne, Esther David and
+                                Chen Hajaj
+                            </p>
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2015</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP15/paper/view/11595">Crowdsourcing
+                                    in the Field: A
+                                    Case Study Using Local Crowds
+                                    for Event Reporting</a>
+                                <br>
+                                Elena Agapie, Jaime Teevan, and
+                                Andres Monroy-Hernandez
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP15/paper/view/11565">Tropel:
+                                    Crowdsourcing Detectors
+                                    with Minimal Training</a>
+                                <br>
+                                Genevieve Patterson, Grant Van Horn,
+                                Serge Belongie, Pietro Perona, and
+                                James Hays
+                            </p>
+                            <p class="lead">
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP15/paper/view/11582">Crowdsourcing
+                                    from Scratch: A
+                                    Pragmatic Experiment in Data
+                                    Collection by Novice
+                                    Requesters</a>
+                                <br>
+                                Alexandra Papoutsaki, Hua Guo,
+                                Metaxa-Kakavouli, Connor Gramazio,
+                                Jeff Rasley, Wenting Xie, Guan Wang,
+                                and Jeff Huang
+                            </p>
+
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2014</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP14/paper/view/8969">STEP: A
+                                    Scalable Testing and Evaluation
+                                    Platform</a>
+                                <br>
+                                Maria Christoforaki and Panos Ipeirotis
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP14/paper/view/8972">A Crowd of
+                                    Your Own: Crowdsourcing for
+                                    On-Demand Personalization</a>
+                                <br>
+                                Peter Organisciak, Jaime Teevan, Susan Dumais,
+                                Robert Miller, and Adam Tauman Kalai
+                            </p>
+                            <p class="lead">
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP14/paper/view/8952">Crowdsourcing
+                                    for Participatory
+                                    Democracies: Efficient Elicitation of Social
+                                    Choice Functions</a>
+                                <br>
+                                David Lee, Ashish Goel, Tanja Aitamurto, and
+                                Helene Landemore
+                            </p>
+                        </div>
+                        <div class="lead col-md-6">
+                            <ul class="list-inline">
+                                <li>
+                                    <h2 class="section-heading">2013</h2>
+                                </li>
+                            </ul>
+
+                            <p class="lead">
+                                <mark>Best Paper Award</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP13/paper/view/7560">Crowdsourcing
+                                    Multi-Label Classification
+                                    for Taxonomy Creation</a>
+                                <br>
+                                Jonathan Bragg, Mausam, and Daniel S. Weld
+                            </p>
+
+                            <p class="lead">
+                                <mark>Best Paper Finalists</mark>
+                                <br>
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP13/paper/view/7475">nEmesis:
+                                    Which Restaurants Should You Avoid
+                                    Today?</a>
+                                <br>
+                                Adam Sadilek, Sean Brennan, Henry Kautz, and
+                                Vincent Silenzio
+                            </p>
+                            <p class="lead">
+                                <a class="theme-link" href="http://www.aaai.org/ocs/index.php/HCOMP/HCOMP13/paper/view/7512">Community
+                                    Clustering: Leveraging an
+                                    Academic Crowd to Form Coherent Conference
+                                    Sessions</a>
+                                <br>
+                                Paul Andre, Haoqi Zhang, Juho Kim, Lydia
+                                Chilton, Steven P. Dow, and Robert C. Miller
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="sub-page-header">Library</h1>
+        <div class="sub-page-border"></div>
+    </div>
+
+    <div class="container">
+        <div class="intro-text">
+            <div class="row">
+                <div class="intro-paragraph">
+                    <ul class="list-inline">
+                        <!-- <li><i class="icon-font fa fa-file-text"></i></li> -->
+                        <li>
+                            <h2 class="section-heading">Past Reports</h2>
+                        </li>
+                    </ul>
+
+                    <p class="lead">
+                        <a class="theme-link" href="http://www.aaai.org/ojs/index.php/aimagazine/article/download/2537/2427">
+                            Workshops Held at the First AAAI Conference on Human
+                            Computation and Crowdsourcing: A Report</a>. Tatiana Josephy, Matthew Lease, Praveen
+                        Paritosh,
+                        Markus Krause, Mihai Georgescu, Michael Tjalve, and
+                        Daniela Braga. <em>AI Magazine</em>, 35(2), 75-78, 2014.
+                    </p>
+
+                    <p class="lead">
+                        Shar Steed.
+                        <a class="theme-link" href="http://archive2.cra.org/resources/crn-archive-view-detail/harnessing_human_intellect_for_computing/">Harnessing
+                            Human Intellect for Computing</a>. Computing Research Association (CRA) Computing
+                        Research News, Vol. 25 No. 2, Feburary 2013.
+                    </p>
+
+                    <p class="lead">
+                        <a class="theme-link" href="http://kdd.org/exploration_files/v11-2-14-HComp09.pdf">A report on
+                            the human computation workshop (HCOMP
+                            2009)</a>. Panagiotis G. Ipeirotis, Raman Chandrasekar, and Paul
+                        N. Bennett. SIGKDD Explorations 11, no. 2 (2009): 80-83.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Association for Computing Machinery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+
+        // Dynamic Sticky Positioning for Sub-navbars
+        // This ensures sub-navs always sit perfectly under the main navbar across all devices
+        window.updateSubnavPosition = () => {
+            const mainNav = document.querySelector('.navbar');
+            const banner = document.querySelector('.announcement-banner');
+            const subnavs = document.querySelectorAll('.sticky-subnav');
+            if (mainNav && subnavs.length > 0) {
+                const bannerHeight = (banner && window.getComputedStyle(banner).display !== 'none') ? banner.offsetHeight : 0;
+                const totalHeight = bannerHeight + mainNav.offsetHeight;
+                subnavs.forEach(nav => {
+                    nav.style.top = (totalHeight - 6) + 'px'; // 6px overlap to eliminate tiny gaps
+                });
+                document.documentElement.style.setProperty('--navbar-height', (totalHeight - 6) + 'px');
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', window.updateSubnavPosition);
+        window.addEventListener('load', window.updateSubnavPosition);
+        window.addEventListener('resize', window.updateSubnavPosition);
+    </script>
+
+
+</body></html>

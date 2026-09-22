@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 ACM HCOMP Conference</title>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #861F41;
+            --secondary-color: #E87722;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-main: #333333;
+            --text-muted: #555555;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+            /* Pre-scrolls anchor targets below navbar */
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--white);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            /* Highlighted Image as Background */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.8)),
+                url('images/ab1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero .location {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .location-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.4);
+            text-underline-offset: 4px;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        .location-link:hover {
+            text-decoration-color: var(--white);
+        }
+
+        .hero .date-badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 4px;
+            border-bottom: 4px solid var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 20px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            z-index: 10;
+        }
+
+        .scroll-indicator:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .scroll-indicator span {
+            margin-bottom: 8px;
+        }
+
+        .scroll-indicator .arrow {
+            width: 15px;
+            height: 15px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0) rotate(45deg);
+            }
+
+            40% {
+                transform: translateY(-10px) rotate(45deg);
+            }
+
+            60% {
+                transform: translateY(-5px) rotate(45deg);
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            color: var(--text-muted);
+        }
+
+        .inline-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(134, 31, 65, 0.3);
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .inline-link:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box strong {
+            color: var(--primary-color);
+        }
+
+
+        /* Important Dates */
+        .dates-section {
+            background-color: var(--light-bg);
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .date-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .date-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .date-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .date-card p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        /* Committees Section */
+        .committees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .committee-group {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .committee-group h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .role-section {
+            margin-bottom: 1.8rem;
+        }
+
+        .role-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .role {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .person {
+            margin-bottom: 0.8rem;
+            padding-left: 10px;
+            border-left: 2px solid #eee;
+        }
+
+        .person:last-child {
+            margin-bottom: 0;
+        }
+
+        .name-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: block;
+            transition: color 0.2s ease;
+        }
+
+        .name-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .affiliation {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            display: block;
+            font-style: italic;
+        }
+
+        /* Keynote Speakers Section */
+        .keynotes-section {
+            background: linear-gradient(180deg, #ffffff 0%, #faf8f6 50%, #ffffff 100%);
+            padding: 5rem 20px;
+            border-top: 1px solid #f0ece9;
+            border-bottom: 1px solid #f0ece9;
+            position: relative;
+        }
+
+        .keynotes-section .section-subtitle {
+            text-align: center;
+            max-width: 820px;
+            margin: -1.5rem auto 3rem auto;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .keynote-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+        }
+
+        .keynote-card {
+            background: var(--white);
+            border: 1px solid #eaeaea;
+            border-radius: 16px;
+            padding: 2.5rem 1.8rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .keynote-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: var(--primary-color);
+            transition: height 0.3s ease;
+        }
+
+        .keynote-card.is-industry::before {
+            background-color: #E87722;
+        }
+
+        .keynote-card.is-academia::before {
+            background-color: #861F41;
+        }
+
+        .keynote-card.is-government::before {
+            background-color: #00a79d;
+        }
+
+        .keynote-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+        }
+
+        .keynote-card.is-industry:hover {
+            border-color: rgba(232, 119, 34, 0.35);
+        }
+
+        .keynote-card.is-academia:hover {
+            border-color: rgba(134, 31, 65, 0.35);
+        }
+
+        .keynote-card.is-government:hover {
+            border-color: rgba(0, 167, 157, 0.35);
+        }
+
+        .keynote-badge {
+            display: inline-block;
+            padding: 5px 16px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        .badge-industry {
+            background-color: rgba(232, 119, 34, 0.12);
+            color: #d16b1f;
+            border: 1px solid rgba(232, 119, 34, 0.3);
+        }
+
+        .badge-academia {
+            background-color: rgba(134, 31, 65, 0.1);
+            color: #861F41;
+            border: 1px solid rgba(134, 31, 65, 0.25);
+        }
+
+        .badge-government {
+            background-color: rgba(0, 167, 157, 0.12);
+            color: #008080;
+            border: 1px solid rgba(0, 167, 157, 0.3);
+        }
+
+        .keynote-photo-wrapper {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .keynote-photo {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+            background-color: #f0f0f0;
+            transition: transform 0.35s ease;
+        }
+
+        .keynote-card:hover .keynote-photo {
+            transform: scale(1.04);
+        }
+
+        .keynote-card.is-industry .keynote-photo {
+            box-shadow: 0 0 0 4px #ffffff, 0 0 0 7px #E87722;
+        }
+
+        .keynote-card.is-academia .keynote-photo {
+            box-shadow: 0 0 0 4px #ffffff, 0 0 0 7px #861F41;
+        }
+
+        .keynote-card.is-government .keynote-photo {
+            box-shadow: 0 0 0 4px #ffffff, 0 0 0 7px #00a79d;
+        }
+
+        .keynote-body {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            width: 100%;
+        }
+
+        .keynote-name {
+            font-size: 1.45rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 0.4rem;
+            color: var(--primary-color);
+        }
+
+        .keynote-name a {
+            color: var(--primary-color) !important;
+            text-decoration: none !important;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s ease, border-bottom-color 0.2s ease;
+        }
+
+        .keynote-name a:hover {
+            color: var(--secondary-color) !important;
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .keynote-role {
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: #4a4a4a;
+            margin-bottom: 0.3rem;
+        }
+
+        .keynote-org {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .keynote-day {
+            margin-top: auto;
+            margin-bottom: 0;
+            padding-top: 1rem;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+
+        .keynote-day i {
+            color: var(--primary-color);
+        }
+
+        .keynotes-cta-wrapper {
+            text-align: center;
+            margin-top: 3.5rem;
+        }
+
+        .btn-keynotes-program {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            color: var(--primary-color) !important;
+            border: 2px solid var(--primary-color);
+            padding: 12px 28px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none !important;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-keynotes-program:hover {
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(134, 31, 65, 0.25);
+        }
+
+        @media (max-width: 992px) {
+            .keynote-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .keynotes-section {
+                padding: 3.5rem 15px;
+            }
+            .keynotes-section .section-subtitle {
+                font-size: 1.05rem;
+                margin-bottom: 2rem;
+            }
+            .keynote-grid {
+                grid-template-columns: 1fr;
+            }
+            .keynote-card {
+                padding: 2rem 1.25rem 1.75rem;
+            }
+        }
+
+        /* Sponsors Section */
+        .sponsors-section {
+            padding: 4rem 20px;
+            text-align: center;
+            background-color: var(--white);
+        }
+
+        .sponsor-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            /* Spacing between logos */
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .logo-link img {
+            height: auto;
+            width: 300px;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .sponsor-cta-box {
+            width: 250px;
+            height: 120px;
+            border: 3px dashed #d9d9d9;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.01);
+            color: #777;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+        }
+
+        .sponsor-cta-box:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(134, 31, 65, 0.03);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .sponsor-cta-box p {
+            margin: 0;
+            pointer-events: none;
+        }
+
+        .sponsor-cta-box .cta-text-main {
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .sponsor-cta-box .cta-text-sub {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .sponsor-cta-box:hover .cta-text-main {
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 20px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+
+        .deadline-text {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: white;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <style>
+    :root {
+        --banner-height: 40px;
+    }
+    .announcement-banner {
+        background-color: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+        font-weight: 600;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1002;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+    .announcement-banner a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .announcement-banner a:hover {
+        color: #fdfdfd;
+        text-decoration: none;
+    }
+    .navbar {
+        top: var(--banner-height, 40px) !important;
+    }
+    body {
+        margin-top: var(--banner-height, 40px);
+    }
+</style>
+<div class="announcement-banner">
+    Registration is now open for HCOMP + CI 2026!
+    <a href="registration.html">View details and register here →</a>
+</div>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; text-decoration: none; gap: 6px;">
+            <img src="img/HCOMP_logo-01-colored_hjS4.svg" alt="HCOMP Logo" class="nav-logo">
+            <span style="font-weight: 800; color: #00a79d; font-size: 1.4rem;">2026</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-nav" id="nav-links">
+            <div class="dropdown">
+                <a href="attend.html" >Attend <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="venue.html" >Venue</a>
+                    <a href="accommodations.html" >Accommodations</a>
+                    <a href="registration.html" >Registration</a>
+                    <a href="travel_grants.html" >Travel Grants</a>
+                    <a href="visa_support_letter.html" >Visa Support Letter</a>
+                    <a href="student_volunteers.html" >Student Volunteers</a>
+                    <a href="attend.html#workshops">Workshops</a>
+                    <a href="crowdcamp.html" >CrowdCamp</a>
+                    <a href="code_of_conduct.html" >Code of Conduct</a>
+                </div>
+            </div>
+            <a href="program.html" >Program</a>
+            <a href="call_for_participation.html" >Submit</a>
+            <a href="organizers.html" >Organizers</a>
+            <a href="call_for_sponsors.html" >Sponsors</a>
+            <a href="past_meetings.html" >Past Meetings</a>
+        </div>
+    </nav>
+
+<script>
+    (function() {
+        function updateBannerAndNavbar() {
+            const banner = document.querySelector('.announcement-banner');
+            const navbar = document.querySelector('.navbar');
+            if (banner && window.getComputedStyle(banner).display !== 'none') {
+                const bannerHeight = banner.offsetHeight;
+                document.documentElement.style.setProperty('--banner-height', bannerHeight + 'px');
+                if (navbar) {
+                    navbar.style.top = bannerHeight + 'px';
+                }
+                document.body.style.marginTop = bannerHeight + 'px';
+            } else {
+                document.documentElement.style.setProperty('--banner-height', '0px');
+                if (navbar) {
+                    navbar.style.top = '0px';
+                }
+                document.body.style.marginTop = '0px';
+            }
+
+            if (typeof window.updateSubnavPosition === 'function') {
+                window.updateSubnavPosition();
+            }
+        }
+
+        window.updateBannerAndNavbar = updateBannerAndNavbar;
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateBannerAndNavbar);
+        } else {
+            updateBannerAndNavbar();
+        }
+
+        window.addEventListener('load', updateBannerAndNavbar);
+        window.addEventListener('resize', updateBannerAndNavbar);
+        window.addEventListener('orientationchange', updateBannerAndNavbar);
+
+        if (window.ResizeObserver) {
+            const ro = new ResizeObserver(() => {
+                updateBannerAndNavbar();
+            });
+            const banner = document.querySelector('.announcement-banner');
+            if (banner) {
+                ro.observe(banner);
+            } else {
+                document.addEventListener('DOMContentLoaded', () => {
+                    const b = document.querySelector('.announcement-banner');
+                    if (b) ro.observe(b);
+                });
+            }
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdownIcons = document.querySelectorAll('.dropdown > a > i');
+        dropdownIcons.forEach(icon => {
+            icon.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1100) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.closest('.dropdown').classList.toggle('mobile-open');
+                }
+            });
+        });
+    });
+</script>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div
+                style="font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 700; letter-spacing: 2px; margin-bottom: 0.5rem; opacity: 0.9;">
+                2026</div>
+            <h1 style="margin-bottom: 1.5rem; margin-top: 0;"><img src="img/HCOMP_logo-01-white_hjS4.svg"
+                    alt="HCOMP Logo" style="width: 100%; max-width: 800px; height: auto;"></h1>
+            <h2>The 2026 ACM Conference on<br />Human-AI Complementarity and Alignment</h2>
+            <div class="location">
+                📍 <a href="https://iac.vt.edu/about/Location.html" target="_blank" class="location-link">Virginia Tech
+                    Academic Building One</a><br>
+                Near Washington, DC
+            </div>
+            <div class="date-badge">
+                September 27-30, 2026
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll down for details</span>
+            <div class="arrow"></div>
+        </a>
+    </header>
+
+    <section class="container" id="about">
+        <h2 class="section-title">About the Conference</h2>
+        <p class="about-text">
+            ACM HCOMP is the premier venue for disseminating the latest research findings on human-AI complementarity
+            and alignment. Our community studies and designs systems that combine the complementary strengths of human
+            and artificial intelligence to achieve outcomes neither could achieve alone, in ways that are ethical, safe,
+            and intentional.
+        </p>
+        <p class="about-text">
+            This research builds on a foundation established by the HCOMP community during its first decade as an <a
+                href="https://aaai.org/conference/hcomp/" target="_blank" class="inline-link">AAAI conference series</a>
+            focused on human computation and crowdsourcing.
+        </p>
+
+        <div class="highlight-box">
+            This year, the conference will be co-located and tightly integrated with the <a
+                href="http://ci.acm.org/2026/" target="_blank"
+                style="color: var(--primary-color); font-weight: bold; text-decoration: none;">2026 ACM Collective
+                Intelligence (CI) Conference</a>, creating a unique synergy between researchers in human-AI
+            collaboration and collective intelligence.
+        </div>
+
+
+    </section>
+
+    <section class="container" id="theme" style="padding-top: 0;">
+        <h2 class="section-title">2026 Conference Theme: "Connections"</h2>
+        <p class="about-text">
+            The theme of this year's co-located conference is <strong>Connections</strong>.
+            <br><br>
+            We encourage submissions that explore connections across disciplines; across humans, animals, and machines;
+            between individuals and communities, and beyond.
+        </p>
+    </section>
+
+    <section class="keynotes-section" id="keynotes">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <h2 class="section-title">Keynote Speakers</h2>
+            <p class="section-subtitle">
+                We are thrilled to welcome three visionary keynote speakers spanning <strong>Industry</strong>, <strong>Academia</strong>, and <strong>Government</strong>, bringing pioneering perspectives on human-AI complementarity and alignment.
+            </p>
+
+            <ul class="keynote-grid">
+                <li class="keynote-card is-industry">
+                    <span class="keynote-badge badge-industry">Industry</span>
+                    <div class="keynote-photo-wrapper">
+                        <img class="keynote-photo" src="img/eric-horvitz_hjS4.jpg" alt="Portrait of Eric Horvitz" loading="lazy">
+                    </div>
+                    <div class="keynote-body">
+                        <h3 class="keynote-name">
+                            <a href="https://www.microsoft.com/en-us/research/people/horvitz/" target="_blank" rel="noopener noreferrer">Eric Horvitz</a>
+                        </h3>
+                        <p class="keynote-role">Chief Scientific Officer</p>
+                        <p class="keynote-org">Microsoft</p>
+                        <p class="keynote-day">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <time datetime="2026-09-28">Monday, September 28</time>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="keynote-card is-academia">
+                    <span class="keynote-badge badge-academia">Academia</span>
+                    <div class="keynote-photo-wrapper">
+                        <img class="keynote-photo" src="img/diyi-yang_hjS4.jpg" alt="Portrait of Diyi Yang" loading="lazy">
+                    </div>
+                    <div class="keynote-body">
+                        <h3 class="keynote-name">
+                            <a href="https://cs.stanford.edu/~diyiy/index.html" target="_blank" rel="noopener noreferrer">Diyi Yang</a>
+                        </h3>
+                        <p class="keynote-role">Assistant Professor of Computer Science</p>
+                        <p class="keynote-org">Stanford University</p>
+                        <p class="keynote-day">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <time datetime="2026-09-29">Tuesday, September 29</time>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="keynote-card is-government">
+                    <span class="keynote-badge badge-government">Government</span>
+                    <div class="keynote-photo-wrapper">
+                        <img class="keynote-photo" src="img/laurie-allen_hjS4.jpg" alt="Portrait of Laurie Allen" loading="lazy">
+                    </div>
+                    <div class="keynote-body">
+                        <h3 class="keynote-name">
+                            <a href="https://www.loc.gov/" target="_blank" rel="noopener noreferrer">Laurie Allen</a>
+                        </h3>
+                        <p class="keynote-role">Creative Engagement Officer</p>
+                        <p class="keynote-org">Library of Congress</p>
+                        <p class="keynote-day">
+                            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                            <time datetime="2026-09-30">Wednesday, September 30</time>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="keynotes-cta-wrapper">
+                <a href="program.html" class="btn-keynotes-program">
+                    <span>View Full Program &amp; Schedule</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="dates-section">
+        <div class="container">
+            <h2 class="section-title">Important Dates</h2>
+            <p style="text-align: center; font-style: italic; color: #555555; margin-top: -2rem; margin-bottom: 1rem;">
+                All dates are 11:59pm <abbr title="Anywhere on Earth time zone"
+                    style="text-decoration: underline dotted; border-bottom: none;">AoE</abbr> in 2026.
+            </p>
+            <div class="timeline">
+                <div class="date-card">
+                    <h3><s style="color: #888; font-size: 0.9em;">June 1</s> <span style="color: red;">June
+                            8</span><br><span style="font-size: 0.8em; color: red;">(extended!)</span></h3>
+                    <p><strong>Papers and Talks:</strong> Abstracts Due</p>
+                </div>
+                <div class="date-card">
+                    <h3><s style="color: #888; font-size: 0.9em;">June 8</s> <span style="color: red;">June
+                            15</span><br><span style="font-size: 0.8em; color: red;">(extended!)</span></h3>
+                    <p><strong>Papers and Talks:</strong> Submissions Due</p>
+                </div>
+                <div class="date-card">
+                    <h3>June 15</h3>
+                    <p><strong>Workshops:</strong> Proposals Due</p>
+                </div>
+                <div class="date-card">
+                    <h3>June 22</h3>
+                    <p><strong>Workshops:</strong> Proposal Notifications</p>
+                </div>
+                <div class="date-card">
+                    <h3>July 16</h3>
+                    <p><strong>Posters and Demos:</strong> Submissions Due</p>
+                </div>
+                <div class="date-card">
+                    <h3>July 31</h3>
+                    <p><strong>Papers and Talks:</strong> Notifications</p>
+                </div>
+                <div class="date-card">
+                    <h3>August 5</h3>
+                    <p><strong>Posters and Demos:</strong> Notifications</p>
+                </div>
+                <div class="date-card">
+                    <h3>August 13</h3>
+                    <p><strong>Papers and Talks:</strong> Camera Ready Due</p>
+                </div>
+            </div>
+            <!-- Secondary CTA for researchers evaluating the timeline -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-weight: 500; margin-bottom: 1rem; color: #555;">Discover all the ways you can participate
+                    in HCOMP 2026</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="registration.html" class="btn-cta" style="margin-top: 0; background-color: var(--primary-color);">Register</a>
+                    <a href="call_for_participation.html" class="btn-cta" style="margin-top: 0;">View Call for Participation</a>
+                    <a href="student_volunteers.html" class="btn-cta" style="margin-top: 0; background-color: var(--secondary-color);">Call for Student Volunteers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <style>
+        .sponsor-logos-container {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .sponsor-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-link {
+            border-bottom: none !important;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-link img {
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Hierarchy Sizing */
+        .logo-link.tier-platinum img {
+            width: 350px;
+            max-height: 150px;
+        }
+
+        .logo-link.tier-gold img {
+            width: 315px;
+            max-height: 135px;
+        }
+
+        .logo-link.tier-silver img {
+            width: 280px;
+            max-height: 120px;
+        }
+
+        .logo-link.tier-bronze img {
+            width: 250px;
+            max-height: 100px;
+        }
+
+        .logo-link.tier-societies img {
+            width: 220px;
+            max-height: 90px;
+            opacity: 0.85;
+        }
+
+        .logo-link:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <section class="sponsors-section">
+        <h2 class="section-title">Sponsors</h2>
+        <div class="sponsor-logos-container">
+            <div class="sponsor-logos">
+                <!-- Platinum -->
+                <a href="https://www.nsf.gov/" target="_blank" class="logo-link tier-platinum">
+                    <img src="img/USNSF_Logo_Lockup_stacked_RGB_1200ppi_hjS4.png"
+                        alt="National Science Foundation Logo">
+                </a>
+
+                <!-- Gold -->
+                <a href="https://www.bloomberg.com/company/values/tech-at-bloomberg/artificial-intelligence-ai/"
+                    target="_blank" class="logo-link tier-gold">
+                    <img src="img/BBGEngineering_black - 2026_hjS4.png" alt="Bloomberg Engineering Logo"
+                        style="width: 260px; max-height: 110px;">
+                </a>
+                <a href="https://iac.vt.edu/" target="_blank" class="logo-link tier-gold">
+                    <img src="img/InstituteforAdvancedComputing_FullColor_RGB_hjS4.png"
+                        alt="Virginia Tech Institute for Advanced Computing Logo" style="max-height: 110px;">
+                </a>
+
+                <!-- Silver & Support -->
+                <a href="https://ifm.ai/" target="_blank" class="logo-link tier-silver">
+                    <img src="img/ifm-logo_hjS4.svg" alt="Institute of Foundation Models Logo">
+                </a>
+                <a href="https://aij.ijcai.org/funding-opportunities-for-promoting-ai-research/" target="_blank"
+                    class="logo-link tier-silver">
+                    <img src="img/ARTINT_Logo2_c_web_more_hjS4.jpg" alt="AI Journal Logo">
+                </a>
+                <a href="https://ist.psu.edu/about/departments/department-human-centered-computing-social-informatics"
+                    target="_blank" class="logo-link tier-silver">
+                    <img src="img/PSU_DHCCSI_RGB_3C_hjS4.png" alt="PSU DHCCSI Logo"
+                        style="width: 340px; max-height: 140px;">
+                </a>
+                <a href="https://bit.vt.edu/" target="_blank" class="logo-link tier-silver">
+                    <img src="img/BusinessInformationTechnology_horizontal_RGB_hjS4.png"
+                        alt="Virginia Tech Department of Business Information Technology Logo">
+                </a>
+                <a href="https://hci.icat.vt.edu/index.html" target="_blank" class="logo-link tier-silver">
+                    <img src="img/CenterforHumanComputerInteraction_Horizontal_RGB_hjS4.png"
+                        alt="VT Center for Human-Computer Interaction Logo">
+                </a>
+
+                <!-- Bronze -->
+                <a href="https://sanghani.cs.vt.edu/index.html" target="_blank" class="logo-link tier-bronze">
+                    <img src="img/Sanghani Center-horizontal-RGB_hjS4.png"
+                        alt="Virginia Tech Sanghani Center for AI & Data Analytics Logo">
+                </a>
+
+                <!-- Societies -->
+                <a href="https://www.sigweb.org/" target="_blank" class="logo-link tier-societies">
+                    <img src="img/sigweb_logo_hjS4.jpeg" alt="ACM SIGWEB Sponsor Logo">
+                </a>
+                <a href="https://sigchi.org/" target="_blank" class="logo-link tier-societies">
+                    <img src="img/sigchi_logo_hjS4.png" alt="ACM SIGCHI Sponsor Logo">
+                </a>
+
+                <a href="call_for_sponsors.html" class="logo-link" style="text-decoration: none;">
+                    <div class="sponsor-cta-box" style="width: 250px; height: 100px;">
+                        <p class="cta-text-main">...and you?</p>
+                        <p class="cta-text-sub">Join as a 2026 Sponsor</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2026 Association for Computing Machinery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
